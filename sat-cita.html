@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprende cómo agendar tu cita en el SAT de forma sencilla y rápida para cualquier trámite fiscal.">
+  <meta name="keywords" content="cita SAT, agendar cita SAT, trámites SAT, SAT 2025, cita fiscal">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Agenda tu cita SAT: guía paso a paso para trámites fiscales</title>
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-neutral-950 text-white min-h-screen flex flex-col">
+  <nav id="main-navbar" class="w-full px-4 py-3 flex justify-between items-center bg-neutral-900/80 backdrop-blur-md fixed top-0 left-0 z-30 transition-transform duration-300 transform">
+    <a href="index.html" class="text-xl font-bold tracking-tight">Tramita México</a>
+    <button id="menu-toggle" class="text-3xl text-white focus:outline-none transition-transform duration-200 z-50 relative">☰</button>
+    <div id="menu-overlay" class="fixed inset-0 bg-black/90 z-40 hidden transition-opacity duration-200"></div>
+    <ul id="main-menu" class="hidden fixed inset-0 bg-black flex-col items-start justify-start gap-8 z-50 text-2xl font-bold text-white transition-all duration-300 mt-[60px]">
+      <li><a href="index.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Inicio</a></li>
+      <li><a href="articulos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Artículos</a></li>
+      <li><a href="guias.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Guías</a></li>
+      <li><a href="recursos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Recursos</a></li>
+      <li><a href="tramites.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Trámites</a></li>
+      <li><a href="sobre-nosotros.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Sobre nosotros</a></li>
+    </ul>
+  </nav>
+  <main class="flex-1 pb-8" style="padding-top: 60px;">
+    <!-- 1. Hero-zona -->
+    <section class="relative flex items-center justify-center bg-cover bg-center min-h-[45vh] px-4" style="background-image: url('images/sat-cita.webp');">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent"></div>
+      <div class="relative z-10 text-center max-w-2xl mx-auto flex flex-col items-center justify-center h-full py-12">
+        <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-500/20 rounded-full mb-6">
+          <span class="text-2xl">📅</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold mb-4">Agenda tu cita SAT: guía paso a paso para trámites fiscales</h1>
+        <p class="text-lg sm:text-2xl mb-8 text-neutral-200 font-medium">Agendar una cita en el SAT es el primer paso para realizar cualquier trámite fiscal. Te explicamos cómo hacerlo en línea, qué documentos necesitas, cómo elegir la oficina correcta y qué hacer el día de tu cita. Esta guía te ayudará a navegar el proceso de agendamiento sin complicaciones y llegar preparado a tu cita.</p>
+        <a href="#agendar" class="inline-block px-8 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-lg shadow-lg">Agendar cita</a>
+      </div>
+    </section>
+
+    <!-- 2. ¿Por qué necesitas una cita SAT? -->
+    <section id="agendar" class="max-w-5xl mx-auto mt-14 px-4">
+      <div class="flex flex-col md:flex-row gap-8 items-center bg-neutral-900/90 rounded-2xl p-8 shadow border border-neutral-800">
+        <div class="flex-1">
+          <h2 class="text-2xl font-bold mb-3">¿Por qué necesitas una cita SAT?</h2>
+          <p class="text-base text-neutral-300 mb-4">Las citas en el SAT son obligatorias para la mayoría de trámites fiscales. Sin cita, no podrás ser atendido en las oficinas. El sistema de citas ayuda a organizar la atención, reducir tiempos de espera y asegurar que tengas todos los documentos necesarios. Es tu garantía de ser atendido de manera eficiente y sin perder tiempo en filas interminables.</p>
+          <div class="flex gap-4 mt-6">
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">⏰</span>
+              <span class="text-xs text-neutral-400 mt-1">Ahorra tiempo</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">📋</span>
+              <span class="text-xs text-neutral-400 mt-1">Trámites organizados</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">✅</span>
+              <span class="text-xs text-neutral-400 mt-1">Atención garantizada</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center">
+          <img src="images/article-sat-cita.webp" alt="Cita SAT" class="w-72 h-44 object-cover rounded-xl shadow-lg opacity-90">
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Trámites que requieren cita -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Trámites que requieren cita en el SAT</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">🆔</span>
+          <span class="font-semibold mb-2">RFC por primera vez</span>
+          <p class="text-sm text-neutral-300">Para obtener tu RFC por primera vez necesitas cita obligatoria. Lleva todos los documentos requeridos y acude a la oficina asignada.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">🔄</span>
+          <span class="font-semibold mb-2">Actualización de datos</span>
+          <p class="text-sm text-neutral-300">Si necesitas cambiar nombre, domicilio u otros datos en tu RFC, debes agendar cita para la actualización.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">📊</span>
+          <span class="font-semibold mb-2">Trámites especiales</span>
+          <p class="text-sm text-neutral-300">Para trámites complejos, aclaraciones fiscales o problemas con tu cuenta, la cita es obligatoria.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Proceso de agendamiento -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Proceso de agendamiento paso a paso</h2>
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 w-full">
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mb-3">
+              <span class="text-white font-bold">1</span>
+            </div>
+            <span class="font-semibold mb-2">Accede al portal</span>
+            <span class="text-xs text-neutral-400">Ve al sitio oficial del SAT y selecciona "Agendar cita" en el menú principal.</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mb-3">
+              <span class="text-white font-bold">2</span>
+            </div>
+            <span class="font-semibold mb-2">Selecciona trámite</span>
+            <span class="text-xs text-neutral-400">Elige el tipo de trámite que necesitas realizar (RFC, actualización, etc.).</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mb-3">
+              <span class="text-white font-bold">3</span>
+            </div>
+            <span class="font-semibold mb-2">Elige oficina y fecha</span>
+            <span class="text-xs text-neutral-400">Selecciona la oficina más cercana y una fecha/hora disponible que te convenga.</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mb-3">
+              <span class="text-white font-bold">4</span>
+            </div>
+            <span class="font-semibold mb-2">Confirma cita</span>
+            <span class="text-xs text-neutral-400">Revisa todos los datos y confirma tu cita. Recibirás un comprobante por email.</span>
+          </div>
+        </div>
+        <div class="mt-6 text-xs text-neutral-400 text-center">El proceso de agendamiento toma aproximadamente 10-15 minutos.</div>
+      </div>
+    </section>
+
+    <!-- 5. Casos reales y errores frecuentes -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Casos reales y errores frecuentes</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">❌</span>
+          <span class="font-semibold mb-1">"Llegué sin cita y no me atendieron"</span>
+          <span class="text-xs text-neutral-400 mt-2">Sin cita no puedes ser atendido en las oficinas del SAT. Siempre agenda tu cita con anticipación.</span>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">⏰</span>
+          <span class="font-semibold mb-1">"Llegué tarde y perdí mi cita"</span>
+          <span class="text-xs text-neutral-400 mt-2">Llega 15 minutos antes de tu cita. Si llegas tarde, tendrás que reprogramar para otro día.</span>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">📄</span>
+          <span class="font-semibold mb-1">"No llevé todos los documentos"</span>
+          <span class="text-xs text-neutral-400 mt-2">Revisa la lista de requisitos antes de acudir. Documentos faltantes pueden retrasar tu trámite.</span>
+        </div>
+      </div>
+      <div class="text-xs text-neutral-400 text-center">Estos errores son comunes pero se pueden evitar con una buena preparación.</div>
+    </section>
+
+    <!-- 6. Cita exitosa vs fallida -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Cita exitosa vs cita fallida</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="bg-green-900/80 rounded-xl p-6 flex flex-col items-center shadow border border-green-700">
+          <span class="text-2xl mb-2">✅ EXITOSA</span>
+          <ul class="text-sm text-green-100 space-y-1">
+            <li>Llegas 15 minutos antes</li>
+            <li>Llevas todos los documentos</li>
+            <li>Datos correctos en el sistema</li>
+            <li>Trámite completado sin problemas</li>
+          </ul>
+        </div>
+        <div class="bg-red-900/80 rounded-xl p-6 flex flex-col items-center shadow border border-red-700">
+          <span class="text-2xl mb-2">❌ FALLIDA</span>
+          <ul class="text-sm text-red-100 space-y-1">
+            <li>Llegas tarde o sin cita</li>
+            <li>Documentos faltantes o incorrectos</li>
+            <li>Datos erróneos en el sistema</li>
+            <li>Necesitas reprogramar cita</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4 text-xs text-neutral-400 text-center">Una cita exitosa te ahorra tiempo y evita tener que reprogramar.</div>
+    </section>
+
+    <!-- 7. Mini-guía ilustrada -->
+    <section class="max-w-3xl mx-auto mt-14 px-4">
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <div class="flex flex-col items-center gap-4">
+          <span class="text-3xl">📅</span>
+          <span class="font-semibold">Agenda con anticipación</span>
+          <span class="text-xs text-neutral-400 text-center">Las citas se llenan rápido, especialmente en épocas de declaraciones. Agenda con tiempo.</span>
+          <span class="text-3xl">📋</span>
+          <span class="font-semibold">Revisa requisitos</span>
+          <span class="text-xs text-neutral-400 text-center">Consulta la lista de documentos necesarios antes de acudir a tu cita.</span>
+          <span class="text-3xl">⏰</span>
+          <span class="font-semibold">Llega a tiempo</span>
+          <span class="text-xs text-neutral-400 text-center">Llega 15 minutos antes de tu cita para evitar retrasos o reprogramación.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Cierre emocional -->
+    <section class="max-w-4xl mx-auto mt-14 px-4">
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <h2 class="text-2xl font-bold mb-4 text-center">¿Por qué es importante agendar tu cita correctamente?</h2>
+        <p class="text-base text-neutral-300 mb-4 text-center">Agendar tu cita SAT correctamente es fundamental para realizar cualquier trámite fiscal sin problemas. Una cita bien programada te ahorra tiempo, evita frustraciones y asegura que puedas completar tu trámite de manera eficiente. Sin cita, no podrás ser atendido y tendrás que regresar otro día.</p>
+        <ul class="list-disc pl-6 text-sm text-neutral-400 mb-4">
+          <li>Evita perder tiempo en filas interminables sin cita.</li>
+          <li>Te garantiza atención en la fecha y hora programada.</li>
+          <li>Te permite preparar todos los documentos necesarios.</li>
+          <li>Facilita la organización de tu agenda personal.</li>
+        </ul>
+        <p class="text-sm text-neutral-400 text-center">Recuerda: una cita bien agendada es el primer paso para un trámite exitoso en el SAT.</p>
+      </div>
+    </section>
+
+    <!-- 9. Disclaimer -->
+    <section class="max-w-3xl mx-auto mt-10 px-4">
+      <div class="bg-neutral-800/90 rounded-lg p-4 text-xs text-neutral-300 text-center">
+        No realizamos trámites ni almacenamos datos personales. Toda la información aquí tiene fines informativos y no sustituye la consulta oficial con el SAT. Consulta siempre fuentes oficiales para agendar tu cita SAT.
+      </div>
+    </section>
+  </main>
+  <footer class="bg-neutral-900 text-neutral-400 py-6 sm:py-8 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-sm">© 2024 Tramita México. Todos los derechos reservados.</div>
+      <div class="text-xs">Este sitio no es una entidad gubernamental ni está afiliado a ninguna institución oficial.</div>
+    </div>
+  </footer>
+  <div id="cookie-banner"
+    class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-neutral-800 text-white w-[95vw] max-w-xl sm:max-w-2xl px-3 py-3 sm:px-6 sm:py-4 rounded-lg shadow-lg flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4 z-50 text-sm sm:text-base"
+    style="word-break:break-word;">
+    <span class="w-full sm:w-auto text-center sm:text-left leading-snug">
+      Este sitio utiliza cookies para mejorar tu experiencia.
+      <a href="sobre-nosotros.html" class="underline text-primary-400">Saber más</a>
+    </span>
+    <button
+      onclick="document.getElementById('cookie-banner').style.display='none'"
+      class="w-full sm:w-auto mt-2 sm:mt-0 px-4 py-2 bg-primary-500 hover:bg-primary-600 rounded transition font-semibold focus:outline-none focus:ring-2 focus:ring-primary-400"
+      aria-label="Aceptar cookies">
+      Aceptar
+    </button>
+  </div>
+  <script>
+    // Fullscreen burger menu for all screens + overlay + auto-hide nav
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('main-menu');
+      const overlay = document.getElementById('menu-overlay');
+      const navbar = document.getElementById('main-navbar');
+      let open = false;
+      function openMenu() {
+        menu.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+        toggle.textContent = '✕';
+        document.body.classList.add('overflow-hidden');
+        open = true;
+      }
+      function closeMenu() {
+        menu.classList.add('hidden');
+        overlay.classList.add('hidden');
+        toggle.textContent = '☰';
+        document.body.classList.remove('overflow-hidden');
+        open = false;
+      }
+      if (toggle && menu && overlay) {
+        toggle.addEventListener('click', function() {
+          open ? closeMenu() : openMenu();
+        });
+        overlay.addEventListener('click', closeMenu);
+        menu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            closeMenu();
+          });
+        });
+      }
+      // Auto-hide navbar on scroll
+      let lastScroll = window.scrollY;
+      window.addEventListener('scroll', function() {
+        const curr = window.scrollY;
+        if (curr > lastScroll && curr > 60) {
+          navbar.classList.add('-translate-y-full');
+        } else {
+          navbar.classList.remove('-translate-y-full');
+        }
+        lastScroll = curr;
+      });
+    });
+  </script>
+</body>
+</html> 

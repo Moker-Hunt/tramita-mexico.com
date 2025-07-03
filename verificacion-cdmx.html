@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Consulta el calendario y los requisitos para verificar tu coche en CDMX en 2025.">
+  <meta name="keywords" content="verificación vehicular, verificación CDMX, cómo verificar auto, calendario verificación">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Verificación vehicular CDMX 2025: calendario y requisitos</title>
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-neutral-950 text-white min-h-screen flex flex-col">
+  <nav id="main-navbar" class="w-full px-4 py-3 flex justify-between items-center bg-neutral-900/80 backdrop-blur-md fixed top-0 left-0 z-30 transition-transform duration-300 transform">
+    <a href="index.html" class="text-xl font-bold tracking-tight">Tramita México</a>
+    <button id="menu-toggle" class="text-3xl text-white focus:outline-none transition-transform duration-200 z-50 relative">☰</button>
+    <div id="menu-overlay" class="fixed inset-0 bg-black/90 z-40 hidden transition-opacity duration-200"></div>
+    <ul id="main-menu" class="hidden fixed inset-0 bg-black flex-col items-start justify-start gap-8 z-50 text-2xl font-bold text-white transition-all duration-300 mt-[60px]">
+      <li><a href="index.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Inicio</a></li>
+      <li><a href="articulos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Artículos</a></li>
+      <li><a href="guias.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Guías</a></li>
+      <li><a href="recursos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Recursos</a></li>
+      <li><a href="tramites.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Trámites</a></li>
+      <li><a href="sobre-nosotros.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Sobre nosotros</a></li>
+    </ul>
+  </nav>
+  <main class="flex-1 pb-8" style="padding-top: 60px;">
+    <!-- 1. Hero-zona -->
+    <section class="relative flex items-center justify-center bg-cover bg-center min-h-[45vh] px-4" style="background-image: url('images/verificacion-cdmx.webp');">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent"></div>
+      <div class="relative z-10 text-center max-w-2xl mx-auto flex flex-col items-center justify-center h-full py-12">
+        <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-500/20 rounded-full mb-6">
+          <span class="text-2xl">🚗</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold mb-4">Verificación vehicular CDMX 2025: calendario y requisitos</h1>
+        <p class="text-lg sm:text-2xl mb-8 text-neutral-200 font-medium">La verificación vehicular es obligatoria en CDMX para mantener tu auto circulando legalmente. Te explicamos cuándo te toca verificar según el último dígito de tus placas, qué documentos necesitas, dónde hacerlo y cómo evitar multas. Esta guía te ayudará a cumplir con este requisito de manera sencilla y sin contratiempos.</p>
+        <a href="#calendario" class="inline-block px-8 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-lg shadow-lg">Ver calendario</a>
+      </div>
+    </section>
+
+    <!-- 2. ¿Qué es la verificación vehicular? -->
+    <section id="calendario" class="max-w-5xl mx-auto mt-14 px-4">
+      <div class="flex flex-col md:flex-row gap-8 items-center bg-neutral-900/90 rounded-2xl p-8 shadow border border-neutral-800">
+        <div class="flex-1">
+          <h2 class="text-2xl font-bold mb-3">¿Qué es la verificación vehicular?</h2>
+          <p class="text-base text-neutral-300 mb-4">La verificación vehicular es un programa ambiental obligatorio que evalúa las emisiones contaminantes de tu vehículo. Su objetivo es reducir la contaminación del aire en la Ciudad de México y mantener los autos en buen estado mecánico. Sin este trámite, tu auto no puede circular legalmente y puedes recibir multas costosas. La verificación se realiza dos veces al año según el último dígito de tus placas.</p>
+          <div class="flex gap-4 mt-6">
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">🌱</span>
+              <span class="text-xs text-neutral-400 mt-1">Medio ambiente</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">⚡</span>
+              <span class="text-xs text-neutral-400 mt-1">Circulación legal</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">🔧</span>
+              <span class="text-xs text-neutral-400 mt-1">Mantenimiento</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center">
+          <img src="images/article-verificacion-cdmx.webp" alt="Verificación vehicular CDMX" class="w-72 h-44 object-cover rounded-xl shadow-lg opacity-90">
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Calendario de verificación -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Calendario de verificación 2025</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">📅</span>
+          <span class="font-semibold mb-2">Primer semestre</span>
+          <p class="text-sm text-neutral-300">Enero: placas terminadas en 5 y 6. Febrero: 7 y 8. Marzo: 9 y 0. Abril: 1 y 2. Mayo: 3 y 4. Junio: 5 y 6. Julio: 7 y 8. Agosto: 9 y 0.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">📅</span>
+          <span class="font-semibold mb-2">Segundo semestre</span>
+          <p class="text-sm text-neutral-300">Septiembre: placas terminadas en 1 y 2. Octubre: 3 y 4. Noviembre: 5 y 6. Diciembre: 7, 8, 9 y 0. Enero 2026: 1 y 2.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">⚠️</span>
+          <span class="font-semibold mb-2">Excepciones</span>
+          <p class="text-sm text-neutral-300">Vehículos nuevos (primer año): no requieren verificación. Vehículos híbridos y eléctricos: calendario especial. Vehículos de carga: horarios específicos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Proceso de verificación -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Proceso de verificación paso a paso</h2>
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 w-full">
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mb-3">
+              <span class="text-white font-bold">1</span>
+            </div>
+            <span class="font-semibold mb-2">Reúne documentos</span>
+            <span class="text-xs text-neutral-400">Licencia de conducir, tarjeta de circulación, comprobante de pago de tenencia y verificación anterior.</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mb-3">
+              <span class="text-white font-bold">2</span>
+            </div>
+            <span class="font-semibold mb-2">Acude al centro</span>
+            <span class="text-xs text-neutral-400">Ve a un centro de verificación autorizado. Puedes consultar la ubicación más cercana en línea.</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mb-3">
+              <span class="text-white font-bold">3</span>
+            </div>
+            <span class="font-semibold mb-2">Inspección técnica</span>
+            <span class="text-xs text-neutral-400">El técnico revisará emisiones, luces, frenos y otros sistemas de tu vehículo.</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mb-3">
+              <span class="text-white font-bold">4</span>
+            </div>
+            <span class="font-semibold mb-2">Recibe tu holograma</span>
+            <span class="text-xs text-neutral-400">Si apruebas, recibirás el holograma correspondiente para colocar en tu parabrisas.</span>
+          </div>
+        </div>
+        <div class="mt-6 text-xs text-neutral-400 text-center">El proceso completo toma aproximadamente 30-45 minutos dependiendo de la afluencia.</div>
+      </div>
+    </section>
+
+    <!-- 5. Casos reales y errores frecuentes -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Casos reales y errores frecuentes</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">🚫</span>
+          <span class="font-semibold mb-1">"Me multaron por no verificar"</span>
+          <span class="text-xs text-neutral-400 mt-2">Circular sin verificación puede resultar en multas de hasta $3,000 pesos y retención del vehículo.</span>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">🔧</span>
+          <span class="font-semibold mb-1">"Mi auto no pasó la verificación"</span>
+          <span class="text-xs text-neutral-400 mt-2">Si tu auto no aprueba, debes repararlo y volver a verificar. Las reparaciones pueden ser costosas.</span>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">⏰</span>
+          <span class="font-semibold mb-1">"Se me pasó la fecha límite"</span>
+          <span class="text-xs text-neutral-400 mt-2">Puedes verificar fuera de tu mes asignado, pero con un costo adicional. No esperes al último momento.</span>
+        </div>
+      </div>
+      <div class="text-xs text-neutral-400 text-center">Estos problemas son comunes pero se pueden evitar con una buena planificación.</div>
+    </section>
+
+    <!-- 6. Hologramas y categorías -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Hologramas y categorías de verificación</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="bg-green-900/80 rounded-xl p-6 flex flex-col items-center shadow border border-green-700">
+          <span class="text-2xl mb-2">🟢 HOLOGRAMA 0</span>
+          <ul class="text-sm text-green-100 space-y-1">
+            <li>Vehículos nuevos (primer año)</li>
+            <li>Híbridos y eléctricos</li>
+            <li>Exentos de restricciones</li>
+            <li>Circulación libre todos los días</li>
+          </ul>
+        </div>
+        <div class="bg-yellow-900/80 rounded-xl p-6 flex flex-col items-center shadow border border-yellow-700">
+          <span class="text-2xl mb-2">🟡 HOLOGRAMA 1</span>
+          <ul class="text-sm text-yellow-100 space-y-1">
+            <li>Vehículos que cumplen estándares</li>
+            <li>Restricciones según programa Hoy No Circula</li>
+                <li>Deben verificar cada 6 meses</li>
+            <li>Circulación con restricciones</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4 text-xs text-neutral-400 text-center">El tipo de holograma determina tus restricciones de circulación en CDMX.</div>
+    </section>
+
+    <!-- 7. Mini-guía ilustrada -->
+    <section class="max-w-3xl mx-auto mt-14 px-4">
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <div class="flex flex-col items-center gap-4">
+          <span class="text-3xl">📅</span>
+          <span class="font-semibold">Revisa tu calendario</span>
+          <span class="text-xs text-neutral-400 text-center">Consulta cuándo te toca verificar según el último dígito de tus placas.</span>
+          <span class="text-3xl">🔧</span>
+          <span class="font-semibold">Mantén tu auto en buen estado</span>
+          <span class="text-xs text-neutral-400 text-center">Realiza mantenimiento regular para asegurar que pase la verificación sin problemas.</span>
+          <span class="text-3xl">📋</span>
+          <span class="font-semibold">Lleva todos los documentos</span>
+          <span class="text-xs text-neutral-400 text-center">Asegúrate de tener todos los documentos requeridos para evitar retrasos.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Cierre emocional -->
+    <section class="max-w-4xl mx-auto mt-14 px-4">
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <h2 class="text-2xl font-bold mb-4 text-center">¿Por qué es importante verificar tu vehículo?</h2>
+        <p class="text-base text-neutral-300 mb-4 text-center">La verificación vehicular es fundamental para mantener la calidad del aire en CDMX y asegurar que tu auto funcione correctamente. Sin este trámite, no puedes circular legalmente y te expones a multas costosas. Además, la verificación te ayuda a detectar problemas mecánicos antes de que se conviertan en reparaciones mayores.</p>
+        <ul class="list-disc pl-6 text-sm text-neutral-400 mb-4">
+          <li>Evita multas de hasta $3,000 pesos por no verificar.</li>
+          <li>Previene la retención de tu vehículo por autoridades.</li>
+          <li>Contribuye a mejorar la calidad del aire en la ciudad.</li>
+          <li>Te ayuda a mantener tu auto en buen estado mecánico.</li>
+        </ul>
+        <p class="text-sm text-neutral-400 text-center">Recuerda: verificar tu vehículo es tu responsabilidad como conductor y beneficia a toda la ciudad.</p>
+      </div>
+    </section>
+
+    <!-- 9. Disclaimer -->
+    <section class="max-w-3xl mx-auto mt-10 px-4">
+      <div class="bg-neutral-800/90 rounded-lg p-4 text-xs text-neutral-300 text-center">
+        No realizamos trámites ni almacenamos datos personales. Toda la información aquí tiene fines informativos y no sustituye la consulta oficial con las autoridades de tránsito de CDMX. Consulta siempre fuentes oficiales para realizar tu verificación vehicular.
+      </div>
+    </section>
+  </main>
+  <footer class="bg-neutral-900 text-neutral-400 py-6 sm:py-8 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-sm">© 2024 Tramita México. Todos los derechos reservados.</div>
+      <div class="text-xs">Este sitio no es una entidad gubernamental ni está afiliado a ninguna institución oficial.</div>
+    </div>
+  </footer>
+  <div id="cookie-banner"
+    class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-neutral-800 text-white w-[95vw] max-w-xl sm:max-w-2xl px-3 py-3 sm:px-6 sm:py-4 rounded-lg shadow-lg flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4 z-50 text-sm sm:text-base"
+    style="word-break:break-word;">
+    <span class="w-full sm:w-auto text-center sm:text-left leading-snug">
+      Este sitio utiliza cookies para mejorar tu experiencia.
+      <a href="sobre-nosotros.html" class="underline text-primary-400">Saber más</a>
+    </span>
+    <button
+      onclick="document.getElementById('cookie-banner').style.display='none'"
+      class="w-full sm:w-auto mt-2 sm:mt-0 px-4 py-2 bg-primary-500 hover:bg-primary-600 rounded transition font-semibold focus:outline-none focus:ring-2 focus:ring-primary-400"
+      aria-label="Aceptar cookies">
+      Aceptar
+    </button>
+  </div>
+  <script>
+    // Fullscreen burger menu for all screens + overlay + auto-hide nav
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('main-menu');
+      const overlay = document.getElementById('menu-overlay');
+      const navbar = document.getElementById('main-navbar');
+      let open = false;
+      function openMenu() {
+        menu.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+        toggle.textContent = '✕';
+        document.body.classList.add('overflow-hidden');
+        open = true;
+      }
+      function closeMenu() {
+        menu.classList.add('hidden');
+        overlay.classList.add('hidden');
+        toggle.textContent = '☰';
+        document.body.classList.remove('overflow-hidden');
+        open = false;
+      }
+      if (toggle && menu && overlay) {
+        toggle.addEventListener('click', function() {
+          open ? closeMenu() : openMenu();
+        });
+        overlay.addEventListener('click', closeMenu);
+        menu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            closeMenu();
+          });
+        });
+      }
+      // Auto-hide navbar on scroll
+      let lastScroll = window.scrollY;
+      window.addEventListener('scroll', function() {
+        const curr = window.scrollY;
+        if (curr > lastScroll && curr > 60) {
+          navbar.classList.add('-translate-y-full');
+        } else {
+          navbar.classList.remove('-translate-y-full');
+        }
+        lastScroll = curr;
+      });
+    });
+  </script>
+</body>
+</html> 

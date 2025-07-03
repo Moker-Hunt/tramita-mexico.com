@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contáctanos: dudas, sugerencias o reportes para Tramita México. Respuesta rápida y trato directo.">
+  <meta name="keywords" content="contacto, dudas, sugerencias, Tramita México, formulario, soporte, ayuda">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Contáctanos - Tramita México</title>
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-neutral-950 text-white min-h-screen flex flex-col">
+  <nav id="main-navbar" class="w-full px-4 py-3 flex justify-between items-center bg-neutral-900/80 backdrop-blur-md fixed top-0 left-0 z-30 transition-transform duration-300 transform">
+    <a href="index.html" class="text-xl font-bold tracking-tight">Tramita México</a>
+    <button id="menu-toggle" class="text-3xl text-white focus:outline-none transition-transform duration-200 z-50 relative">☰</button>
+    <div id="menu-overlay" class="fixed inset-0 bg-black/90 z-40 hidden transition-opacity duration-200"></div>
+    <ul id="main-menu" class="hidden fixed inset-0 bg-black flex-col items-start justify-start gap-8 z-50 text-2xl font-bold text-white transition-all duration-300 mt-[60px]">
+      <li><a href="index.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Inicio</a></li>
+      <li><a href="articulos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Artículos</a></li>
+      <li><a href="guias.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Guías</a></li>
+      <li><a href="recursos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Recursos</a></li>
+      <li><a href="tramites.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Trámites</a></li>
+      <li><a href="sobre-nosotros.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Sobre nosotros</a></li>
+    </ul>
+  </nav>
+  <main class="flex-1 pb-8" style="padding-top: 60px;">
+    <!-- 1. Hero-блок -->
+    <section class="relative flex items-center justify-center bg-gradient-to-br from-neutral-900 via-blue-900/60 to-neutral-950 min-h-[50vh] px-4">
+      <div class="absolute inset-0 pointer-events-none">
+        <img src="images/contact-hero-abstract.png" alt="Contact abstract" class="absolute right-8 top-8 w-64 max-w-[60vw] opacity-60 hidden sm:block select-none" loading="lazy">
+      </div>
+      <div class="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-5xl mx-auto gap-8 py-12">
+        <div class="flex-1 text-center md:text-left">
+          <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-500/20 rounded-full mb-6">
+            <span class="text-2xl">📘</span>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">Contáctanos</h1>
+          <p class="text-lg sm:text-2xl mb-8 text-neutral-200 font-medium max-w-xl">¿Tienes dudas, sugerencias o quieres avisar sobre algún error?</p>
+          <a href="mailto:contact@tramita-mexico.com" class="w-full sm:w-auto text-center inline-block px-7 py-3 bg-white text-black hover:bg-primary-100 rounded-lg font-bold transition text-lg shadow">Ver correo de contacto</a>
+        </div>
+        <div class="flex-1 flex justify-center items-center">
+          <img src="images/contact-envelope.png" alt="Ícono contacto" class="w-56 h-44 object-contain drop-shadow-xl" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Información de contacto directa -->
+    <section class="max-w-4xl mx-auto mt-10 px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+        <div class="bg-neutral-900/90 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-2xl mb-2">📧</span>
+          <span class="font-semibold text-base mb-1">contact@tramita-mexico.com</span>
+          <span class="text-xs text-neutral-400">Correo principal</span>
+        </div>
+        <div class="bg-neutral-900/90 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-2xl mb-2">📄</span>
+          <span class="font-semibold text-base mb-1">legal@tramita-mexico.com</span>
+          <span class="text-xs text-neutral-400">Asuntos legales</span>
+        </div>
+        <div class="bg-neutral-900/90 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-2xl mb-2">🕐</span>
+          <span class="font-semibold text-base mb-1">Lun–Vie, 9:00–18:00</span>
+          <span class="text-xs text-neutral-400">Horario (CDMX)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ¿Para qué puedes escribirnos? -->
+    <section class="max-w-4xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6 text-center">¿Para qué puedes escribirnos?</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+        <div class="bg-neutral-900/80 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">🧾</span>
+          <span class="font-semibold mb-1">Correcciones en contenido</span>
+        </div>
+        <div class="bg-neutral-900/80 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">💬</span>
+          <span class="font-semibold mb-1">Sugerencias sobre temas nuevos</span>
+        </div>
+        <div class="bg-neutral-900/80 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">🚫</span>
+          <span class="font-semibold mb-1">Reportar enlaces rotos o información antigua</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Mensaje de privacidad y uso responsable -->
+    <section class="max-w-2xl mx-auto mt-10 px-4">
+      <div class="bg-neutral-800/90 rounded-lg p-4 text-xs text-neutral-300 text-center">
+        No recopilamos datos personales. Sólo respondemos correos electrónicos enviados por el usuario de manera directa. No compartimos tu información con terceros.
+      </div>
+    </section>
+
+    <!-- 5. CTA final -->
+    <section class="max-w-2xl mx-auto mt-14 px-4">
+      <div class="bg-gradient-to-br from-primary-700/20 to-neutral-900 rounded-2xl p-8 text-center shadow flex flex-col items-center gap-4">
+        <span class="text-2xl mb-2">💡</span>
+        <p class="text-lg font-semibold mb-2">Este proyecto es colaborativo.</p>
+        <p class="text-base text-neutral-300">Si tienes ideas para mejorar Tramex, ¡te leemos con gusto!</p>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-neutral-900 text-neutral-400 py-6 sm:py-8 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-sm">© 2024 Tramita México. Todos los derechos reservados.</div>
+      <div class="text-xs">Este sitio no es una entidad gubernamental ni está afiliado a ninguna institución oficial.</div>
+    </div>
+  </footer>
+  <div id="cookie-banner"
+    class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-neutral-800 text-white w-[95vw] max-w-xl sm:max-w-2xl px-3 py-3 sm:px-6 sm:py-4 rounded-lg shadow-lg flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4 z-50 text-sm sm:text-base"
+    style="word-break:break-word;">
+    <span class="w-full sm:w-auto text-center sm:text-left leading-snug">
+      Este sitio utiliza cookies para mejorar tu experiencia.
+      <a href="sobre-nosotros.html" class="underline text-primary-400">Saber más</a>
+    </span>
+    <button
+      onclick="document.getElementById('cookie-banner').style.display='none'"
+      class="w-full sm:w-auto mt-2 sm:mt-0 px-4 py-2 bg-primary-500 hover:bg-primary-600 rounded transition font-semibold focus:outline-none focus:ring-2 focus:ring-primary-400"
+      aria-label="Aceptar cookies">
+      Aceptar
+    </button>
+  </div>
+  <script>
+    // Fullscreen burger menu for all screens + overlay + auto-hide nav
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('main-menu');
+      const overlay = document.getElementById('menu-overlay');
+      const navbar = document.getElementById('main-navbar');
+      let open = false;
+      function openMenu() {
+        menu.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+        toggle.textContent = '✕';
+        document.body.classList.add('overflow-hidden');
+        open = true;
+      }
+      function closeMenu() {
+        menu.classList.add('hidden');
+        overlay.classList.add('hidden');
+        toggle.textContent = '☰';
+        document.body.classList.remove('overflow-hidden');
+        open = false;
+      }
+      if (toggle && menu && overlay) {
+        toggle.addEventListener('click', function() {
+          open ? closeMenu() : openMenu();
+        });
+        overlay.addEventListener('click', closeMenu);
+        menu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            closeMenu();
+          });
+        });
+      }
+      // Auto-hide navbar on scroll
+      let lastScroll = window.scrollY;
+      window.addEventListener('scroll', function() {
+        const curr = window.scrollY;
+        if (curr > lastScroll && curr > 60) {
+          navbar.classList.add('-translate-y-full');
+        } else {
+          navbar.classList.remove('-translate-y-full');
+        }
+        lastScroll = curr;
+      });
+      // Контактная форма: имитация отправки
+      const form = document.getElementById('contact-form');
+      const success = document.getElementById('form-success');
+      if(form && success) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          form.reset();
+          success.classList.remove('hidden');
+          setTimeout(()=>success.classList.add('hidden'), 4000);
+        });
+      }
+    });
+  </script>
+</body>
+</html> 

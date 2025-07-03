@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Consulta cómo tramitar tu duplicado de tarjeta de circulación en línea y en módulo.">
+  <meta name="keywords" content="tarjeta circulación, duplicado auto, SEMOVI, reposición tarjeta">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Cómo sacar un duplicado de tu tarjeta de circulación</title>
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-neutral-950 text-white min-h-screen flex flex-col">
+  <nav id="main-navbar" class="w-full px-4 py-3 flex justify-between items-center bg-neutral-900/80 backdrop-blur-md fixed top-0 left-0 z-30 transition-transform duration-300 transform">
+    <a href="index.html" class="text-xl font-bold tracking-tight">Tramita México</a>
+    <button id="menu-toggle" class="text-3xl text-white focus:outline-none transition-transform duration-200 z-50 relative">☰</button>
+    <div id="menu-overlay" class="fixed inset-0 bg-black/90 z-40 hidden transition-opacity duration-200"></div>
+    <ul id="main-menu" class="hidden fixed inset-0 bg-black flex-col items-start justify-start gap-8 z-50 text-2xl font-bold text-white transition-all duration-300 mt-[60px]">
+      <li><a href="index.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Inicio</a></li>
+      <li><a href="articulos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Artículos</a></li>
+      <li><a href="guias.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Guías</a></li>
+      <li><a href="recursos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Recursos</a></li>
+      <li><a href="tramites.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Trámites</a></li>
+      <li><a href="sobre-nosotros.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Sobre nosotros</a></li>
+    </ul>
+  </nav>
+  <main class="flex-1 pb-8" style="padding-top: 60px;">
+    <!-- 1. Hero-zona -->
+    <section class="relative flex items-center justify-center bg-cover bg-center min-h-[45vh] px-4" style="background-image: url('images/duplicado-tarjeta.webp');">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent"></div>
+      <div class="relative z-10 text-center max-w-2xl mx-auto flex flex-col items-center justify-center h-full py-12">
+        <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-500/20 rounded-full mb-6">
+          <span class="text-2xl">🚗</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold mb-4">Cómo sacar un duplicado de tu tarjeta de circulación</h1>
+        <p class="text-lg sm:text-2xl mb-8 text-neutral-200 font-medium">Tu tarjeta de circulación es el documento que acredita que tu vehículo está registrado legalmente. Aquí te enseñamos cómo obtener un duplicado cuando la pierdes, se daña o necesitas una copia adicional. Descubre los pasos para tramitar tu duplicado en línea o en módulo, los requisitos necesarios y cómo evitar multas por circular sin este documento importante.</p>
+        <a href="#documento" class="inline-block px-8 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-lg shadow-lg">Ver pasos esenciales</a>
+      </div>
+    </section>
+
+    <!-- 2. Tu tarjeta de circulación, tu documento vehicular -->
+    <section id="documento" class="max-w-5xl mx-auto mt-14 px-4">
+      <div class="flex flex-col md:flex-row gap-8 items-center bg-neutral-900/90 rounded-2xl p-8 shadow border border-neutral-800">
+        <div class="flex-1">
+          <h2 class="text-2xl font-bold mb-3">Tu tarjeta de circulación, tu documento vehicular</h2>
+          <p class="text-base text-neutral-300 mb-4">La tarjeta de circulación es el documento oficial que acredita que tu vehículo está registrado ante las autoridades y puede circular legalmente. Este documento contiene información esencial como los datos del propietario, características del vehículo, placas, número de motor y serie. Es obligatorio portarla siempre en el vehículo y presentarla cuando las autoridades lo soliciten. Sin ella, puedes recibir multas y tu vehículo puede ser remitido al depósito.</p>
+          <div class="flex gap-4 mt-6">
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">🚔</span>
+              <span class="text-xs text-neutral-400 mt-1">Tránsito</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">🏦</span>
+              <span class="text-xs text-neutral-400 mt-1">Seguros</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">🛣️</span>
+              <span class="text-xs text-neutral-400 mt-1">Circulación</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center">
+          <img src="images/article-duplicado-tarjeta.webp" alt="Tarjeta de circulación" class="w-72 h-44 object-cover rounded-xl shadow-lg opacity-90">
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Consejos para obtener tu duplicado -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Consejos para obtener tu duplicado</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">🌐</span>
+          <span class="font-semibold mb-2">¿Cómo solicitarlo en línea?</span>
+          <p class="text-sm text-neutral-300">Muchos estados permiten solicitar el duplicado en línea. Necesitarás los datos del vehículo y del propietario. El proceso es rápido y puedes descargar el documento o recibirlo por correo.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">🏛️</span>
+          <span class="font-semibold mb-2">¿Cómo solicitarlo en módulo?</span>
+          <p class="text-sm text-neutral-300">Puedes acudir a cualquier módulo de atención vehicular. Lleva identificación oficial, comprobante de domicilio y los datos del vehículo. El trámite es inmediato.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">📋</span>
+          <span class="font-semibold mb-2">¿Qué documentos necesitas?</span>
+          <p class="text-sm text-neutral-300">Identificación oficial, comprobante de domicilio, factura del vehículo y en algunos casos, denuncia de extravío ante el Ministerio Público si la perdiste.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Información que contiene tu tarjeta -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Información que contiene tu tarjeta</h2>
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+          <div class="flex flex-col items-center text-center">
+            <span class="text-3xl mb-2">👤</span>
+            <span class="font-semibold mb-2">Datos del propietario</span>
+            <span class="text-xs text-neutral-400">Nombre completo, CURP, RFC y domicilio del propietario del vehículo registrado oficialmente.</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <span class="text-3xl mb-2">🚗</span>
+            <span class="font-semibold mb-2">Datos del vehículo</span>
+            <span class="text-xs text-neutral-400">Marca, modelo, año, color, número de motor, serie y características técnicas del automóvil.</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <span class="text-3xl mb-2">🔢</span>
+            <span class="font-semibold mb-2">Placas y números</span>
+            <span class="text-xs text-neutral-400">Número de placas, folio de la tarjeta, fecha de expedición y vigencia del documento.</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <span class="text-3xl mb-2">📝</span>
+            <span class="font-semibold mb-2">Restricciones y observaciones</span>
+            <span class="text-xs text-neutral-400">Limitaciones de circulación, adeudos pendientes o restricciones especiales del vehículo.</span>
+          </div>
+        </div>
+        <div class="mt-4 text-xs text-neutral-400 text-center">Cada elemento de tu tarjeta tiene importancia legal. Verifica que toda la información sea correcta.</div>
+      </div>
+    </section>
+
+    <!-- 5. Casos reales y situaciones comunes -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Casos reales y situaciones comunes</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">❌</span>
+          <span class="font-semibold mb-1">"Perdí mi tarjeta y me multaron"</span>
+          <span class="text-xs text-neutral-400 mt-2">Circular sin tarjeta de circulación es una infracción grave. Solicita el duplicado inmediatamente para evitar más multas.</span>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">❓</span>
+          <span class="font-semibold mb-1">"¿Puedo circular mientras tramito el duplicado?"</span>
+          <span class="text-xs text-neutral-400 mt-2">No es recomendable. Si te detienen, puedes recibir multa. Mejor tramita el duplicado antes de circular.</span>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">🛑</span>
+          <span class="font-semibold mb-1">"La tarjeta se dañó, ¿necesito denuncia?"</span>
+          <span class="text-xs text-neutral-400 mt-2">Para tarjetas dañadas no necesitas denuncia. Solo para extravío o robo. Lleva la tarjeta dañada al módulo.</span>
+        </div>
+      </div>
+      <div class="text-xs text-neutral-400 text-center">Estas situaciones son comunes. Conocer los procedimientos te ayuda a resolver problemas rápidamente.</div>
+    </section>
+
+    <!-- 6. Mini-guía de solicitud -->
+    <section class="max-w-3xl mx-auto mt-14 px-4">
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <div class="flex flex-col items-center gap-4">
+          <span class="text-3xl">🌐</span>
+          <span class="font-semibold">Accede al portal oficial</span>
+          <span class="text-xs text-neutral-400 text-center">Ve al sitio web de tu estado o al portal nacional de trámites vehiculares. Busca la sección de duplicados.</span>
+          <span class="text-3xl">📝</span>
+          <span class="font-semibold">Llena el formulario</span>
+          <span class="text-xs text-neutral-400 text-center">Ingresa los datos exactos del vehículo y propietario. Verifica que no haya errores antes de enviar.</span>
+          <span class="text-3xl">⬇️</span>
+          <span class="font-semibold">Descarga o recibe tu tarjeta</span>
+          <span class="text-xs text-neutral-400 text-center">Puedes descargar el PDF inmediatamente o recibirlo por correo. Imprime la tarjeta y llévala en tu auto.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Tarjetas válidas vs tarjetas con problemas -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Tarjetas válidas vs tarjetas con problemas</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="bg-green-900/80 rounded-xl p-6 flex flex-col items-center shadow border border-green-700">
+          <span class="text-2xl mb-2">✅ VÁLIDA</span>
+          <ul class="text-sm text-green-100 space-y-1">
+            <li>Datos correctos: información del propietario y vehículo actualizada.</li>
+            <li>Sello oficial: tiene el sello y firma de la autoridad correspondiente.</li>
+            <li>Sin restricciones: el vehículo no tiene adeudos o limitaciones.</li>
+            <li>Estado legible: el documento está en buen estado y es fácil de leer.</li>
+          </ul>
+        </div>
+        <div class="bg-red-900/80 rounded-xl p-6 flex flex-col items-center shadow border border-red-700">
+          <span class="text-2xl mb-2">❌ CON PROBLEMAS</span>
+          <ul class="text-sm text-red-100 space-y-1">
+            <li>Datos desactualizados: información del propietario o vehículo incorrecta.</li>
+            <li>Falta de sellos: no tiene los sellos oficiales requeridos.</li>
+            <li>Restricciones: el vehículo tiene adeudos o limitaciones de circulación.</li>
+            <li>Estado deteriorado: el documento está dañado o ilegible.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4 text-xs text-neutral-400 text-center">Una tarjeta correcta es esencial para circular legalmente. Verifica siempre la validez de tu documento.</div>
+    </section>
+
+    <!-- 8. Cierre emocional -->
+    <section class="max-w-4xl mx-auto mt-14 px-4">
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <h2 class="text-2xl font-bold mb-4 text-center">¿Por qué es importante tener tu tarjeta de circulación al día?</h2>
+        <p class="text-base text-neutral-300 mb-4 text-center">Tu tarjeta de circulación es el documento que acredita que tu vehículo está registrado legalmente y puede circular en las calles. Sin este documento, puedes recibir multas, tu vehículo puede ser remitido al depósito y puedes enfrentar problemas con seguros, trámites de compra-venta o servicios mecánicos. Es el documento que protege tu inversión vehicular y te permite circular con tranquilidad.</p>
+        <ul class="list-disc pl-6 text-sm text-neutral-400 mb-4">
+          <li>Para circular legalmente, las autoridades pueden solicitar tu tarjeta en cualquier momento.</li>
+          <li>En caso de accidente, la tarjeta es necesaria para trámites de seguros y responsabilidades.</li>
+          <li>Para vender tu auto, el comprador requiere la tarjeta de circulación actualizada.</li>
+          <li>En servicios mecánicos, algunos talleres solicitan la tarjeta para garantías.</li>
+        </ul>
+        <p class="text-sm text-neutral-400 text-center">Recuerda: tu tarjeta de circulación es más que un papel. Es la protección legal de tu vehículo y tu tranquilidad al conducir.</p>
+      </div>
+    </section>
+
+    <!-- 9. Disclaimer -->
+    <section class="max-w-3xl mx-auto mt-10 px-4">
+      <div class="bg-neutral-800/90 rounded-lg p-4 text-xs text-neutral-300 text-center">
+        No realizamos trámites ni almacenamos datos personales. Toda la información aquí tiene fines informativos y no sustituye la consulta oficial con las autoridades vehiculares. Consulta siempre fuentes oficiales para validar tu tarjeta y resolver cualquier duda.
+      </div>
+    </section>
+  </main>
+  <footer class="bg-neutral-900 text-neutral-400 py-6 sm:py-8 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-sm">© 2024 Tramita México. Todos los derechos reservados.</div>
+      <div class="text-xs">Este sitio no es una entidad gubernamental ni está afiliado a ninguna institución oficial.</div>
+    </div>
+  </footer>
+
+  <div id="cookie-banner" class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-neutral-800 text-white w-full max-w-xl sm:max-w-2xl px-4 py-3 sm:px-6 sm:py-4 rounded-lg shadow-lg flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4 z-50 text-sm sm:text-base">
+    <span class="w-full sm:w-auto text-center sm:text-left">Este sitio utiliza cookies para mejorar tu experiencia. <a href="sobre-nosotros.html" class="underline text-primary-400">Saber más</a></span>
+    <button onclick="document.getElementById('cookie-banner').style.display='none'" class="w-full sm:w-auto mt-2 sm:mt-0 px-4 py-2 bg-primary-500 hover:bg-primary-600 rounded transition">Aceptar</button>
+  </div>
+
+  <script>
+    // Fullscreen burger menu for all screens + overlay + auto-hide nav
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('main-menu');
+      const overlay = document.getElementById('menu-overlay');
+      const navbar = document.getElementById('main-navbar');
+      let open = false;
+      function openMenu() {
+        menu.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+        toggle.textContent = '✕';
+        document.body.classList.add('overflow-hidden');
+        open = true;
+      }
+      function closeMenu() {
+        menu.classList.add('hidden');
+        overlay.classList.add('hidden');
+        toggle.textContent = '☰';
+        document.body.classList.remove('overflow-hidden');
+        open = false;
+      }
+      if (toggle && menu && overlay) {
+        toggle.addEventListener('click', function() {
+          open ? closeMenu() : openMenu();
+        });
+        overlay.addEventListener('click', closeMenu);
+        menu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            closeMenu();
+          });
+        });
+      }
+      // Auto-hide navbar on scroll
+      let lastScroll = window.scrollY;
+      window.addEventListener('scroll', function() {
+        const curr = window.scrollY;
+        if (curr > lastScroll && curr > 60) {
+          navbar.classList.add('-translate-y-full');
+        } else {
+          navbar.classList.remove('-translate-y-full');
+        }
+        lastScroll = curr;
+      });
+    });
+  </script>
+</body>
+</html> 

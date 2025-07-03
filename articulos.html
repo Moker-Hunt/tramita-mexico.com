@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Artículos y guías sobre trámites en CDMX: CURP, RFC, licencias, impuestos y más. No afiliado a ninguna entidad gubernamental.">
+  <meta name="keywords" content="artículos, trámites, CDMX, CURP, RFC, licencias, impuestos, México">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Artículos - Tramita México</title>
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-neutral-950 text-white min-h-screen flex flex-col">
+  <nav id="main-navbar" class="w-full px-4 py-3 flex justify-between items-center bg-neutral-900/80 backdrop-blur-md fixed top-0 left-0 z-30 transition-transform duration-300 transform">
+    <a href="index.html" class="text-xl font-bold tracking-tight">Tramita México</a>
+    <button id="menu-toggle" class="text-3xl text-white focus:outline-none transition-transform duration-200 z-50 relative">☰</button>
+    <div id="menu-overlay" class="fixed inset-0 bg-black/90 z-40 hidden transition-opacity duration-200"></div>
+    <ul id="main-menu" class="hidden fixed inset-0 bg-black flex-col items-start justify-start gap-8 z-50 text-2xl font-bold text-white transition-all duration-300 mt-[60px]">
+      <li><a href="index.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Inicio</a></li>
+      <li><a href="articulos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Artículos</a></li>
+      <li><a href="guias.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Guías</a></li>
+      <li><a href="recursos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Recursos</a></li>
+      <li><a href="tramites.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Trámites</a></li>
+      <li><a href="sobre-nosotros.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Sobre nosotros</a></li>
+    </ul>
+  </nav>
+
+  <main class="flex-1 pt-24 pb-12">
+    <!-- Hero Section -->
+    <section class="relative flex items-center justify-center bg-cover bg-center min-h-[320px] sm:min-h-[400px] md:min-h-[480px] lg:min-h-[540px]" style="background-image: url('images/office-documents.webp');">
+      <div class="absolute inset-0 bg-black/70"></div>
+      <div class="relative z-10 text-center max-w-2xl sm:max-w-3xl mx-auto flex flex-col items-center justify-center h-full px-4 py-10 sm:py-16 md:py-24">
+        <h1 class="text-2xl xs:text-3xl sm:text-4xl md:text-6xl font-extrabold mb-4 sm:mb-6">📘 Artículos informativos</h1>
+        <p class="text-base sm:text-lg md:text-2xl mb-6 sm:mb-8 text-neutral-200">Explora nuestra colección de artículos sobre los trámites clave en México.</p>
+        <a href="#top-articles" class="inline-block px-6 sm:px-8 py-2 sm:py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-base sm:text-lg">Ver guías más leídas</a>
+      </div>
+    </section>
+
+    <!-- Top Articles Section -->
+    <section id="top-articles" class="max-w-6xl mx-auto mt-16 px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8">Lo más consultado</h2>
+      <div class="space-y-4">
+        <div class="bg-neutral-900 rounded-xl p-4 sm:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-8 hover:bg-neutral-800 transition-all duration-300 border border-neutral-800">
+          <div class="w-16 h-16 bg-primary-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mb-4 md:mb-0 md:mr-4">
+            <span class="text-2xl">🆔</span>
+          </div>
+          <div class="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+            <h3 class="text-xl font-semibold mb-2">Consulta tu CURP en línea gratis – Guía 2025</h3>
+            <p class="text-neutral-400 mb-3">Aprende cómo consultar, descargar e imprimir tu CURP en pocos pasos.</p>
+            <div class="flex gap-4 text-sm text-neutral-500 mb-4">
+              <span>📖 8 min de lectura</span>
+              <span>👁️ 15,420 vistas</span>
+            </div>
+            <a href="curp.html" class="w-full md:w-auto px-8 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-center md:self-start">Leer más</a>
+          </div>
+        </div>
+
+        <div class="bg-neutral-900 rounded-xl p-4 sm:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-8 hover:bg-neutral-800 transition-all duration-300 border border-neutral-800">
+          <div class="w-16 h-16 bg-primary-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mb-4 md:mb-0 md:mr-4">
+            <span class="text-2xl">🚗</span>
+          </div>
+          <div class="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+            <h3 class="text-xl font-semibold mb-2">Renovación de licencia de conducir: guía para CDMX 2025</h3>
+            <p class="text-neutral-400 mb-3">Requisitos, pasos y costos para renovar tu licencia en línea o presencial.</p>
+            <div class="flex gap-4 text-sm text-neutral-500 mb-4">
+              <span>📖 10 min de lectura</span>
+              <span>👁️ 12,850 vistas</span>
+            </div>
+            <a href="renovar-licencia-cdmx.html" class="w-full md:w-auto px-8 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-center md:self-start">Leer más</a>
+          </div>
+        </div>
+
+        <div class="bg-neutral-900 rounded-xl p-4 sm:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-8 hover:bg-neutral-800 transition-all duration-300 border border-neutral-800">
+          <div class="w-16 h-16 bg-primary-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mb-4 md:mb-0 md:mr-4">
+            <span class="text-2xl">🏢</span>
+          </div>
+          <div class="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+            <h3 class="text-xl font-semibold mb-2">Solicita tu constancia de alineación y número oficial en tu municipio</h3>
+            <p class="text-neutral-400 mb-3">Aprende cuándo necesitas este documento para trámites de construcción o compraventa.</p>
+            <div class="flex gap-4 text-sm text-neutral-500 mb-4">
+              <span>📖 7 min de lectura</span>
+              <span>👁️ 11,230 vistas</span>
+            </div>
+            <a href="alineacion-numero-oficial.html" class="w-full md:w-auto px-8 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-center md:self-start">Leer más</a>
+          </div>
+        </div>
+
+        <div class="bg-neutral-900 rounded-xl p-4 sm:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-8 hover:bg-neutral-800 transition-all duration-300 border border-neutral-800">
+          <div class="w-16 h-16 bg-primary-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mb-4 md:mb-0 md:mr-4">
+            <span class="text-2xl">📋</span>
+          </div>
+          <div class="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+            <h3 class="text-xl font-semibold mb-2">Cómo solicitar tu constancia de situación migratoria ante el INM</h3>
+            <p class="text-neutral-400 mb-3">Documento oficial requerido para trámites migratorios y laborales en México.</p>
+            <div class="flex gap-4 text-sm text-neutral-500 mb-4">
+              <span>📖 9 min de lectura</span>
+              <span>👁️ 9,850 vistas</span>
+            </div>
+            <a href="constancia-migratoria.html" class="w-full md:w-auto px-8 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-center md:self-start">Leer más</a>
+          </div>
+        </div>
+
+        <div class="bg-neutral-900 rounded-xl p-4 sm:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-8 hover:bg-neutral-800 transition-all duration-300 border border-neutral-800">
+          <div class="w-16 h-16 bg-primary-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mb-4 md:mb-0 md:mr-4">
+            <span class="text-2xl">💰</span>
+          </div>
+          <div class="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+            <h3 class="text-xl font-semibold mb-2">Tenencia CDMX 2025: cómo pagar y consultar tu adeudo vehicular</h3>
+            <p class="text-neutral-400 mb-3">Aprende a verificar y pagar tu tenencia vehicular sin contratiempos.</p>
+            <div class="flex gap-4 text-sm text-neutral-500 mb-4">
+              <span>📖 5 min de lectura</span>
+              <span>👁️ 8,420 vistas</span>
+            </div>
+            <a href="tenencia-cdmx.html" class="w-full md:w-auto px-8 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-center md:self-start">Leer más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles Grid Section -->
+    <section class="max-w-6xl mx-auto mt-20 px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8">Todos los artículos</h2>
+      
+      <!-- Filter Navigation -->
+      <div id="filter-nav" class="flex flex-wrap gap-2 mb-8 pb-4 border-b border-neutral-800">
+        <button class="px-4 py-2 bg-primary-500 text-white rounded-lg font-medium transition" data-filter="Todos">Todos</button>
+        <button class="px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-white rounded-lg font-medium transition" data-filter="CURP">CURP</button>
+        <button class="px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-white rounded-lg font-medium transition" data-filter="Licencias">Licencias</button>
+        <button class="px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-white rounded-lg font-medium transition" data-filter="Vehículo">Vehículo</button>
+        <button class="px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-white rounded-lg font-medium transition" data-filter="Documentos">Documentos</button>
+        <button class="px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-white rounded-lg font-medium transition" data-filter="Otros">Otros</button>
+      </div>
+
+      <!-- Articles Grid -->
+      <div id="articles-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Article Card 1 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300" data-category="CURP">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/curp.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">CURP</span>
+                <span class="text-xs text-neutral-500">📖 8 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Consulta tu CURP en línea gratis – Guía 2025</h3>
+              <p class="text-sm text-neutral-400 mb-4">Aprende cómo consultar, descargar e imprimir tu CURP en pocos pasos.</p>
+            </div>
+            <a href="curp.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 2 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300" data-category="Licencias">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/renovar-licencia-cdmx.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Licencias</span>
+                <span class="text-xs text-neutral-500">📖 10 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Renovación de licencia de conducir: guía para CDMX 2025</h3>
+              <p class="text-sm text-neutral-400 mb-4">Requisitos, pasos y costos para renovar tu licencia en línea o presencial.</p>
+            </div>
+            <a href="renovar-licencia-cdmx.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 3 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300" data-category="Documentos">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/alineacion-numero-oficial.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Documentos</span>
+                <span class="text-xs text-neutral-500">📖 7 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Solicita tu constancia de alineación y número oficial en tu municipio</h3>
+              <p class="text-sm text-neutral-400 mb-4">Aprende cuándo necesitas este documento para trámites de construcción o compraventa.</p>
+            </div>
+            <a href="alineacion-numero-oficial.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 4 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300" data-category="Documentos">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/constancia-migratoria.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Documentos</span>
+                <span class="text-xs text-neutral-500">📖 9 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Cómo solicitar tu constancia de situación migratoria ante el INM</h3>
+              <p class="text-sm text-neutral-400 mb-4">Documento oficial requerido para trámites migratorios y laborales en México.</p>
+            </div>
+            <a href="constancia-migratoria.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 5 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300" data-category="Vehículo">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/verificacion-cdmx.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Vehículo</span>
+                <span class="text-xs text-neutral-500">📖 8 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Verificación vehicular CDMX 2025: calendario y requisitos</h3>
+              <p class="text-sm text-neutral-400 mb-4">Conoce cuándo y cómo hacer la verificación de tu auto en Ciudad de México.</p>
+            </div>
+            <a href="verificacion-cdmx.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 6 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300" data-category="Vehículo">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/tenencia-cdmx.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Vehículo</span>
+                <span class="text-xs text-neutral-500">📖 5 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Tenencia CDMX 2025: cómo pagar y consultar tu adeudo vehicular</h3>
+              <p class="text-sm text-neutral-400 mb-4">Aprende a verificar y pagar tu tenencia vehicular sin contratiempos.</p>
+            </div>
+            <a href="tenencia-cdmx.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 7 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300" data-category="Licencias">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/licencia-conducir.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Licencias</span>
+                <span class="text-xs text-neutral-500">📖 12 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Licencia de conducir en CDMX: requisitos y renovación 2025</h3>
+              <p class="text-sm text-neutral-400 mb-4">Consulta cómo renovar o tramitar tu licencia de forma sencilla y actualizada.</p>
+            </div>
+            <a href="licencia-conducir.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 8 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300" data-category="Documentos">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/ine.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Documentos</span>
+                <span class="text-xs text-neutral-500">📖 8 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Consulta y reposición de tu credencial INE paso a paso</h3>
+              <p class="text-sm text-neutral-400 mb-4">Conoce los pasos para verificar y reponer tu credencial para votar.</p>
+            </div>
+            <a href="ine.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 9 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300" data-category="Documentos">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/comprobante-domicilio.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Documentos</span>
+                <span class="text-xs text-neutral-500">📖 6 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Cómo obtener un comprobante de domicilio válido en México</h3>
+              <p class="text-sm text-neutral-400 mb-4">Consulta qué documentos son aceptados como comprobante y cómo generarlos.</p>
+            </div>
+            <a href="comprobante-domicilio.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 10 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 hidden" data-category="Otros">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/nss.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Otros</span>
+                <span class="text-xs text-neutral-500">📖 7 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Consulta tu número de seguridad social (NSS) del IMSS en línea</h3>
+              <p class="text-sm text-neutral-400 mb-4">Averigua cómo obtener tu NSS en minutos y sin salir de casa.</p>
+            </div>
+            <a href="nss.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 11 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 hidden" data-category="Otros">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/cfdi.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Otros</span>
+                <span class="text-xs text-neutral-500">📖 9 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Cómo consultar y descargar tu comprobante fiscal (CFDI)</h3>
+              <p class="text-sm text-neutral-400 mb-4">Aprende a obtener tus facturas electrónicas CFDI desde el portal del SAT.</p>
+            </div>
+            <a href="cfdi.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 12 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 hidden" data-category="Documentos">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/no-antecedentes.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Documentos</span>
+                <span class="text-xs text-neutral-500">📖 8 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Cómo tramitar tu carta de no antecedentes penales en México</h3>
+              <p class="text-sm text-neutral-400 mb-4">Descubre qué necesitas para obtener este documento oficial y en qué casos lo solicitan.</p>
+            </div>
+            <a href="no-antecedentes.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 13 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 hidden" data-category="Otros">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/registro-marca.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Otros</span>
+                <span class="text-xs text-neutral-500">📖 15 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Cómo registrar una marca en el IMPI paso a paso</h3>
+              <p class="text-sm text-neutral-400 mb-4">Protege el nombre de tu negocio o producto registrándolo legalmente en México.</p>
+            </div>
+            <a href="registro-marca.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 14 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 hidden" data-category="Documentos">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/pasaporte.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Documentos</span>
+                <span class="text-xs text-neutral-500">📖 12 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Pasaporte mexicano: requisitos y renovación 2025</h3>
+              <p class="text-sm text-neutral-400 mb-4">Conoce los pasos y documentos necesarios para obtener o renovar tu pasaporte.</p>
+            </div>
+            <a href="pasaporte.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 15 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 hidden" data-category="Documentos">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/certificado-secundaria.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Documentos</span>
+                <span class="text-xs text-neutral-500">📖 6 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Cómo obtener tu certificado de secundaria SEP en línea</h3>
+              <p class="text-sm text-neutral-400 mb-4">Descubre cómo descargar tu certificado de secundaria validado por la SEP.</p>
+            </div>
+            <a href="certificado-secundaria.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 16 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 hidden" data-category="Vehículo">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/cambio-placas.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Vehículo</span>
+                <span class="text-xs text-neutral-500">📖 10 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Cambio de placas vehiculares en CDMX y México 2025</h3>
+              <p class="text-sm text-neutral-400 mb-4">Conoce cómo realizar el cambio de placas en tu estado paso a paso.</p>
+            </div>
+            <a href="cambio-placas.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 17 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 hidden" data-category="Otros">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/situacion-fiscal.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Otros</span>
+                <span class="text-xs text-neutral-500">📖 7 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Cómo obtener tu constancia de situación fiscal actualizada</h3>
+              <p class="text-sm text-neutral-400 mb-4">Aprende a consultar y descargar tu constancia fiscal desde el portal SAT.</p>
+            </div>
+            <a href="situacion-fiscal.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 18 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 hidden" data-category="Documentos">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/certificado-covid.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Documentos</span>
+                <span class="text-xs text-neutral-500">📖 5 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Descarga tu certificado de vacunación COVID-19 en México</h3>
+              <p class="text-sm text-neutral-400 mb-4">Aprende a consultar y descargar tu certificado de vacunación oficial desde tu celular.</p>
+            </div>
+            <a href="certificado-covid.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 19 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 hidden" data-category="Otros">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/seguro-desempleo.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Otros</span>
+                <span class="text-xs text-neutral-500">📖 8 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Seguro de desempleo CDMX 2025: requisitos y registro</h3>
+              <p class="text-sm text-neutral-400 mb-4">Infórmate sobre el apoyo económico para personas desempleadas en Ciudad de México.</p>
+            </div>
+            <a href="seguro-desempleo.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 20 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 hidden" data-category="Otros">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/apoyo-bienestar.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Otros</span>
+                <span class="text-xs text-neutral-500">📖 6 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Apoyo Bienestar 2025: cómo consultar y recibir tu pago como adulto mayor</h3>
+              <p class="text-sm text-neutral-400 mb-4">Consulta fechas, montos y cómo inscribirte al programa para adultos mayores.</p>
+            </div>
+            <a href="apoyo-bienestar.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 21 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 hidden" data-category="Documentos">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/constancia-estudios.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Documentos</span>
+                <span class="text-xs text-neutral-500">📖 7 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Cómo solicitar una constancia de estudios oficial en México</h3>
+              <p class="text-sm text-neutral-400 mb-4">Descubre cómo obtener tu constancia de estudios de manera rápida y válida.</p>
+            </div>
+            <a href="constancia-estudios.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 22 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 hidden" data-category="Licencias">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/licencia-funcionamiento.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Licencias</span>
+                <span class="text-xs text-neutral-500">📖 11 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Licencia de funcionamiento: cómo tramitarla para tu negocio</h3>
+              <p class="text-sm text-neutral-400 mb-4">Consulta los pasos para registrar tu comercio y operar legalmente.</p>
+            </div>
+            <a href="licencia-funcionamiento.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 23 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 hidden" data-category="Vehículo">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/reemplacamiento.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Vehículo</span>
+                <span class="text-xs text-neutral-500">📖 9 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Reemplacamiento 2025: cómo hacer el cambio de placas en tu estado</h3>
+              <p class="text-sm text-neutral-400 mb-4">Aprende cuándo debes reemplacar y cómo hacerlo paso a paso según tu entidad.</p>
+            </div>
+            <a href="reemplacamiento.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 24 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 hidden" data-category="Otros">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/beca-benito-juarez.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Otros</span>
+                <span class="text-xs text-neutral-500">📖 8 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Beca Benito Juárez 2025: cómo consultar pagos y requisitos</h3>
+              <p class="text-sm text-neutral-400 mb-4">Infórmate sobre cómo acceder a esta beca educativa, fechas de pago y criterios de elegibilidad.</p>
+            </div>
+            <a href="beca-benito-juarez.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+
+        <!-- Article Card 25 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 hidden" data-category="Otros">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('images/habitos-nocivos.webp');"></div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-primary-500/20 text-primary-400 text-xs rounded">Otros</span>
+                <span class="text-xs text-neutral-500">📖 10 min</span>
+              </div>
+              <h3 class="font-semibold text-lg mb-3">Guía para dejar hábitos nocivos con apoyo de instituciones públicas en México</h3>
+              <p class="text-sm text-neutral-400 mb-4">Conoce programas gratuitos para dejar el tabaco, el alcohol u otras adicciones con respaldo profesional.</p>
+            </div>
+            <a href="habitos-nocivos.html" class="text-primary-400 hover:underline font-medium">Leer más →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Load More Button -->
+      <div class="text-center mt-12">
+        <button id="load-more-btn" class="px-8 py-3 bg-neutral-800 hover:bg-neutral-700 text-white rounded-lg font-semibold transition group">
+          <span class="group-hover:translate-y-[-2px] transition-transform inline-block">Cargar más artículos</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="max-w-6xl mx-auto mt-20 px-4">
+      <div class="bg-neutral-900 rounded-2xl p-8 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-8">¿Para qué sirven estas guías?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mb-4">
+              <span class="text-2xl">✅</span>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Evita errores comunes</h3>
+            <p class="text-neutral-400">Aprende de los errores más frecuentes y cómo evitarlos en tus trámites.</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mb-4">
+              <span class="text-2xl">⏰</span>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Ahorra tiempo en trámites</h3>
+            <p class="text-neutral-400">Optimiza tu tiempo con información clara y procesos simplificados.</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mb-4">
+              <span class="text-2xl">📋</span>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Entiende los requisitos oficiales</h3>
+            <p class="text-neutral-400">Información actualizada sobre requisitos y documentación necesaria.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="max-w-6xl mx-auto mt-20 px-4">
+      <div class="bg-gradient-to-r from-neutral-800 to-neutral-900 rounded-2xl p-8 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Información importante</h2>
+        <p class="text-lg mb-6 text-neutral-300">Nuestros artículos se actualizan constantemente para mantener la información más reciente y precisa.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div class="flex items-center gap-2 text-sm text-neutral-400">
+            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+            <span>Información verificada</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm text-neutral-400">
+            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+            <span>Actualizaciones regulares</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm text-neutral-400">
+            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+            <span>No afiliado a entidades gubernamentales</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-neutral-900 text-neutral-400 py-6 sm:py-8 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-sm">© 2024 Tramita México. Todos los derechos reservados.</div>
+      <div class="text-xs">Este sitio no es una entidad gubernamental ni está afiliado a ninguna institución oficial.</div>
+    </div>
+  </footer>
+
+  <div id="cookie-banner" class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-neutral-800 text-white w-full max-w-xl sm:max-w-2xl px-4 py-3 sm:px-6 sm:py-4 rounded-lg shadow-lg flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4 z-50 text-sm sm:text-base">
+    <span class="w-full sm:w-auto text-center sm:text-left">Este sitio utiliza cookies para mejorar tu experiencia. <a href="sobre-nosotros.html" class="underline text-primary-400">Saber más</a></span>
+    <button onclick="document.getElementById('cookie-banner').style.display='none'" class="w-full sm:w-auto mt-2 sm:mt-0 px-4 py-2 bg-primary-500 hover:bg-primary-600 rounded transition">Aceptar</button>
+  </div>
+
+  <script>
+    const filterNav = document.getElementById('filter-nav');
+    const articles = document.querySelectorAll('#articles-grid > div[data-category]');
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    let currentFilter = 'Todos';
+    let allArticlesShown = false;
+
+    // Функция для показа дополнительных статей
+    function loadMoreArticles() {
+      // Показываем дополнительные статьи только для категории "Todos"
+      if (currentFilter === 'Todos') {
+        const visibleArticles = document.querySelectorAll('#articles-grid > div[data-category]:not(.hidden)');
+        const allArticles = Array.from(articles);
+        const nextArticles = allArticles.slice(visibleArticles.length, visibleArticles.length + 9);
+        
+        nextArticles.forEach(article => {
+          article.classList.remove('hidden');
+        });
+
+        // Если больше нет скрытых статей, скрываем кнопку
+        if (visibleArticles.length + nextArticles.length >= allArticles.length) {
+          loadMoreBtn.style.display = 'none';
+          allArticlesShown = true;
+        }
+      }
+    }
+
+    // Обработчик кнопки "Cargar más artículos"
+    loadMoreBtn.addEventListener('click', loadMoreArticles);
+
+    filterNav.addEventListener('click', (e) => {
+      if (e.target.tagName === 'BUTTON') {
+        const filter = e.target.getAttribute('data-filter');
+        currentFilter = filter;
+        
+        // Стилизация активной кнопки
+        filterNav.querySelectorAll('button').forEach(btn => {
+          btn.classList.remove('bg-primary-500', 'text-white');
+          btn.classList.add('bg-neutral-800', 'text-white');
+        });
+        e.target.classList.add('bg-primary-500', 'text-white');
+        e.target.classList.remove('bg-neutral-800');
+        
+        // Сброс состояния "показать еще"
+        allArticlesShown = false;
+        loadMoreBtn.style.display = 'block';
+        
+        // Фильтрация
+        const filteredArticles = Array.from(articles).filter(card => 
+          filter === 'Todos' || card.getAttribute('data-category') === filter
+        );
+        
+        // Скрываем все статьи сначала
+        articles.forEach(card => {
+          card.classList.add('hidden');
+        });
+        
+        // Показываем статьи выбранной категории
+        filteredArticles.forEach((card, index) => {
+          if (filter === 'Todos') {
+            // Для "Todos" показываем только первые 9
+            if (index < 9) {
+              card.classList.remove('hidden');
+            }
+          } else {
+            // Для конкретной категории показываем все статьи
+            card.classList.remove('hidden');
+          }
+        });
+        
+        // Скрываем кнопку "показать еще" для конкретных категорий
+        if (filter !== 'Todos') {
+          loadMoreBtn.style.display = 'none';
+        } else {
+          loadMoreBtn.style.display = 'block';
+        }
+      }
+    });
+
+    // Инициализация: показываем только первые 9 статей
+    document.addEventListener('DOMContentLoaded', function() {
+      // Скрываем все статьи кроме первых 9
+      articles.forEach((card, index) => {
+        if (index >= 9) {
+          card.classList.add('hidden');
+        }
+      });
+
+    // Fullscreen burger menu for all screens + overlay + auto-hide nav
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('main-menu');
+      const overlay = document.getElementById('menu-overlay');
+      const navbar = document.getElementById('main-navbar');
+      let open = false;
+      function openMenu() {
+        menu.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+        toggle.textContent = '✕';
+        document.body.classList.add('overflow-hidden');
+        open = true;
+      }
+      function closeMenu() {
+        menu.classList.add('hidden');
+        overlay.classList.add('hidden');
+        toggle.textContent = '☰';
+        document.body.classList.remove('overflow-hidden');
+        open = false;
+      }
+      if (toggle && menu && overlay) {
+        toggle.addEventListener('click', function() {
+          open ? closeMenu() : openMenu();
+        });
+        overlay.addEventListener('click', closeMenu);
+        menu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            closeMenu();
+          });
+        });
+      }
+      // Auto-hide navbar on scroll
+      let lastScroll = window.scrollY;
+      window.addEventListener('scroll', function() {
+        const curr = window.scrollY;
+        if (curr > lastScroll && curr > 60) {
+          navbar.classList.add('-translate-y-full');
+        } else {
+          navbar.classList.remove('-translate-y-full');
+        }
+        lastScroll = curr;
+      });
+    });
+  </script>
+</body>
+</html> 

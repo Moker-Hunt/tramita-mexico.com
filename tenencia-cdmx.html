@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Consulta si debes tenencia y paga en línea de forma sencilla y segura en CDMX.">
+  <meta name="keywords" content="tenencia CDMX, pagar tenencia, consulta tenencia, tenencia 2025, adeudo vehicular">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Tenencia CDMX 2025: cómo pagar y consultar tu adeudo vehicular</title>
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-neutral-950 text-white min-h-screen flex flex-col">
+  <nav id="main-navbar" class="w-full px-4 py-3 flex justify-between items-center bg-neutral-900/80 backdrop-blur-md fixed top-0 left-0 z-30 transition-transform duration-300 transform">
+    <a href="index.html" class="text-xl font-bold tracking-tight">Tramita México</a>
+    <button id="menu-toggle" class="text-3xl text-white focus:outline-none transition-transform duration-200 z-50 relative">☰</button>
+    <div id="menu-overlay" class="fixed inset-0 bg-black/90 z-40 hidden transition-opacity duration-200"></div>
+    <ul id="main-menu" class="hidden fixed inset-0 bg-black flex-col items-start justify-start gap-8 z-50 text-2xl font-bold text-white transition-all duration-300 mt-[60px]">
+      <li><a href="index.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Inicio</a></li>
+      <li><a href="articulos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Artículos</a></li>
+      <li><a href="guias.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Guías</a></li>
+      <li><a href="recursos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Recursos</a></li>
+      <li><a href="tramites.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Trámites</a></li>
+      <li><a href="sobre-nosotros.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Sobre nosotros</a></li>
+    </ul>
+  </nav>
+  <main class="flex-1 pb-8" style="padding-top: 60px;">
+    <!-- 1. Hero-zona -->
+    <section class="relative flex items-center justify-center bg-cover bg-center min-h-[45vh] px-4" style="background-image: url('images/tenencia-cdmx.webp');">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent"></div>
+      <div class="relative z-10 text-center max-w-2xl mx-auto flex flex-col items-center justify-center h-full py-12">
+        <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-500/20 rounded-full mb-6">
+          <span class="text-2xl">💰</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold mb-4">Tenencia CDMX 2025: cómo pagar y consultar tu adeudo vehicular</h1>
+        <p class="text-lg sm:text-2xl mb-8 text-neutral-200 font-medium">La tenencia es un impuesto anual obligatorio para vehículos en CDMX. Te explicamos cómo consultar si debes pagar, cuánto cuesta, cómo pagarlo en línea y qué pasa si no lo pagas a tiempo. Esta guía te ayudará a cumplir con esta obligación fiscal de manera sencilla y evitar multas o embargos.</p>
+        <a href="#consulta" class="inline-block px-8 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-lg shadow-lg">Consultar adeudo</a>
+      </div>
+    </section>
+
+    <!-- 2. ¿Qué es la tenencia? -->
+    <section id="consulta" class="max-w-5xl mx-auto mt-14 px-4">
+      <div class="flex flex-col md:flex-row gap-8 items-center bg-neutral-900/90 rounded-2xl p-8 shadow border border-neutral-800">
+        <div class="flex-1">
+          <h2 class="text-2xl font-bold mb-3">¿Qué es la tenencia vehicular?</h2>
+          <p class="text-base text-neutral-300 mb-4">La tenencia es un impuesto anual que se paga por la posesión de vehículos en CDMX. Este impuesto se calcula según el valor de tu auto, su antigüedad y otros factores. El pago es obligatorio y se debe realizar antes del 31 de marzo de cada año. Sin este pago, tu vehículo no puede circular legalmente y puedes enfrentar multas, embargos o incluso la pérdida del vehículo.</p>
+          <div class="flex gap-4 mt-6">
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">📋</span>
+              <span class="text-xs text-neutral-400 mt-1">Impuesto anual</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">🚗</span>
+              <span class="text-xs text-neutral-400 mt-1">Circulación legal</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">⚡</span>
+              <span class="text-xs text-neutral-400 mt-1">Pago en línea</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center">
+          <img src="images/article-tenencia-cdmx.webp" alt="Tenencia CDMX" class="w-72 h-44 object-cover rounded-xl shadow-lg opacity-90">
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Cómo consultar tu adeudo -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Cómo consultar tu adeudo de tenencia</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">🔍</span>
+          <span class="font-semibold mb-2">Consulta en línea</span>
+          <p class="text-sm text-neutral-300">Ve al portal oficial de la CDMX, ingresa tu número de placas y consulta si debes tenencia. El sistema te mostrará el monto exacto a pagar y las fechas límite.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">📱</span>
+          <span class="font-semibold mb-2">Aplicación móvil</span>
+          <p class="text-sm text-neutral-300">Descarga la app oficial de CDMX para consultar y pagar tu tenencia desde tu celular. Es más rápido y conveniente que el portal web.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">🏢</span>
+          <span class="font-semibold mb-2">Oficinas de tesorería</span>
+          <p class="text-sm text-neutral-300">Acude a las oficinas de tesorería de CDMX con tu tarjeta de circulación para consultar personalmente tu adeudo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Proceso de pago -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Proceso de pago paso a paso</h2>
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 w-full">
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mb-3">
+              <span class="text-white font-bold">1</span>
+            </div>
+            <span class="font-semibold mb-2">Consulta tu adeudo</span>
+            <span class="text-xs text-neutral-400">Ingresa tu número de placas en el portal oficial para ver el monto a pagar.</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mb-3">
+              <span class="text-white font-bold">2</span>
+            </div>
+            <span class="font-semibold mb-2">Selecciona método de pago</span>
+            <span class="text-xs text-neutral-400">Elige entre tarjeta de crédito/débito, transferencia bancaria o pago en efectivo.</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mb-3">
+              <span class="text-white font-bold">3</span>
+            </div>
+            <span class="font-semibold mb-2">Confirma el pago</span>
+            <span class="text-xs text-neutral-400">Revisa todos los datos y confirma la transacción. Guarda el comprobante.</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mb-3">
+              <span class="text-white font-bold">4</span>
+            </div>
+            <span class="font-semibold mb-2">Recibe confirmación</span>
+            <span class="text-xs text-neutral-400">Recibirás un comprobante digital. Tu pago se procesará en 24-48 horas.</span>
+          </div>
+        </div>
+        <div class="mt-6 text-xs text-neutral-400 text-center">El pago en línea es más rápido y seguro que acudir a las oficinas.</div>
+      </div>
+    </section>
+
+    <!-- 5. Casos reales y errores frecuentes -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Casos reales y errores frecuentes</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">🚫</span>
+          <span class="font-semibold mb-1">"Me embargaron el auto por no pagar"</span>
+          <span class="text-xs text-neutral-400 mt-2">No pagar la tenencia puede resultar en embargos, multas costosas y la pérdida del vehículo. Siempre paga a tiempo.</span>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">💰</span>
+          <span class="font-semibold mb-1">"El monto no coincide con mi auto"</span>
+          <span class="text-xs text-neutral-400 mt-2">Si el monto parece incorrecto, verifica los datos de tu vehículo o consulta directamente en tesorería.</span>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">⏰</span>
+          <span class="font-semibold mb-1">"Se me pasó la fecha límite"</span>
+          <span class="text-xs text-neutral-400 mt-2">Puedes pagar después del 31 de marzo, pero con recargos. No esperes al último momento.</span>
+        </div>
+      </div>
+      <div class="text-xs text-neutral-400 text-center">Estos problemas son comunes pero se pueden evitar con una buena planificación.</div>
+    </section>
+
+    <!-- 6. Exenciones y descuentos -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Exenciones y descuentos disponibles</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="bg-green-900/80 rounded-xl p-6 flex flex-col items-center shadow border border-green-700">
+          <span class="text-2xl mb-2">✅ EXENTOS</span>
+          <ul class="text-sm text-green-100 space-y-1">
+            <li>Vehículos nuevos (primer año)</li>
+            <li>Vehículos híbridos y eléctricos</li>
+            <li>Vehículos de personas con discapacidad</li>
+            <li>Vehículos de servicios públicos</li>
+          </ul>
+        </div>
+        <div class="bg-blue-900/80 rounded-xl p-6 flex flex-col items-center shadow border border-blue-700">
+          <span class="text-2xl mb-2">💰 DESCUENTOS</span>
+          <ul class="text-sm text-blue-100 space-y-1">
+            <li>Pago anticipado (enero-febrero)</li>
+            <li>Vehículos de más de 10 años</li>
+            <li>Pago en línea (descuento mínimo)</li>
+            <li>Programas sociales específicos</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4 text-xs text-neutral-400 text-center">Consulta si calificas para alguna exención o descuento antes de pagar.</div>
+    </section>
+
+    <!-- 7. Mini-guía ilustrada -->
+    <section class="max-w-3xl mx-auto mt-14 px-4">
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <div class="flex flex-col items-center gap-4">
+          <span class="text-3xl">📅</span>
+          <span class="font-semibold">Paga antes del 31 de marzo</span>
+          <span class="text-xs text-neutral-400 text-center">Evita recargos y multas pagando tu tenencia antes de la fecha límite.</span>
+          <span class="text-3xl">💻</span>
+          <span class="font-semibold">Usa el pago en línea</span>
+          <span class="text-xs text-neutral-400 text-center">Es más rápido, seguro y puedes obtener descuentos por pago electrónico.</span>
+          <span class="text-3xl">📋</span>
+          <span class="font-semibold">Guarda tu comprobante</span>
+          <span class="text-xs text-neutral-400 text-center">Conserva el comprobante de pago para futuras consultas o trámites.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Cierre emocional -->
+    <section class="max-w-4xl mx-auto mt-14 px-4">
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <h2 class="text-2xl font-bold mb-4 text-center">¿Por qué es importante pagar la tenencia a tiempo?</h2>
+        <p class="text-base text-neutral-300 mb-4 text-center">Pagar la tenencia es una obligación fiscal que permite que tu vehículo circule legalmente en CDMX. Sin este pago, puedes enfrentar consecuencias graves como multas costosas, embargos de tu vehículo o incluso la pérdida del mismo. Además, el pago de tenencia contribuye al mantenimiento de las calles y servicios públicos de la ciudad.</p>
+        <ul class="list-disc pl-6 text-sm text-neutral-400 mb-4">
+          <li>Evita multas de hasta $5,000 pesos por no pagar a tiempo.</li>
+          <li>Previene el embargo de tu vehículo por autoridades fiscales.</li>
+          <li>Mantiene tu historial fiscal limpio y sin adeudos.</li>
+          <li>Contribuye al mantenimiento de la infraestructura vial de CDMX.</li>
+        </ul>
+        <p class="text-sm text-neutral-400 text-center">Recuerda: pagar la tenencia es tu responsabilidad como propietario de un vehículo en CDMX.</p>
+      </div>
+    </section>
+
+    <!-- 9. Disclaimer -->
+    <section class="max-w-3xl mx-auto mt-10 px-4">
+      <div class="bg-neutral-800/90 rounded-lg p-4 text-xs text-neutral-300 text-center">
+        No realizamos trámites ni almacenamos datos personales. Toda la información aquí tiene fines informativos y no sustituye la consulta oficial con las autoridades fiscales de CDMX. Consulta siempre fuentes oficiales para realizar tu pago de tenencia.
+      </div>
+    </section>
+  </main>
+  <footer class="bg-neutral-900 text-neutral-400 py-6 sm:py-8 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-sm">© 2024 Tramita México. Todos los derechos reservados.</div>
+      <div class="text-xs">Este sitio no es una entidad gubernamental ni está afiliado a ninguna institución oficial.</div>
+    </div>
+  </footer>
+  <div id="cookie-banner"
+    class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-neutral-800 text-white w-[95vw] max-w-xl sm:max-w-2xl px-3 py-3 sm:px-6 sm:py-4 rounded-lg shadow-lg flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4 z-50 text-sm sm:text-base"
+    style="word-break:break-word;">
+    <span class="w-full sm:w-auto text-center sm:text-left leading-snug">
+      Este sitio utiliza cookies para mejorar tu experiencia.
+      <a href="sobre-nosotros.html" class="underline text-primary-400">Saber más</a>
+    </span>
+    <button
+      onclick="document.getElementById('cookie-banner').style.display='none'"
+      class="w-full sm:w-auto mt-2 sm:mt-0 px-4 py-2 bg-primary-500 hover:bg-primary-600 rounded transition font-semibold focus:outline-none focus:ring-2 focus:ring-primary-400"
+      aria-label="Aceptar cookies">
+      Aceptar
+    </button>
+  </div>
+  <script>
+    // Fullscreen burger menu for all screens + overlay + auto-hide nav
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('main-menu');
+      const overlay = document.getElementById('menu-overlay');
+      const navbar = document.getElementById('main-navbar');
+      let open = false;
+      function openMenu() {
+        menu.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+        toggle.textContent = '✕';
+        document.body.classList.add('overflow-hidden');
+        open = true;
+      }
+      function closeMenu() {
+        menu.classList.add('hidden');
+        overlay.classList.add('hidden');
+        toggle.textContent = '☰';
+        document.body.classList.remove('overflow-hidden');
+        open = false;
+      }
+      if (toggle && menu && overlay) {
+        toggle.addEventListener('click', function() {
+          open ? closeMenu() : openMenu();
+        });
+        overlay.addEventListener('click', closeMenu);
+        menu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            closeMenu();
+          });
+        });
+      }
+      // Auto-hide navbar on scroll
+      let lastScroll = window.scrollY;
+      window.addEventListener('scroll', function() {
+        const curr = window.scrollY;
+        if (curr > lastScroll && curr > 60) {
+          navbar.classList.add('-translate-y-full');
+        } else {
+          navbar.classList.remove('-translate-y-full');
+        }
+        lastScroll = curr;
+      });
+    });
+  </script>
+</body>
+</html> 

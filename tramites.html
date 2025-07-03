@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trámites populares en México: los procedimientos más solicitados, explicados paso a paso. SAT, INE, licencias, vehículos y más.">
+  <meta name="keywords" content="trámites, populares, SAT, INE, licencias, vehículos, México, ciudadanos, guía">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Trámites Populares - Tramita México</title>
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-neutral-950 text-white min-h-screen flex flex-col">
+  <nav id="main-navbar" class="w-full px-4 py-3 flex justify-between items-center bg-neutral-900/80 backdrop-blur-md fixed top-0 left-0 z-30 transition-transform duration-300 transform">
+    <a href="index.html" class="text-xl font-bold tracking-tight">Tramita México</a>
+    <button id="menu-toggle" class="text-3xl text-white focus:outline-none transition-transform duration-200 z-50 relative">☰</button>
+    <div id="menu-overlay" class="fixed inset-0 bg-black/90 z-40 hidden transition-opacity duration-200"></div>
+    <ul id="main-menu" class="hidden fixed inset-0 bg-black flex-col items-start justify-start gap-8 z-50 text-2xl font-bold text-white transition-all duration-300 mt-[60px]">
+      <li><a href="index.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Inicio</a></li>
+      <li><a href="articulos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Artículos</a></li>
+      <li><a href="guias.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Guías</a></li>
+      <li><a href="recursos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Recursos</a></li>
+      <li><a href="tramites.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Trámites</a></li>
+      <li><a href="sobre-nosotros.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Sobre nosotros</a></li>
+    </ul>
+  </nav>
+  <main class="flex-1 pb-8" style="padding-top: 60px;">
+    <!-- Hero Section -->
+    <section class="relative flex items-center justify-center bg-cover bg-center" style="background-image: url('images/city-crowd.webp'); min-height: calc(100vh - 60px);">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 text-center max-w-2xl mx-auto flex flex-col items-center justify-center h-full">
+        <div class="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-primary-500/20 rounded-full mb-4 sm:mb-6">
+          <span class="text-2xl sm:text-3xl">📘</span>
+        </div>
+        <h1 class="text-2xl sm:text-4xl md:text-6xl font-extrabold mb-4 sm:mb-6">Trámites populares</h1>
+        <p class="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-neutral-200">Los procedimientos más solicitados por los ciudadanos, explicados paso a paso.</p>
+        <a href="#tramites-grid" class="inline-block px-6 sm:px-8 py-2 sm:py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-base sm:text-lg">Ver todos los trámites</a>
+      </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="max-w-6xl mx-auto mt-10 sm:mt-16 px-2 sm:px-4">
+      <div class="flex flex-nowrap gap-2 sm:gap-3 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-neutral-700 scrollbar-track-neutral-900 snap-x">
+        <button class="filter-btn active px-4 sm:px-6 py-2 bg-primary-500 text-white rounded-full text-sm font-medium transition whitespace-nowrap min-w-[90px] snap-start" data-filter="todos">Todos</button>
+        <button class="filter-btn px-4 sm:px-6 py-2 bg-neutral-800 hover:bg-neutral-700 text-neutral-300 rounded-full text-sm font-medium transition whitespace-nowrap min-w-[90px] snap-start" data-filter="sat">SAT</button>
+        <button class="filter-btn px-4 sm:px-6 py-2 bg-neutral-800 hover:bg-neutral-700 text-neutral-300 rounded-full text-sm font-medium transition whitespace-nowrap min-w-[110px] snap-start" data-filter="licencias">Licencias</button>
+        <button class="filter-btn px-4 sm:px-6 py-2 bg-neutral-800 hover:bg-neutral-700 text-neutral-300 rounded-full text-sm font-medium transition whitespace-nowrap min-w-[110px] snap-start" data-filter="identidad">Identidad</button>
+        <button class="filter-btn px-4 sm:px-6 py-2 bg-neutral-800 hover:bg-neutral-700 text-neutral-300 rounded-full text-sm font-medium transition whitespace-nowrap min-w-[110px] snap-start" data-filter="vehiculo">Vehículo</button>
+        <button class="filter-btn px-4 sm:px-6 py-2 bg-neutral-800 hover:bg-neutral-700 text-neutral-300 rounded-full text-sm font-medium transition whitespace-nowrap min-w-[90px] snap-start" data-filter="salud">Salud</button>
+      </div>
+    </section>
+
+    <!-- Trámites Grid -->
+    <section id="tramites-grid" class="max-w-6xl mx-auto mt-8 sm:mt-12 px-2 sm:px-4">
+      <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-7">
+        <!-- SAT -->
+        <div class="tramite-card bg-neutral-900 rounded-xl overflow-hidden shadow-lg border-2 border-primary-500/30 hover:border-primary-500 transition-all duration-300 flex flex-col" data-category="sat">
+          <div class="h-32 sm:h-36 bg-cover bg-center relative" style="background-image: url('images/sat-cita.webp');">
+            <div class="absolute top-2 sm:top-3 left-2 sm:left-3 bg-green-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1"><span>🧭</span>SAT</div>
+          </div>
+          <div class="p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Agendar cita en el SAT</h3>
+            <a href="#" class="mt-auto inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+
+        <div class="tramite-card bg-neutral-900 rounded-xl overflow-hidden shadow-lg border-2 border-primary-500/30 hover:border-primary-500 transition-all duration-300 flex flex-col" data-category="sat">
+          <div class="h-32 sm:h-36 bg-cover bg-center relative" style="background-image: url('images/article-rfc.webp');">
+            <div class="absolute top-2 sm:top-3 left-2 sm:left-3 bg-green-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1"><span>🧭</span>SAT</div>
+          </div>
+          <div class="p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Consulta de RFC</h3>
+            <a href="#" class="mt-auto inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+
+        <div class="tramite-card bg-neutral-900 rounded-xl overflow-hidden shadow-lg border-2 border-primary-500/30 hover:border-primary-500 transition-all duration-300 flex flex-col" data-category="sat">
+          <div class="h-32 sm:h-36 bg-cover bg-center relative" style="background-image: url('images/article-impuestos.webp');">
+            <div class="absolute top-2 sm:top-3 left-2 sm:left-3 bg-green-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1"><span>🧭</span>SAT</div>
+          </div>
+          <div class="p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Declaración anual</h3>
+            <a href="#" class="mt-auto inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+
+        <div class="tramite-card bg-neutral-900 rounded-xl overflow-hidden shadow-lg border-2 border-primary-500/30 hover:border-primary-500 transition-all duration-300 flex flex-col" data-category="sat">
+          <div class="h-32 sm:h-36 bg-cover bg-center relative" style="background-image: url('images/declaraciones.webp');">
+            <div class="absolute top-2 sm:top-3 left-2 sm:left-3 bg-green-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1"><span>🧭</span>SAT</div>
+          </div>
+          <div class="p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Facturación electrónica</h3>
+            <a href="#" class="mt-auto inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+
+        <!-- Licencias -->
+        <div class="tramite-card bg-neutral-900 rounded-xl overflow-hidden shadow-lg border-2 border-primary-500/30 hover:border-primary-500 transition-all duration-300 flex flex-col" data-category="licencias">
+          <div class="h-32 sm:h-36 bg-cover bg-center relative" style="background-image: url('images/licencia-renovar.webp');">
+            <div class="absolute top-2 sm:top-3 left-2 sm:left-3 bg-blue-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1"><span>🚗</span>Licencias</div>
+          </div>
+          <div class="p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Renovar licencia</h3>
+            <a href="#" class="mt-auto inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+
+        <div class="tramite-card bg-neutral-900 rounded-xl overflow-hidden shadow-lg border-2 border-primary-500/30 hover:border-primary-500 transition-all duration-300 flex flex-col" data-category="licencias">
+          <div class="h-32 sm:h-36 bg-cover bg-center relative" style="background-image: url('images/licencias-rapidas.webp');">
+            <div class="absolute top-2 sm:top-3 left-2 sm:left-3 bg-blue-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1"><span>🚗</span>Licencias</div>
+          </div>
+          <div class="p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Licencia nueva</h3>
+            <a href="#" class="mt-auto inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+
+        <div class="tramite-card bg-neutral-900 rounded-xl overflow-hidden shadow-lg border-2 border-primary-500/30 hover:border-primary-500 transition-all duration-300 flex flex-col" data-category="licencias">
+          <div class="h-32 sm:h-36 bg-cover bg-center relative" style="background-image: url('images/licencia.webp');">
+            <div class="absolute top-2 sm:top-3 left-2 sm:left-3 bg-blue-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1"><span>🚗</span>Licencias</div>
+          </div>
+          <div class="p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Duplicado de licencia</h3>
+            <a href="#" class="mt-auto inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+
+        <div class="tramite-card bg-neutral-900 rounded-xl overflow-hidden shadow-lg border-2 border-primary-500/30 hover:border-primary-500 transition-all duration-300 flex flex-col" data-category="licencias">
+          <div class="h-32 sm:h-36 bg-cover bg-center relative" style="background-image: url('images/pagos.webp');">
+            <div class="absolute top-2 sm:top-3 left-2 sm:left-3 bg-blue-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1"><span>🚗</span>Licencias</div>
+          </div>
+          <div class="p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Pago de licencia</h3>
+            <a href="#" class="mt-auto inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+
+        <!-- Identidad -->
+        <div class="tramite-card bg-neutral-900 rounded-xl overflow-hidden shadow-lg border-2 border-primary-500/30 hover:border-primary-500 transition-all duration-300 flex flex-col" data-category="identidad">
+          <div class="h-32 sm:h-36 bg-cover bg-center relative" style="background-image: url('images/ine-reposicion.webp');">
+            <div class="absolute top-2 sm:top-3 left-2 sm:left-3 bg-purple-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1"><span>🆔</span>Identidad</div>
+          </div>
+          <div class="p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Reposición de INE</h3>
+            <a href="#" class="mt-auto inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+
+        <div class="tramite-card bg-neutral-900 rounded-xl overflow-hidden shadow-lg border-2 border-primary-500/30 hover:border-primary-500 transition-all duration-300 flex flex-col" data-category="identidad">
+          <div class="h-32 sm:h-36 bg-cover bg-center relative" style="background-image: url('images/article-curp.webp');">
+            <div class="absolute top-2 sm:top-3 left-2 sm:left-3 bg-purple-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1"><span>🆔</span>Identidad</div>
+          </div>
+          <div class="p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Consulta de CURP</h3>
+            <a href="#" class="mt-auto inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+
+        <div class="tramite-card bg-neutral-900 rounded-xl overflow-hidden shadow-lg border-2 border-primary-500/30 hover:border-primary-500 transition-all duration-300 flex flex-col" data-category="identidad">
+          <div class="h-32 sm:h-36 bg-cover bg-center relative" style="background-image: url('images/solicitudes.webp');">
+            <div class="absolute top-2 sm:top-3 left-2 sm:left-3 bg-purple-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1"><span>🆔</span>Identidad</div>
+          </div>
+          <div class="p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Acta de nacimiento</h3>
+            <a href="#" class="mt-auto inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+
+        <div class="tramite-card bg-neutral-900 rounded-xl overflow-hidden shadow-lg border-2 border-primary-500/30 hover:border-primary-500 transition-all duration-300 flex flex-col" data-category="identidad">
+          <div class="h-32 sm:h-36 bg-cover bg-center relative" style="background-image: url('images/about-bg.webp');">
+            <div class="absolute top-2 sm:top-3 left-2 sm:left-3 bg-purple-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1"><span>🆔</span>Identidad</div>
+          </div>
+          <div class="p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Pasaporte</h3>
+            <a href="#" class="mt-auto inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+
+        <!-- Vehículo -->
+        <div class="tramite-card bg-neutral-900 rounded-xl overflow-hidden shadow-lg border-2 border-primary-500/30 hover:border-primary-500 transition-all duration-300 flex flex-col" data-category="vehiculo">
+          <div class="h-32 sm:h-36 bg-cover bg-center relative" style="background-image: url('images/placas-verificar.webp');">
+            <div class="absolute top-2 sm:top-3 left-2 sm:left-3 bg-orange-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1"><span>🚙</span>Vehículo</div>
+          </div>
+          <div class="p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Verificar placas</h3>
+            <a href="#" class="mt-auto inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+
+        <div class="tramite-card bg-neutral-900 rounded-xl overflow-hidden shadow-lg border-2 border-primary-500/30 hover:border-primary-500 transition-all duration-300 flex flex-col" data-category="vehiculo">
+          <div class="h-32 sm:h-36 bg-cover bg-center relative" style="background-image: url('images/tenencia.webp');">
+            <div class="absolute top-2 sm:top-3 left-2 sm:left-3 bg-orange-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1"><span>🚙</span>Vehículo</div>
+          </div>
+          <div class="p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Pago de tenencia</h3>
+            <a href="#" class="mt-auto inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+
+        <div class="tramite-card bg-neutral-900 rounded-xl overflow-hidden shadow-lg border-2 border-primary-500/30 hover:border-primary-500 transition-all duration-300 flex flex-col" data-category="vehiculo">
+          <div class="h-32 sm:h-36 bg-cover bg-center relative" style="background-image: url('images/verificacion.webp');">
+            <div class="absolute top-2 sm:top-3 left-2 sm:left-3 bg-orange-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1"><span>🚙</span>Vehículo</div>
+          </div>
+          <div class="p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Verificación vehicular</h3>
+            <a href="#" class="mt-auto inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+
+        <div class="tramite-card bg-neutral-900 rounded-xl overflow-hidden shadow-lg border-2 border-primary-500/30 hover:border-primary-500 transition-all duration-300 flex flex-col" data-category="vehiculo">
+          <div class="h-32 sm:h-36 bg-cover bg-center relative" style="background-image: url('images/article-multas.webp');">
+            <div class="absolute top-2 sm:top-3 left-2 sm:left-3 bg-orange-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1"><span>🚙</span>Vehículo</div>
+          </div>
+          <div class="p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Consulta de multas</h3>
+            <a href="#" class="mt-auto inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+
+        <!-- Salud -->
+        <div class="tramite-card bg-neutral-900 rounded-xl overflow-hidden shadow-lg border-2 border-primary-500/30 hover:border-primary-500 transition-all duration-300 flex flex-col" data-category="salud">
+          <div class="h-32 sm:h-36 bg-cover bg-center relative" style="background-image: url('images/infracciones.webp');">
+            <div class="absolute top-2 sm:top-3 left-2 sm:left-3 bg-red-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1"><span>🏥</span>Salud</div>
+          </div>
+          <div class="p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">IMSS - Afiliación</h3>
+            <a href="#" class="mt-auto inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+
+        <div class="tramite-card bg-neutral-900 rounded-xl overflow-hidden shadow-lg border-2 border-primary-500/30 hover:border-primary-500 transition-all duration-300 flex flex-col" data-category="salud">
+          <div class="h-32 sm:h-36 bg-cover bg-center relative" style="background-image: url('images/cdmx-streets.webp');">
+            <div class="absolute top-2 sm:top-3 left-2 sm:left-3 bg-red-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1"><span>🏥</span>Salud</div>
+          </div>
+          <div class="p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">ISSSTE - Registro</h3>
+            <a href="#" class="mt-auto inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+
+        <div class="tramite-card bg-neutral-900 rounded-xl overflow-hidden shadow-lg border-2 border-primary-500/30 hover:border-primary-500 transition-all duration-300 flex flex-col" data-category="salud">
+          <div class="h-32 sm:h-36 bg-cover bg-center relative" style="background-image: url('images/hero-bg.webp');">
+            <div class="absolute top-2 sm:top-3 left-2 sm:left-3 bg-red-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1"><span>🏥</span>Salud</div>
+          </div>
+          <div class="p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Cartilla de vacunación</h3>
+            <a href="#" class="mt-auto inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+
+        <div class="tramite-card bg-neutral-900 rounded-xl overflow-hidden shadow-lg border-2 border-primary-500/30 hover:border-primary-500 transition-all duration-300 flex flex-col" data-category="salud">
+          <div class="h-32 sm:h-36 bg-cover bg-center relative" style="background-image: url('images/pagos.webp');">
+            <div class="absolute top-2 sm:top-3 left-2 sm:left-3 bg-red-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1"><span>🏥</span>Salud</div>
+          </div>
+          <div class="p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Certificado médico</h3>
+            <a href="#" class="mt-auto inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ¿Para qué sirven estos trámites? -->
+    <section class="max-w-6xl mx-auto mt-16 sm:mt-20 px-2 sm:px-4">
+      <div class="bg-neutral-900 rounded-xl sm:rounded-2xl p-6 sm:p-8 lg:p-10 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 text-center md:text-left">
+        <div class="flex-1 flex flex-col gap-4 sm:gap-6">
+          <div class="flex items-center gap-3 sm:gap-4">
+            <span class="text-2xl sm:text-3xl bg-primary-500/20 rounded-full p-2 sm:p-3">🧾</span>
+            <span class="text-base sm:text-lg font-semibold">Acceder a servicios públicos</span>
+          </div>
+          <div class="flex items-center gap-3 sm:gap-4">
+            <span class="text-2xl sm:text-3xl bg-green-500/20 rounded-full p-2 sm:p-3">🏛</span>
+            <span class="text-base sm:text-lg font-semibold">Cumplir obligaciones fiscales</span>
+          </div>
+          <div class="flex items-center gap-3 sm:gap-4">
+            <span class="text-2xl sm:text-3xl bg-blue-500/20 rounded-full p-2 sm:p-3">📋</span>
+            <span class="text-base sm:text-lg font-semibold">Actualizar tus documentos</span>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center">
+          <img src="images/proceso-ilustracion.png" alt="Proceso administrativo" class="w-48 h-48 sm:w-60 sm:h-60 object-contain">
+        </div>
+      </div>
+    </section>
+
+    <!-- Top más consultados -->
+    <section class="max-w-6xl mx-auto mt-16 sm:mt-20 px-2 sm:px-4">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-6 sm:mb-8">Top más consultados</h2>
+      <div class="flex gap-4 sm:gap-6 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-neutral-700 scrollbar-track-neutral-900 snap-x">
+        <div class="min-w-full sm:min-w-[300px] bg-primary-900/80 rounded-xl shadow-lg border-2 border-primary-500/40 flex flex-col snap-start">
+          <div class="h-24 sm:h-28 bg-cover bg-center rounded-t-xl" style="background-image: url('images/placas-verificar.webp');"></div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Verificar placas</h3>
+            <a href="#" class="inline-block px-4 sm:px-5 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+        <div class="min-w-full sm:min-w-[300px] bg-primary-900/80 rounded-xl shadow-lg border-2 border-primary-500/40 flex flex-col snap-start">
+          <div class="h-24 sm:h-28 bg-cover bg-center rounded-t-xl" style="background-image: url('images/ine-reposicion.webp');"></div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Reposición de INE</h3>
+            <a href="#" class="inline-block px-4 sm:px-5 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+        <div class="min-w-full sm:min-w-[300px] bg-primary-900/80 rounded-xl shadow-lg border-2 border-primary-500/40 flex flex-col snap-start">
+          <div class="h-24 sm:h-28 bg-cover bg-center rounded-t-xl" style="background-image: url('images/licencia-renovar.webp');"></div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Renovar licencia</h3>
+            <a href="#" class="inline-block px-4 sm:px-5 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+        <div class="min-w-full sm:min-w-[300px] bg-primary-900/80 rounded-xl shadow-lg border-2 border-primary-500/40 flex flex-col snap-start">
+          <div class="h-24 sm:h-28 bg-cover bg-center rounded-t-xl" style="background-image: url('images/article-rfc.webp');"></div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Consulta de RFC</h3>
+            <a href="#" class="inline-block px-4 sm:px-5 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+        <div class="min-w-full sm:min-w-[300px] bg-primary-900/80 rounded-xl shadow-lg border-2 border-primary-500/40 flex flex-col snap-start">
+          <div class="h-24 sm:h-28 bg-cover bg-center rounded-t-xl" style="background-image: url('images/sat-cita.webp');"></div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-base sm:text-lg mb-2">Cita SAT</h3>
+            <a href="#" class="inline-block px-4 sm:px-5 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-sm sm:text-base">Iniciar trámite</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA: Sugerir trámite -->
+    <section class="max-w-4xl mx-auto mt-16 sm:mt-20 px-2 sm:px-4">
+      <div class="bg-gradient-to-r from-primary-700/30 to-primary-900/30 rounded-xl sm:rounded-2xl p-6 sm:p-8 lg:p-10 text-center border border-primary-500/30">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-4">¿No encuentras tu trámite?</h2>
+        <p class="text-base sm:text-lg mb-6 text-neutral-300">Contáctanos y sugiere el trámite que te gustaría ver en la plataforma.</p>
+        <a href="contacto.html" class="inline-block px-6 sm:px-8 py-2 sm:py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-base sm:text-lg">Sugerir un trámite</a>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="max-w-6xl mx-auto mt-16 sm:mt-20 px-2 sm:px-4">
+      <div class="bg-neutral-900 rounded-xl sm:rounded-2xl p-6 sm:p-8 text-center">
+        <h2 class="text-xl sm:text-2xl font-bold mb-4">¿Necesitas ayuda?</h2>
+        <p class="text-base sm:text-lg mb-6">Estamos aquí para ayudarte con cualquier duda sobre trámites</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a href="mailto:contact@tramita-mexico.com" class="text-primary-400 hover:underline font-medium">contact@tramita-mexico.com</a>
+          <span class="text-neutral-400">|</span>
+          <a href="contacto.html" class="inline-block px-4 sm:px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-medium transition">Formulario de contacto</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-neutral-900 text-neutral-400 py-6 sm:py-8 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-sm">© 2024 Tramita México. Todos los derechos reservados.</div>
+      <div class="text-xs">Este sitio no es una entidad gubernamental ni está afiliado a ninguna institución oficial.</div>
+    </div>
+  </footer>
+  <div id="cookie-banner" class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-neutral-800 text-white w-full max-w-xl sm:max-w-2xl px-4 py-3 sm:px-6 sm:py-4 rounded-lg shadow-lg flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4 z-50 text-sm sm:text-base">
+    <span class="w-full sm:w-auto text-center sm:text-left">Este sitio utiliza cookies para mejorar tu experiencia. <a href="sobre-nosotros.html" class="underline text-primary-400">Saber más</a></span>
+    <button onclick="document.getElementById('cookie-banner').style.display='none'" class="w-full sm:w-auto mt-2 sm:mt-0 px-4 py-2 bg-primary-500 hover:bg-primary-600 rounded transition">Aceptar</button>
+  </div>
+  <script>
+    // Fullscreen burger menu for all screens + overlay + auto-hide nav
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('main-menu');
+      const overlay = document.getElementById('menu-overlay');
+      const navbar = document.getElementById('main-navbar');
+      let open = false;
+      function openMenu() {
+        menu.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+        toggle.textContent = '✕';
+        document.body.classList.add('overflow-hidden');
+        open = true;
+      }
+      function closeMenu() {
+        menu.classList.add('hidden');
+        overlay.classList.add('hidden');
+        toggle.textContent = '☰';
+        document.body.classList.remove('overflow-hidden');
+        open = false;
+      }
+      if (toggle && menu && overlay) {
+        toggle.addEventListener('click', function() {
+          open ? closeMenu() : openMenu();
+        });
+        overlay.addEventListener('click', closeMenu);
+        menu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            closeMenu();
+          });
+        });
+      }
+      // Auto-hide navbar on scroll
+      let lastScroll = window.scrollY;
+      window.addEventListener('scroll', function() {
+        const curr = window.scrollY;
+        if (curr > lastScroll && curr > 60) {
+          navbar.classList.add('-translate-y-full');
+        } else {
+          navbar.classList.remove('-translate-y-full');
+        }
+        lastScroll = curr;
+      });
+
+      // Фильтрация карточек
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const tramiteCards = document.querySelectorAll('.tramite-card');
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const filter = this.getAttribute('data-filter');
+          filterBtns.forEach(b => {
+            b.classList.remove('active', 'bg-primary-500', 'text-white');
+            b.classList.add('bg-neutral-800', 'text-neutral-300');
+          });
+          this.classList.add('active', 'bg-primary-500', 'text-white');
+          this.classList.remove('bg-neutral-800', 'text-neutral-300');
+          tramiteCards.forEach(card => {
+            if (filter === 'todos' || card.getAttribute('data-category') === filter) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html> 

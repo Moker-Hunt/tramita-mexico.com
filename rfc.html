@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprende cómo obtener, consultar y validar tu RFC en línea sin complicaciones.">
+  <meta name="keywords" content="RFC, consultar RFC, cómo obtener RFC, constancia RFC, RFC SAT">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Consulta tu RFC y descarga tu constancia actualizada</title>
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-neutral-950 text-white min-h-screen flex flex-col">
+  <nav id="main-navbar" class="w-full px-4 py-3 flex justify-between items-center bg-neutral-900/80 backdrop-blur-md fixed top-0 left-0 z-30 transition-transform duration-300 transform">
+    <a href="index.html" class="text-xl font-bold tracking-tight">Tramita México</a>
+    <button id="menu-toggle" class="text-3xl text-white focus:outline-none transition-transform duration-200 z-50 relative">☰</button>
+    <div id="menu-overlay" class="fixed inset-0 bg-black/90 z-40 hidden transition-opacity duration-200"></div>
+    <ul id="main-menu" class="hidden fixed inset-0 bg-black flex-col items-start justify-start gap-8 z-50 text-2xl font-bold text-white transition-all duration-300 mt-[60px]">
+      <li><a href="index.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Inicio</a></li>
+      <li><a href="articulos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Artículos</a></li>
+      <li><a href="guias.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Guías</a></li>
+      <li><a href="recursos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Recursos</a></li>
+      <li><a href="tramites.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Trámites</a></li>
+      <li><a href="sobre-nosotros.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Sobre nosotros</a></li>
+    </ul>
+  </nav>
+  <main class="flex-1 pb-8" style="padding-top: 60px;">
+    <!-- 1. Hero-zona -->
+    <section class="relative flex items-center justify-center bg-cover bg-center min-h-[45vh] px-4" style="background-image: url('images/rfc.webp');">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent"></div>
+      <div class="relative z-10 text-center max-w-2xl mx-auto flex flex-col items-center justify-center h-full py-12">
+        <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-500/20 rounded-full mb-6">
+          <span class="text-2xl">📋</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold mb-4">Consulta tu RFC y descarga tu constancia actualizada</h1>
+        <p class="text-lg sm:text-2xl mb-8 text-neutral-200 font-medium">Tu RFC es tu identidad fiscal en México. Aquí te enseñamos cómo consultarlo, validarlo y obtener tu constancia oficial sin complicaciones. Descubre los pasos para acceder a tu RFC en línea, entender qué significa cada parte de tu clave y mantenerla actualizada para todos tus trámites fiscales. Esta guía te ayudará a evitar errores comunes y a tener tu RFC listo para cualquier gestión oficial.</p>
+        <a href="#identidad" class="inline-block px-8 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-lg shadow-lg">Ver pasos esenciales</a>
+      </div>
+    </section>
+
+    <!-- 2. Tu RFC, tu identidad fiscal -->
+    <section id="identidad" class="max-w-5xl mx-auto mt-14 px-4">
+      <div class="flex flex-col md:flex-row gap-8 items-center bg-neutral-900/90 rounded-2xl p-8 shadow border border-neutral-800">
+        <div class="flex-1">
+          <h2 class="text-2xl font-bold mb-3">Tu RFC, tu identidad fiscal</h2>
+          <p class="text-base text-neutral-300 mb-4">El RFC (Registro Federal de Contribuyentes) es tu identidad fiscal ante el SAT y todas las instituciones financieras. Es la clave que te permite realizar actividades económicas, abrir cuentas bancarias, obtener empleo formal, facturar servicios y cumplir con tus obligaciones fiscales. Desde que inicias cualquier actividad económica, el RFC te acompaña en cada transacción: compras, ventas, empleos, inversiones y más. Es esencial para el funcionamiento del sistema fiscal mexicano y para tu participación en la economía formal.</p>
+          <div class="flex gap-4 mt-6">
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">💼</span>
+              <span class="text-xs text-neutral-400 mt-1">Trabajo</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">🏦</span>
+              <span class="text-xs text-neutral-400 mt-1">Bancos</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">📊</span>
+              <span class="text-xs text-neutral-400 mt-1">Impuestos</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center">
+          <img src="images/article-rfc.webp" alt="Ejemplo RFC" class="w-72 h-44 object-cover rounded-xl shadow-lg opacity-90">
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Consejos prácticos sobre tu RFC -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Consejos prácticos sobre tu RFC</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">🔍</span>
+          <span class="font-semibold mb-2">¿Cómo consultar tu RFC?</span>
+          <p class="text-sm text-neutral-300">Puedes consultar tu RFC en el portal del SAT usando tu CURP o datos personales. También puedes obtenerlo en cualquier módulo de atención del SAT. Es importante verificar que los datos coincidan exactamente con tus documentos oficiales para evitar errores en tu clave fiscal.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">📄</span>
+          <span class="font-semibold mb-2">¿Cómo obtener tu constancia?</span>
+          <p class="text-sm text-neutral-300">Una vez que tengas tu RFC, puedes descargar tu constancia de situación fiscal desde el portal del SAT. Esta constancia es necesaria para muchos trámites y debe estar actualizada. Guárdala en formato PDF y ten copias impresas para presentaciones oficiales.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">🔄</span>
+          <span class="font-semibold mb-2">¿Cuándo actualizar tu RFC?</span>
+          <p class="text-sm text-neutral-300">Debes actualizar tu RFC cuando cambies de domicilio, nombre, actividad económica o estado civil. También es importante mantener actualizada tu información de contacto para recibir notificaciones importantes del SAT sobre tus obligaciones fiscales.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ¿Reconoces este RFC? -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">¿Reconoces este RFC?</h2>
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <div class="text-3xl font-mono tracking-widest mb-4 text-primary-400 select-all">MORL920313ABC</div>
+        <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+          <div class="flex-1 flex flex-col items-center">
+            <span class="text-lg font-semibold">👤 Datos personales</span>
+            <span class="text-xs text-neutral-400">Las primeras letras corresponden a tus apellidos y nombre, seguidos de tu fecha de nacimiento.</span>
+          </div>
+          <div class="flex-1 flex flex-col items-center">
+            <span class="text-lg font-semibold">🏢 Homoclave</span>
+            <span class="text-xs text-neutral-400">Los últimos tres caracteres son la homoclave que evita duplicados y es asignada por el SAT.</span>
+          </div>
+          <div class="flex-1 flex flex-col items-center">
+            <span class="text-lg font-semibold">📅 Fecha de nacimiento</span>
+            <span class="text-xs text-neutral-400">Los números indican tu fecha de nacimiento (año, mes, día) para identificación única.</span>
+          </div>
+        </div>
+        <div class="mt-4 text-xs text-neutral-400 text-center">Cada parte de tu RFC tiene un significado específico. Entenderlo te ayuda a detectar errores y a proteger tu identidad fiscal.</div>
+      </div>
+    </section>
+
+    <!-- 5. Casos reales y errores frecuentes -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Casos reales y errores frecuentes</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">❌</span>
+          <span class="font-semibold mb-1">"Mi RFC tenía un error y no pude abrir mi cuenta bancaria"</span>
+          <span class="text-xs text-neutral-400 mt-2">Un error en el RFC puede impedirte acceder a servicios financieros. Los bancos verifican la validez del RFC antes de abrir cuentas.</span>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">❓</span>
+          <span class="font-semibold mb-1">"¿Puedo tener dos RFC si tengo dos empleos?"</span>
+          <span class="text-xs text-neutral-400 mt-2">No, el RFC es único por persona. Puedes tener múltiples empleos con el mismo RFC, pero cada empleador debe reportar tus ingresos.</span>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">🛑</span>
+          <span class="font-semibold mb-1">"Mi RFC no aparece aunque puse mis datos correctos"</span>
+          <span class="text-xs text-neutral-400 mt-2">Esto puede ocurrir si nunca has tenido actividad económica o si hay un problema en el sistema. Consulta directamente con el SAT.</span>
+        </div>
+      </div>
+      <div class="text-xs text-neutral-400 text-center">Estos problemas son comunes. Mantén tu RFC actualizado y verifica su validez antes de cualquier trámite importante.</div>
+    </section>
+
+    <!-- 6. Mini-guía ilustrada -->
+    <section class="max-w-3xl mx-auto mt-14 px-4">
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <div class="flex flex-col items-center gap-4">
+          <span class="text-3xl">🌐</span>
+          <span class="font-semibold">Accede al portal del SAT</span>
+          <span class="text-xs text-neutral-400 text-center">Ve a sat.gob.mx y busca la sección "Consulta tu RFC". Necesitarás tu CURP o datos personales exactos.</span>
+          <span class="text-3xl">📋</span>
+          <span class="font-semibold">Verifica que el RFC coincida</span>
+          <span class="text-xs text-neutral-400 text-center">Compara el RFC mostrado con tus documentos oficiales. Si hay diferencias, solicita la corrección inmediatamente.</span>
+          <span class="text-3xl">⬇️</span>
+          <span class="font-semibold">Descarga tu constancia</span>
+          <span class="text-xs text-neutral-400 text-center">Guarda tu constancia de situación fiscal en PDF e imprímela. La necesitarás para trámites oficiales.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. RFC válido vs RFC con errores -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">RFC válido vs RFC con errores</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="bg-green-900/80 rounded-xl p-6 flex flex-col items-center shadow border border-green-700">
+          <span class="text-2xl mb-2">✅ VÁLIDO</span>
+          <ul class="text-sm text-green-100 space-y-1">
+            <li>Datos correctos: tu nombre y fecha coinciden con tus documentos oficiales.</li>
+            <li>Homoclave válida: los últimos tres caracteres están asignados por el SAT.</li>
+            <li>Sin restricciones: puedes realizar actividades económicas sin problemas.</li>
+          </ul>
+        </div>
+        <div class="bg-red-900/80 rounded-xl p-6 flex flex-col items-center shadow border border-red-700">
+          <span class="text-2xl mb-2">❌ CON ERROR</span>
+          <ul class="text-sm text-red-100 space-y-1">
+            <li>Nombre mal escrito: una letra incorrecta puede invalidar tu RFC.</li>
+            <li>RFC duplicado: si existen dos registros, tendrás problemas fiscales.</li>
+            <li>Restricciones: si tienes adeudos o problemas fiscales, tu RFC puede estar limitado.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4 text-xs text-neutral-400 text-center">Un RFC correcto es esencial para tu vida económica. Revisa y mantén actualizada tu información fiscal.</div>
+    </section>
+
+    <!-- 8. Cierre emocional -->
+    <section class="max-w-4xl mx-auto mt-14 px-4">
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <h2 class="text-2xl font-bold mb-4 text-center">¿Por qué es importante tener tu RFC correcto y actualizado?</h2>
+        <p class="text-base text-neutral-300 mb-4 text-center">Tu RFC es la llave para participar en la economía formal de México. Un RFC correcto te permite trabajar legalmente, abrir cuentas bancarias, obtener créditos, facturar servicios, cumplir con tus obligaciones fiscales y acceder a beneficios gubernamentales. Si tu RFC tiene errores o no está actualizado, puedes enfrentar rechazos en trámites, problemas con empleadores, dificultades para acceder a servicios financieros o incluso sanciones fiscales.</p>
+        <ul class="list-disc pl-6 text-sm text-neutral-400 mb-4">
+          <li>Antes de aceptar un empleo, verifica que tu RFC esté correcto y sin restricciones.</li>
+          <li>Para abrir cuentas bancarias, asegúrate de que tu RFC coincida con tu identificación oficial.</li>
+          <li>Si vas a facturar servicios, tu RFC debe estar activo y sin adeudos pendientes.</li>
+          <li>Mantén actualizada tu información de contacto para recibir notificaciones del SAT.</li>
+        </ul>
+        <p class="text-sm text-neutral-400 text-center">Recuerda: tu RFC es tu identidad fiscal. Mantenerlo correcto y actualizado es tu responsabilidad y te evitará muchos problemas en el futuro.</p>
+      </div>
+    </section>
+
+    <!-- 9. Disclaimer -->
+    <section class="max-w-3xl mx-auto mt-10 px-4">
+      <div class="bg-neutral-800/90 rounded-lg p-4 text-xs text-neutral-300 text-center">
+        No realizamos trámites ni almacenamos datos personales. Toda la información aquí tiene fines informativos y no sustituye la consulta oficial con el SAT. Consulta siempre fuentes oficiales para validar tu RFC y resolver cualquier duda fiscal.
+      </div>
+    </section>
+  </main>
+  <footer class="bg-neutral-900 text-neutral-400 py-6 sm:py-8 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-sm">© 2024 Tramita México. Todos los derechos reservados.</div>
+      <div class="text-xs">Este sitio no es una entidad gubernamental ni está afiliado a ninguna institución oficial.</div>
+    </div>
+  </footer>
+
+  <div id="cookie-banner" class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-neutral-800 text-white w-full max-w-xl sm:max-w-2xl px-4 py-3 sm:px-6 sm:py-4 rounded-lg shadow-lg flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4 z-50 text-sm sm:text-base">
+    <span class="w-full sm:w-auto text-center sm:text-left">Este sitio utiliza cookies para mejorar tu experiencia. <a href="sobre-nosotros.html" class="underline text-primary-400">Saber más</a></span>
+    <button onclick="document.getElementById('cookie-banner').style.display='none'" class="w-full sm:w-auto mt-2 sm:mt-0 px-4 py-2 bg-primary-500 hover:bg-primary-600 rounded transition">Aceptar</button>
+  </div>
+
+  <script>
+    // Fullscreen burger menu for all screens + overlay + auto-hide nav
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('main-menu');
+      const overlay = document.getElementById('menu-overlay');
+      const navbar = document.getElementById('main-navbar');
+      let open = false;
+      function openMenu() {
+        menu.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+        toggle.textContent = '✕';
+        document.body.classList.add('overflow-hidden');
+        open = true;
+      }
+      function closeMenu() {
+        menu.classList.add('hidden');
+        overlay.classList.add('hidden');
+        toggle.textContent = '☰';
+        document.body.classList.remove('overflow-hidden');
+        open = false;
+      }
+      if (toggle && menu && overlay) {
+        toggle.addEventListener('click', function() {
+          open ? closeMenu() : openMenu();
+        });
+        overlay.addEventListener('click', closeMenu);
+        menu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            closeMenu();
+          });
+        });
+      }
+      // Auto-hide navbar on scroll
+      let lastScroll = window.scrollY;
+      window.addEventListener('scroll', function() {
+        const curr = window.scrollY;
+        if (curr > lastScroll && curr > 60) {
+          navbar.classList.add('-translate-y-full');
+        } else {
+          navbar.classList.remove('-translate-y-full');
+        }
+        lastScroll = curr;
+      });
+    });
+  </script>
+</body>
+</html> 

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprende dónde y cómo ver imágenes satelitales de México desde fuentes abiertas como la CONABIO o NASA Worldview.">
+  <meta name="keywords" content="imágenes satelitales, consulta satélite, monitoreo CONABIO, mapas digitales, observación terrestre">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Cómo acceder a imágenes satelitales gratuitas en México en 2025</title>
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-neutral-950 text-white min-h-screen flex flex-col">
+  <nav id="main-navbar" class="w-full px-4 py-3 flex justify-between items-center bg-neutral-900/80 backdrop-blur-md fixed top-0 left-0 z-30 transition-transform duration-300 transform">
+    <a href="index.html" class="text-xl font-bold tracking-tight">Tramita México</a>
+    <button id="menu-toggle" class="text-3xl text-white focus:outline-none transition-transform duration-200 z-50 relative">☰</button>
+    <div id="menu-overlay" class="fixed inset-0 bg-black/90 z-40 hidden transition-opacity duration-200"></div>
+    <ul id="main-menu" class="hidden fixed inset-0 bg-black flex-col items-start justify-start gap-8 z-50 text-2xl font-bold text-white transition-all duration-300 mt-[60px]">
+      <li><a href="index.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Inicio</a></li>
+      <li><a href="articulos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Artículos</a></li>
+      <li><a href="guias.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Guías</a></li>
+      <li><a href="recursos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Recursos</a></li>
+      <li><a href="tramites.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Trámites</a></li>
+      <li><a href="sobre-nosotros.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Sobre nosotros</a></li>
+    </ul>
+  </nav>
+  <main class="flex-1 pb-8" style="padding-top: 60px;">
+    <!-- 1. Hero-zona -->
+    <section class="relative flex items-center justify-center bg-cover bg-center min-h-[45vh] px-4" style="background-image: url('images/imagenes-satelitales.webp');">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent"></div>
+      <div class="relative z-10 text-center max-w-2xl mx-auto flex flex-col items-center justify-center h-full py-12">
+        <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-500/20 rounded-full mb-6">
+          <span class="text-2xl">🛰️</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold mb-4">Cómo acceder a imágenes satelitales gratuitas en México en 2025</h1>
+        <p class="text-lg sm:text-2xl mb-8 text-neutral-200 font-medium">Las imágenes satelitales son una herramienta poderosa para entender nuestro territorio. Aquí te enseñamos cómo acceder a imágenes satelitales gratuitas de México desde fuentes oficiales y plataformas internacionales. Descubre cómo usar estas herramientas para proyectos educativos, ambientales, urbanos o de investigación. Aprende a navegar por las plataformas más importantes y a interpretar la información que te proporcionan.</p>
+        <a href="#plataformas" class="inline-block px-8 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-lg shadow-lg">Ver plataformas disponibles</a>
+      </div>
+    </section>
+
+    <!-- 2. Plataformas oficiales en México -->
+    <section id="plataformas" class="max-w-5xl mx-auto mt-14 px-4">
+      <div class="flex flex-col md:flex-row gap-8 items-center bg-neutral-900/90 rounded-2xl p-8 shadow border border-neutral-800">
+        <div class="flex-1">
+          <h2 class="text-2xl font-bold mb-3">Plataformas oficiales en México</h2>
+          <p class="text-base text-neutral-300 mb-4">México cuenta con varias instituciones que proporcionan acceso gratuito a imágenes satelitales. La CONABIO (Comisión Nacional para el Conocimiento y Uso de la Biodiversidad) es la principal fuente de información geoespacial del país, ofreciendo datos de alta calidad para estudios ambientales y de biodiversidad. El INEGI también proporciona información cartográfica y satelital actualizada. Estas plataformas son fundamentales para investigadores, estudiantes y profesionales que necesitan información geoespacial confiable.</p>
+          <div class="flex gap-4 mt-6">
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">🌿</span>
+              <span class="text-xs text-neutral-400 mt-1">CONABIO</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">📊</span>
+              <span class="text-xs text-neutral-400 mt-1">INEGI</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">🌍</span>
+              <span class="text-xs text-neutral-400 mt-1">NASA</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center">
+          <img src="images/article-imagenes-satelitales.webp" alt="Imágenes satelitales México" class="w-72 h-44 object-cover rounded-xl shadow-lg opacity-90">
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Consejos para usar imágenes satelitales -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Consejos para usar imágenes satelitales</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">🔍</span>
+          <span class="font-semibold mb-2">¿Cómo buscar imágenes específicas?</span>
+          <p class="text-sm text-neutral-300">Usa coordenadas geográficas o nombres de lugares para localizar el área que te interesa. La mayoría de plataformas permiten búsquedas por fecha, tipo de satélite y resolución. Es importante verificar la fecha de la imagen para asegurar que tienes información actualizada.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">📱</span>
+          <span class="font-semibold mb-2">¿Cómo descargar las imágenes?</span>
+          <p class="text-sm text-neutral-300">La mayoría de plataformas permiten descargar imágenes en diferentes formatos (GeoTIFF, JPEG). Algunas requieren registro gratuito. Verifica los términos de uso y las limitaciones de descarga antes de usar las imágenes en proyectos comerciales.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">🎯</span>
+          <span class="font-semibold mb-2">¿Cómo interpretar las imágenes?</span>
+          <p class="text-sm text-neutral-300">Las imágenes satelitales pueden mostrar diferentes aspectos según las bandas espectrales utilizadas. Aprende a identificar elementos como vegetación, agua, áreas urbanas y cambios temporales. Muchas plataformas ofrecen herramientas de análisis integradas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Principales plataformas disponibles -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Principales plataformas disponibles</h2>
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+          <div class="flex flex-col items-center text-center">
+            <span class="text-3xl mb-2">🌿</span>
+            <span class="font-semibold mb-2">CONABIO - SNIB</span>
+            <span class="text-xs text-neutral-400">Sistema Nacional de Información sobre Biodiversidad. Ofrece datos de alta resolución para estudios ambientales y de biodiversidad en México.</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <span class="text-3xl mb-2">📊</span>
+            <span class="font-semibold mb-2">INEGI - DENUE</span>
+            <span class="text-xs text-neutral-400">Directorio Estadístico Nacional de Unidades Económicas. Proporciona información cartográfica y satelital actualizada del territorio nacional.</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <span class="text-3xl mb-2">🌍</span>
+            <span class="font-semibold mb-2">NASA Worldview</span>
+            <span class="text-xs text-neutral-400">Plataforma global que ofrece imágenes satelitales de todo el mundo, incluyendo México, con actualizaciones diarias.</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <span class="text-3xl mb-2">🗺️</span>
+            <span class="font-semibold mb-2">Google Earth Engine</span>
+            <span class="text-xs text-neutral-400">Plataforma de análisis geoespacial que permite procesar grandes cantidades de datos satelitales de forma gratuita.</span>
+          </div>
+        </div>
+        <div class="mt-4 text-xs text-neutral-400 text-center">Cada plataforma tiene sus ventajas. Te recomendamos explorar varias para encontrar la que mejor se adapte a tus necesidades.</div>
+      </div>
+    </section>
+
+    <!-- 5. Casos de uso prácticos -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Casos de uso prácticos</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">🎓</span>
+          <span class="font-semibold mb-1">Proyectos educativos</span>
+          <span class="text-xs text-neutral-400 mt-2">Los estudiantes pueden usar imágenes satelitales para proyectos de geografía, ciencias ambientales o urbanismo. Es una herramienta excelente para aprender sobre el territorio.</span>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">🌱</span>
+          <span class="font-semibold mb-1">Monitoreo ambiental</span>
+          <span class="text-xs text-neutral-400 mt-2">Las imágenes satelitales permiten monitorear cambios en la vegetación, deforestación, contaminación del agua y otros fenómenos ambientales.</span>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">🏙️</span>
+          <span class="font-semibold mb-1">Planificación urbana</span>
+          <span class="text-xs text-neutral-400 mt-2">Los urbanistas pueden analizar el crecimiento de las ciudades, identificar áreas de desarrollo y planificar infraestructura usando imágenes satelitales.</span>
+        </div>
+      </div>
+      <div class="text-xs text-neutral-400 text-center">Las aplicaciones de las imágenes satelitales son infinitas. Solo necesitas creatividad y las herramientas adecuadas.</div>
+    </section>
+
+    <!-- 6. Mini-guía de acceso -->
+    <section class="max-w-3xl mx-auto mt-14 px-4">
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <div class="flex flex-col items-center gap-4">
+          <span class="text-3xl">🌐</span>
+          <span class="font-semibold">Accede a las plataformas oficiales</span>
+          <span class="text-xs text-neutral-400 text-center">Visita los sitios web de CONABIO, INEGI o NASA Worldview. La mayoría no requieren registro para consultas básicas.</span>
+          <span class="text-3xl">🔍</span>
+          <span class="font-semibold">Busca tu área de interés</span>
+          <span class="text-xs text-neutral-400 text-center">Usa coordenadas, nombres de lugares o navega por el mapa para encontrar la zona que necesitas analizar.</span>
+          <span class="text-3xl">⬇️</span>
+          <span class="font-semibold">Descarga y analiza</span>
+          <span class="text-xs text-neutral-400 text-center">Descarga las imágenes en el formato que necesites y usa herramientas de análisis para interpretar los datos.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Ventajas y limitaciones -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Ventajas y limitaciones</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="bg-green-900/80 rounded-xl p-6 flex flex-col items-center shadow border border-green-700">
+          <span class="text-2xl mb-2">✅ VENTAJAS</span>
+          <ul class="text-sm text-green-100 space-y-1">
+            <li>Acceso gratuito a datos de alta calidad desde fuentes oficiales.</li>
+            <li>Información actualizada regularmente con cobertura global.</li>
+            <li>Herramientas de análisis integradas en muchas plataformas.</li>
+            <li>Útil para múltiples aplicaciones: educación, investigación, planificación.</li>
+          </ul>
+        </div>
+        <div class="bg-red-900/80 rounded-xl p-6 flex flex-col items-center shadow border border-red-700">
+          <span class="text-2xl mb-2">⚠️ LIMITACIONES</span>
+          <ul class="text-sm text-red-100 space-y-1">
+            <li>Algunas imágenes pueden tener baja resolución o estar nubladas.</li>
+            <li>Requiere conocimientos básicos de interpretación de imágenes.</li>
+            <li>No todas las áreas tienen cobertura frecuente o de alta calidad.</li>
+            <li>Puede requerir software especializado para análisis avanzados.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4 text-xs text-neutral-400 text-center">Conocer las ventajas y limitaciones te ayuda a usar las imágenes satelitales de manera más efectiva.</div>
+    </section>
+
+    <!-- 8. Cierre emocional -->
+    <section class="max-w-4xl mx-auto mt-14 px-4">
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <h2 class="text-2xl font-bold mb-4 text-center">¿Por qué es importante acceder a imágenes satelitales?</h2>
+        <p class="text-base text-neutral-300 mb-4 text-center">Las imágenes satelitales nos permiten entender mejor nuestro planeta y los cambios que ocurren en él. En México, estas herramientas son fundamentales para la conservación ambiental, la planificación urbana, la investigación científica y la educación. Acceder a estas imágenes gratuitas democratiza el conocimiento y permite que más personas participen en el estudio y protección de nuestro territorio.</p>
+        <ul class="list-disc pl-6 text-sm text-neutral-400 mb-4">
+          <li>Los estudiantes pueden usar estas herramientas para proyectos escolares y tesis.</li>
+          <li>Los investigadores tienen acceso a datos actualizados para sus estudios.</li>
+          <li>Los ciudadanos pueden monitorear cambios en su entorno local.</li>
+          <li>Las organizaciones pueden usar esta información para proyectos de conservación.</li>
+        </ul>
+        <p class="text-sm text-neutral-400 text-center">Recuerda: las imágenes satelitales son una ventana al mundo. Úsalas responsablemente y comparte el conocimiento que obtengas.</p>
+      </div>
+    </section>
+
+    <!-- 9. Disclaimer -->
+    <section class="max-w-3xl mx-auto mt-10 px-4">
+      <div class="bg-neutral-800/90 rounded-lg p-4 text-xs text-neutral-300 text-center">
+        No somos responsables del contenido de las plataformas externas mencionadas. Siempre verifica los términos de uso y las políticas de cada sitio antes de usar las imágenes satelitales para proyectos comerciales o de investigación.
+      </div>
+    </section>
+  </main>
+  <footer class="bg-neutral-900 text-neutral-400 py-6 sm:py-8 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-sm">© 2024 Tramita México. Todos los derechos reservados.</div>
+      <div class="text-xs">Este sitio no es una entidad gubernamental ni está afiliado a ninguna institución oficial.</div>
+    </div>
+  </footer>
+
+  <div id="cookie-banner" class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-neutral-800 text-white w-full max-w-xl sm:max-w-2xl px-4 py-3 sm:px-6 sm:py-4 rounded-lg shadow-lg flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4 z-50 text-sm sm:text-base">
+    <span class="w-full sm:w-auto text-center sm:text-left">Este sitio utiliza cookies para mejorar tu experiencia. <a href="sobre-nosotros.html" class="underline text-primary-400">Saber más</a></span>
+    <button onclick="document.getElementById('cookie-banner').style.display='none'" class="w-full sm:w-auto mt-2 sm:mt-0 px-4 py-2 bg-primary-500 hover:bg-primary-600 rounded transition">Aceptar</button>
+  </div>
+
+  <script>
+    // Fullscreen burger menu for all screens + overlay + auto-hide nav
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('main-menu');
+      const overlay = document.getElementById('menu-overlay');
+      const navbar = document.getElementById('main-navbar');
+      let open = false;
+      function openMenu() {
+        menu.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+        toggle.textContent = '✕';
+        document.body.classList.add('overflow-hidden');
+        open = true;
+      }
+      function closeMenu() {
+        menu.classList.add('hidden');
+        overlay.classList.add('hidden');
+        toggle.textContent = '☰';
+        document.body.classList.remove('overflow-hidden');
+        open = false;
+      }
+      if (toggle && menu && overlay) {
+        toggle.addEventListener('click', function() {
+          open ? closeMenu() : openMenu();
+        });
+        overlay.addEventListener('click', closeMenu);
+        menu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            closeMenu();
+          });
+        });
+      }
+      // Auto-hide navbar on scroll
+      let lastScroll = window.scrollY;
+      window.addEventListener('scroll', function() {
+        const curr = window.scrollY;
+        if (curr > lastScroll && curr > 60) {
+          navbar.classList.add('-translate-y-full');
+        } else {
+          navbar.classList.remove('-translate-y-full');
+        }
+        lastScroll = curr;
+      });
+    });
+  </script>
+</body>
+</html> 

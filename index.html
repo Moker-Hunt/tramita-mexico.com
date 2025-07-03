@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guías confiables y actualizadas sobre trámites en CDMX: CURP, RFC, licencias, impuestos y más. No afiliado a ninguna entidad gubernamental.">
+  <meta name="keywords" content="trámites, CDMX, CURP, RFC, licencias, impuestos, guías, México">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Guías de Trámites en CDMX</title>
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-neutral-950 text-white min-h-screen flex flex-col">
+  <nav id="main-navbar" class="w-full px-4 py-3 flex justify-between items-center bg-neutral-900/80 backdrop-blur-md fixed top-0 left-0 z-30 transition-transform duration-300 transform">
+    <a href="index.html" class="text-xl font-bold tracking-tight">Tramita México</a>
+    <button id="menu-toggle" class="text-3xl text-white focus:outline-none transition-transform duration-200 z-50 relative">☰</button>
+    <div id="menu-overlay" class="fixed inset-0 bg-black/90 z-40 hidden transition-opacity duration-200"></div>
+    <ul id="main-menu" class="hidden fixed inset-0 bg-black flex-col items-start justify-start gap-8 z-50 text-2xl font-bold text-white transition-all duration-300 mt-[60px]">
+      <li><a href="index.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Inicio</a></li>
+      <li><a href="articulos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Artículos</a></li>
+      <li><a href="guias.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Guías</a></li>
+      <li><a href="recursos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Recursos</a></li>
+      <li><a href="tramites.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Trámites</a></li>
+      <li><a href="sobre-nosotros.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Sobre nosotros</a></li>
+    </ul>
+  </nav>
+  <main class="flex-1 pb-8" style="padding-top: 60px;">
+    <section class="relative flex items-center justify-center bg-cover bg-center" style="background-image: url('images/hero-bg.webp'); min-height: calc(100vh - 60px);">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 text-center max-w-2xl mx-auto flex flex-col items-center justify-center h-full">
+        <h1 class="text-2xl sm:text-4xl md:text-6xl font-extrabold mb-4 sm:mb-6">Guías de trámites en CDMX</h1>
+        <p class="text-base sm:text-lg md:text-2xl mb-6 sm:mb-8">Tu fuente confiable para consultar y entender trámites como CURP, RFC, licencias, impuestos y más.</p>
+        <a href="articulos.html" class="inline-block px-6 sm:px-8 py-2 sm:py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-base sm:text-lg">Explorar guías</a>
+      </div>
+    </section>
+    <section class="max-w-6xl mx-auto mt-10 sm:mt-16 px-2 sm:px-4">
+      <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-6 sm:mb-8 gap-2 sm:gap-0">
+        <h2 class="text-lg sm:text-2xl md:text-3xl font-bold">🗂 Artículos</h2>
+        <a href="articulos.html" class="text-primary-400 hover:underline font-medium text-base sm:text-lg">Ver todos los artículos →</a>
+      </div>
+      <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300">
+          <div class="h-40 bg-cover bg-center" style="background-image: url('images/curp.webp');"></div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-lg mb-2">Consulta tu CURP en línea gratis – Guía 2025</h3>
+            <a href="articulos.html" class="mt-auto text-primary-400 hover:underline">Leer más</a>
+          </div>
+        </div>
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300">
+          <div class="h-40 bg-cover bg-center" style="background-image: url('images/renovar-licencia-cdmx.webp');"></div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-lg mb-2">Renovación de licencia de conducir: guía para CDMX 2025</h3>
+            <a href="articulos.html" class="mt-auto text-primary-400 hover:underline">Leer más</a>
+          </div>
+        </div>
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300">
+          <div class="h-40 bg-cover bg-center" style="background-image: url('images/alineacion-numero-oficial.webp');"></div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-lg mb-2">Solicita tu constancia de alineación y número oficial en tu municipio</h3>
+            <a href="articulos.html" class="mt-auto text-primary-400 hover:underline">Leer más</a>
+          </div>
+        </div>
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300">
+          <div class="h-40 bg-cover bg-center" style="background-image: url('images/constancia-migratoria.webp');"></div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-lg mb-2">Cómo solicitar tu constancia de situación migratoria ante el INM</h3>
+            <a href="articulos.html" class="mt-auto text-primary-400 hover:underline">Leer más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-6xl mx-auto mt-20 px-4">
+      <div class="bg-gradient-to-r from-primary-600 to-primary-800 rounded-2xl p-8 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Tu fuente confiable para entender los trámites esenciales en México</h2>
+        <p class="text-lg opacity-90">Información actualizada y verificada para facilitar tus gestiones</p>
+      </div>
+    </section>
+    <section class="max-w-6xl mx-auto mt-20 px-4">
+      <div class="flex justify-between items-center mb-8">
+        <h2 class="text-lg sm:text-2xl md:text-3xl font-bold">🧾 Guías prácticas</h2>
+        <a href="guias.html" class="text-primary-400 hover:underline font-medium">Ver todas las guías →</a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+        <div class="bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col border border-neutral-700 hover:border-primary-500 transition-all duration-300">
+          <div class="h-40 bg-cover bg-center relative" style="background-image: url('images/rfc.webp');">
+            <div class="absolute top-3 right-3 bg-primary-500 text-white px-2 py-1 rounded-full text-xs font-medium">Nuevo</div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-lg mb-2">Consulta tu RFC y descarga tu constancia actualizada</h3>
+            <p class="text-sm text-neutral-400 mb-3">Descubre cómo consultar tu RFC gratis y obtener tu constancia oficial en línea</p>
+            <a href="guias.html" class="mt-auto text-primary-400 hover:underline font-medium">Ver guía</a>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col border border-neutral-700 hover:border-primary-500 transition-all duration-300">
+          <div class="h-40 bg-cover bg-center" style="background-image: url('images/imagenes-satelitales.webp');"></div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-lg mb-2">Cómo acceder a imágenes satelitales gratuitas en México en 2025</h3>
+            <p class="text-sm text-neutral-400 mb-3">Conoce las plataformas oficiales y herramientas para consultar imágenes de satélite</p>
+            <a href="guias.html" class="mt-auto text-primary-400 hover:underline font-medium">Ver guía</a>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col border border-neutral-700 hover:border-primary-500 transition-all duration-300">
+          <div class="h-40 bg-cover bg-center" style="background-image: url('images/acta-matrimonio.webp');"></div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-lg mb-2">Acta de matrimonio en línea: obtén tu copia fácil</h3>
+            <p class="text-sm text-neutral-400 mb-3">Guía rápida para descargar tu acta en PDF desde cualquier lugar</p>
+            <a href="guias.html" class="mt-auto text-primary-400 hover:underline font-medium">Ver guía</a>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col border border-neutral-700 hover:border-primary-500 transition-all duration-300">
+          <div class="h-40 bg-cover bg-center" style="background-image: url('images/certificado-secundaria.webp');"></div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-lg mb-2">Certificado de secundaria SEP: cómo descargarlo</h3>
+            <p class="text-sm text-neutral-400 mb-3">Si estudiaste hace años o perdiste tu certificado, aquí sabrás cómo recuperarlo</p>
+            <a href="guias.html" class="mt-auto text-primary-400 hover:underline font-medium">Ver guía</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="relative mt-20 h-64 flex items-center justify-center bg-cover bg-center" style="background-image: url('images/cdmx-streets.webp');">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">+100,000 usuarios han usado nuestras guías este año</h2>
+        <p class="text-lg opacity-90">Únete a miles de mexicanos que confían en nosotros</p>
+      </div>
+    </section>
+    <section class="max-w-6xl mx-auto mt-20 px-4">
+      <div class="flex justify-between items-center mb-8">
+        <h2 class="text-lg sm:text-2xl md:text-3xl font-bold">⚡ Recursos rápidos</h2>
+        <a href="recursos.html" class="text-primary-400 hover:underline font-medium">Ver todos los recursos →</a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col group hover:bg-neutral-800 transition-all duration-300">
+          <div class="h-40 bg-cover bg-center relative overflow-hidden" style="background-image: url('images/licencias-rapidas.webp');">
+            <div class="absolute inset-0 bg-primary-500/20 group-hover:bg-primary-500/30 transition-all duration-300"></div>
+            <div class="absolute bottom-3 left-3 bg-black/70 text-white px-3 py-1 rounded-full text-sm">Rápido</div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-lg mb-2">Licencias de conducir</h3>
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-neutral-400">5 min de lectura</span>
+              <a href="recursos.html" class="text-primary-400 hover:underline">Acceder</a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col group hover:bg-neutral-800 transition-all duration-300">
+          <div class="h-40 bg-cover bg-center relative overflow-hidden" style="background-image: url('images/infracciones.webp');">
+            <div class="absolute inset-0 bg-primary-500/20 group-hover:bg-primary-500/30 transition-all duration-300"></div>
+            <div class="absolute bottom-3 left-3 bg-black/70 text-white px-3 py-1 rounded-full text-sm">Rápido</div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-lg mb-2">Consulta de infracciones</h3>
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-neutral-400">3 min de lectura</span>
+              <a href="recursos.html" class="text-primary-400 hover:underline">Acceder</a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col group hover:bg-neutral-800 transition-all duration-300">
+          <div class="h-40 bg-cover bg-center relative overflow-hidden" style="background-image: url('images/declaraciones.webp');">
+            <div class="absolute inset-0 bg-primary-500/20 group-hover:bg-primary-500/30 transition-all duration-300"></div>
+            <div class="absolute bottom-3 left-3 bg-black/70 text-white px-3 py-1 rounded-full text-sm">Rápido</div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-lg mb-2">Declaraciones anuales</h3>
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-neutral-400">7 min de lectura</span>
+              <a href="recursos.html" class="text-primary-400 hover:underline">Acceder</a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col group hover:bg-neutral-800 transition-all duration-300">
+          <div class="h-40 bg-cover bg-center relative overflow-hidden" style="background-image: url('images/solicitudes.webp');">
+            <div class="absolute inset-0 bg-primary-500/20 group-hover:bg-primary-500/30 transition-all duration-300"></div>
+            <div class="absolute bottom-3 left-3 bg-black/70 text-white px-3 py-1 rounded-full text-sm">Rápido</div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-lg mb-2">Solicitudes en línea</h3>
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-neutral-400">4 min de lectura</span>
+              <a href="recursos.html" class="text-primary-400 hover:underline">Acceder</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-6xl mx-auto mt-20 px-4">
+      <div class="bg-gradient-to-r from-neutral-800 via-primary-600 to-neutral-800 h-1 rounded-full"></div>
+    </section>
+    <section class="max-w-6xl mx-auto mt-20 px-4">
+      <div class="flex justify-between items-center mb-8">
+        <h2 class="text-lg sm:text-2xl md:text-3xl font-bold">⭐ Trámites populares</h2>
+        <a href="tramites.html" class="text-primary-400 hover:underline font-medium">Ver más trámites →</a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+        <div class="bg-gradient-to-br from-yellow-500/10 to-orange-500/10 rounded-xl overflow-hidden shadow-lg flex flex-col border border-yellow-500/20 hover:border-yellow-500/40 transition-all duration-300">
+          <div class="h-40 bg-cover bg-center relative" style="background-image: url('images/sat-cita.webp');">
+            <div class="absolute top-3 left-3 bg-yellow-500 text-black px-2 py-1 rounded-full text-xs font-bold">Popular</div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-lg mb-2">Agendar cita SAT</h3>
+            <p class="text-sm text-neutral-400 mb-3">Proceso simplificado paso a paso</p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded">Muy solicitado</span>
+              <a href="tramites.html" class="text-primary-400 hover:underline">Ver trámite</a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-yellow-500/10 to-orange-500/10 rounded-xl overflow-hidden shadow-lg flex flex-col border border-yellow-500/20 hover:border-yellow-500/40 transition-all duration-300">
+          <div class="h-40 bg-cover bg-center relative" style="background-image: url('images/ine-reposicion.webp');">
+            <div class="absolute top-3 left-3 bg-yellow-500 text-black px-2 py-1 rounded-full text-xs font-bold">Popular</div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-lg mb-2">Reposición de INE</h3>
+            <p class="text-sm text-neutral-400 mb-3">Documentos y requisitos necesarios</p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded">Muy solicitado</span>
+              <a href="tramites.html" class="text-primary-400 hover:underline">Ver trámite</a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-yellow-500/10 to-orange-500/10 rounded-xl overflow-hidden shadow-lg flex flex-col border border-yellow-500/20 hover:border-yellow-500/40 transition-all duration-300">
+          <div class="h-40 bg-cover bg-center relative" style="background-image: url('images/licencia-renovar.webp');">
+            <div class="absolute top-3 left-3 bg-yellow-500 text-black px-2 py-1 rounded-full text-xs font-bold">Popular</div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-lg mb-2">Renovar licencia</h3>
+            <p class="text-sm text-neutral-400 mb-3">Renovación sin complicaciones</p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded">Muy solicitado</span>
+              <a href="tramites.html" class="text-primary-400 hover:underline">Ver trámite</a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-yellow-500/10 to-orange-500/10 rounded-xl overflow-hidden shadow-lg flex flex-col border border-yellow-500/20 hover:border-yellow-500/40 transition-all duration-300">
+          <div class="h-40 bg-cover bg-center relative" style="background-image: url('images/placas-verificar.webp');">
+            <div class="absolute top-3 left-3 bg-yellow-500 text-black px-2 py-1 rounded-full text-xs font-bold">Popular</div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <h3 class="font-semibold text-lg mb-2">Verificar placas</h3>
+            <p class="text-sm text-neutral-400 mb-3">Consulta de estado vehicular</p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded">Muy solicitado</span>
+              <a href="tramites.html" class="text-primary-400 hover:underline">Ver trámite</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Donaciones Section -->
+    <section class="max-w-6xl mx-auto mt-20 px-4">
+      <div class="bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-2xl p-8 border border-neutral-700 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-primary-500/10 rounded-full -translate-y-16 translate-x-16"></div>
+        <div class="absolute bottom-0 left-0 w-24 h-24 bg-primary-400/10 rounded-full translate-y-12 -translate-x-12"></div>
+        <div class="relative z-10 text-center">
+          <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-500/20 rounded-full mb-6">
+            <span class="text-2xl">💙</span>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Te han sido útiles nuestras guías?</h2>
+          <p class="text-lg mb-6 text-neutral-300 max-w-2xl mx-auto">Si nuestras guías te han ayudado a resolver tus trámites, considera hacer una pequeña contribución para mantener este proyecto vivo y seguir ayudando a más personas.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+            <div class="flex items-center gap-2 text-sm text-neutral-400">
+              <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+              <span>Mantener el sitio sin anuncios</span>
+            </div>
+            <div class="flex items-center gap-2 text-sm text-neutral-400">
+              <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+              <span>Actualizar información constantemente</span>
+            </div>
+            <div class="flex items-center gap-2 text-sm text-neutral-400">
+              <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+              <span>Crear nuevas guías</span>
+            </div>
+          </div>
+          <a href="donaciones.html" class="inline-flex items-center gap-2 px-8 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition group">
+            <span>Apoyar el proyecto</span>
+            <span class="group-hover:translate-x-1 transition-transform">→</span>
+          </a>
+          <p class="text-xs text-neutral-500 mt-4">Cualquier cantidad es bienvenida. Tu apoyo hace la diferencia.</p>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-6xl mx-auto mt-20 px-4">
+      <div class="bg-neutral-900 rounded-2xl p-8 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Necesitas ayuda?</h2>
+        <p class="text-lg mb-6">Estamos aquí para ayudarte con cualquier duda sobre trámites</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a href="mailto:contact@tramita-mexico.com" class="text-primary-400 hover:underline font-medium">contact@tramita-mexico.com</a>
+          <span class="text-neutral-400">|</span>
+          <a href="contacto.html" class="inline-block px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-medium transition">Formulario de contacto</a>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-6xl mx-auto mt-20 px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Sobre nosotros</h2>
+        <p class="text-lg mb-2">Descubre información clara y actualizada sobre trámites esenciales en México.</p>
+        <p class="text-base text-neutral-400">No afiliado con ninguna entidad gubernamental.</p>
+      </div>
+      <div class="h-56 md:h-64 rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url('images/about-bg.webp');"></div>
+    </section>
+  </main>
+  <footer class="bg-neutral-900 text-neutral-400 py-6 sm:py-8 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-sm">© 2024 Tramita México. Todos los derechos reservados.</div>
+      <div class="text-xs">Este sitio no es una entidad gubernamental ni está afiliado a ninguna institución oficial.</div>
+    </div>
+  </footer>
+  <div id="cookie-banner"
+    class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-neutral-800 text-white w-[95vw] max-w-xl sm:max-w-2xl px-3 py-3 sm:px-6 sm:py-4 rounded-lg shadow-lg flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4 z-50 text-sm sm:text-base"
+    style="word-break:break-word;">
+    <span class="w-full sm:w-auto text-center sm:text-left leading-snug">
+      Este sitio utiliza cookies para mejorar tu experiencia.
+      <a href="sobre-nosotros.html" class="underline text-primary-400">Saber más</a>
+    </span>
+    <button
+      onclick="document.getElementById('cookie-banner').style.display='none'"
+      class="w-full sm:w-auto mt-2 sm:mt-0 px-4 py-2 bg-primary-500 hover:bg-primary-600 rounded transition font-semibold focus:outline-none focus:ring-2 focus:ring-primary-400"
+      aria-label="Aceptar cookies">
+      Aceptar
+    </button>
+  </div>
+  <script>
+    // Fullscreen burger menu for all screens + overlay + auto-hide nav
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('main-menu');
+      const overlay = document.getElementById('menu-overlay');
+      const navbar = document.getElementById('main-navbar');
+      let open = false;
+      function openMenu() {
+        menu.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+        toggle.textContent = '✕';
+        document.body.classList.add('overflow-hidden');
+        open = true;
+      }
+      function closeMenu() {
+        menu.classList.add('hidden');
+        overlay.classList.add('hidden');
+        toggle.textContent = '☰';
+        document.body.classList.remove('overflow-hidden');
+        open = false;
+      }
+      if (toggle && menu && overlay) {
+        toggle.addEventListener('click', function() {
+          open ? closeMenu() : openMenu();
+        });
+        overlay.addEventListener('click', closeMenu);
+        menu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            closeMenu();
+          });
+        });
+      }
+      // Auto-hide navbar on scroll
+      let lastScroll = window.scrollY;
+      window.addEventListener('scroll', function() {
+        const curr = window.scrollY;
+        if (curr > lastScroll && curr > 60) {
+          navbar.classList.add('-translate-y-full');
+        } else {
+          navbar.classList.remove('-translate-y-full');
+        }
+        lastScroll = curr;
+      });
+    });
+  </script>
+</body>
+</html> 

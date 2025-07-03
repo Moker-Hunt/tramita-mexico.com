@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guías prácticas paso a paso para trámites en CDMX: licencias, vehículos, pagos y más. Instrucciones claras y actualizadas.">
+  <meta name="keywords" content="guías, trámites, CDMX, licencias, vehículos, pagos, instrucciones, México">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Guías Prácticas - Tramita México</title>
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-neutral-950 text-white min-h-screen flex flex-col">
+  <nav id="main-navbar" class="w-full px-4 py-3 flex justify-between items-center bg-neutral-900/80 backdrop-blur-md fixed top-0 left-0 z-30 transition-transform duration-300 transform">
+    <a href="index.html" class="text-xl font-bold tracking-tight">Tramita México</a>
+    <button id="menu-toggle" class="text-3xl text-white focus:outline-none transition-transform duration-200 z-50 relative">☰</button>
+    <div id="menu-overlay" class="fixed inset-0 bg-black/90 z-40 hidden transition-opacity duration-200"></div>
+    <ul id="main-menu" class="hidden fixed inset-0 bg-black flex-col items-start justify-start gap-8 z-50 text-2xl font-bold text-white transition-all duration-300 mt-[60px]">
+      <li><a href="index.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Inicio</a></li>
+      <li><a href="articulos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Artículos</a></li>
+      <li><a href="guias.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Guías</a></li>
+      <li><a href="recursos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Recursos</a></li>
+      <li><a href="tramites.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Trámites</a></li>
+      <li><a href="sobre-nosotros.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Sobre nosotros</a></li>
+    </ul>
+  </nav>
+
+  <main class="flex-1 pt-24 pb-12">
+    <!-- Hero Section -->
+    <section class="relative flex items-center justify-center bg-cover bg-center min-h-[320px] sm:min-h-[400px] md:min-h-[480px] lg:min-h-[540px]" style="background-image: url('images/checklist-documents.webp');">
+      <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+      <div class="relative z-10 text-center max-w-2xl sm:max-w-3xl mx-auto flex flex-col items-center justify-center h-full px-4 py-10 sm:py-16 md:py-24">
+        <h1 class="text-2xl xs:text-3xl sm:text-4xl md:text-6xl font-extrabold mb-4 sm:mb-6">📘 Guías prácticas paso a paso</h1>
+        <p class="text-base sm:text-lg md:text-2xl mb-6 sm:mb-8 text-neutral-200">Instrucciones claras y actualizadas para realizar trámites sin errores.</p>
+        <a href="#guias-list" class="inline-block px-6 sm:px-8 py-2 sm:py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-base sm:text-lg">Explorar guías</a>
+      </div>
+    </section>
+
+    <!-- Category Tabs -->
+    <section class="max-w-6xl mx-auto mt-16 px-4">
+      <div id="category-tabs" class="w-full overflow-x-auto whitespace-nowrap gap-2 pb-2 flex flex-nowrap justify-start snap-x">
+        <button class="inline-block min-w-[140px] px-4 py-3 bg-primary-500 text-white rounded-lg font-medium transition snap-start ml-2 text-center" data-category="Todos">Todos</button>
+        <button class="inline-block min-w-[140px] px-4 py-3 bg-neutral-800 hover:bg-neutral-700 text-white rounded-lg font-medium transition snap-start text-center" data-category="Identidad">Identidad</button>
+        <button class="inline-block min-w-[140px] px-4 py-3 bg-neutral-800 hover:bg-neutral-700 text-white rounded-lg font-medium transition snap-start text-center" data-category="Vehículo">Vehículo</button>
+        <button class="inline-block min-w-[140px] px-4 py-3 bg-neutral-800 hover:bg-neutral-700 text-white rounded-lg font-medium transition snap-start text-center" data-category="Documentos">Documentos</button>
+        <button class="inline-block min-w-[140px] px-4 py-3 bg-neutral-800 hover:bg-neutral-700 text-white rounded-lg font-medium transition snap-start text-center" data-category="RFC">RFC</button>
+        <button class="inline-block min-w-[140px] px-4 py-3 bg-neutral-800 hover:bg-neutral-700 text-white rounded-lg font-medium transition snap-start text-center" data-category="SAT">SAT</button>
+        <button class="inline-block min-w-[140px] px-4 py-3 bg-neutral-800 hover:bg-neutral-700 text-white rounded-lg font-medium transition snap-start text-center" data-category="Becas">Becas</button>
+        <button class="inline-block min-w-[140px] px-4 py-3 bg-neutral-800 hover:bg-neutral-700 text-white rounded-lg font-medium transition snap-start mr-2 text-center" data-category="Otros">Otros</button>
+      </div>
+    </section>
+
+    <!-- Guías List -->
+    <section id="guias-list" class="max-w-6xl mx-auto mt-8 px-4">
+      <div id="guias-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Guía 1 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800" data-category="RFC">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/rfc.webp');">
+            <div class="absolute top-3 right-3 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-bold">Nuevo</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Consulta tu RFC y descarga tu constancia actualizada</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-green-400">✅ Paso 1 de 3 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Descubre cómo consultar tu RFC gratis y obtener tu constancia oficial en línea</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 8 min</span>
+                <span>👁️ 12,450 vistas</span>
+              </div>
+            </div>
+            <a href="rfc.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 2 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800" data-category="Otros">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/imagenes-satelitales.webp');">
+            <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">Actualizada</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Cómo acceder a imágenes satelitales gratuitas en México en 2025</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-yellow-400">🔄 Paso 2 de 4 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Conoce las plataformas oficiales y herramientas para consultar imágenes de satélite</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 12 min</span>
+                <span>👁️ 8,230 vistas</span>
+              </div>
+            </div>
+            <a href="imagenes-satelitales.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 3 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800" data-category="Documentos">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/acta-matrimonio.webp');">
+            <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">Completa</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Acta de matrimonio en línea: obtén tu copia fácil</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-green-400">✅ Paso 3 de 3 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Guía rápida para descargar tu acta en PDF desde cualquier lugar</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 6 min</span>
+                <span>👁️ 15,120 vistas</span>
+              </div>
+            </div>
+            <a href="acta-matrimonio.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 4 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800" data-category="Documentos">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/certificado-secundaria.webp');">
+            <div class="absolute top-3 right-3 bg-orange-500 text-white px-2 py-1 rounded-full text-xs font-bold">Actualizada</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Certificado de secundaria SEP: cómo descargarlo</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-blue-400">📋 Paso 1 de 5 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Si estudiaste hace años o perdiste tu certificado, aquí sabrás cómo recuperarlo</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 10 min</span>
+                <span>👁️ 9,850 vistas</span>
+              </div>
+            </div>
+            <a href="certificado-secundaria.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 5 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800" data-category="Vehículo">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/duplicado-tarjeta.webp');">
+            <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">Completa</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Cómo sacar un duplicado de tu tarjeta de circulación</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-green-400">✅ Paso 2 de 2 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Proceso para reponer tarjeta extraviada o dañada de tu auto</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 8 min</span>
+                <span>👁️ 7,420 vistas</span>
+              </div>
+            </div>
+            <a href="duplicado-tarjeta.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 6 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800" data-category="Otros">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/no-inhabilitacion.webp');">
+            <div class="absolute top-3 right-3 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-bold">Nuevo</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Constancia de No Inhabilitación: cómo obtenerla en 2025</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-yellow-400">🔄 Paso 1 de 4 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Documento requerido para trabajos públicos o licitaciones</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 15 min</span>
+                <span>👁️ 5,230 vistas</span>
+              </div>
+            </div>
+            <a href="no-inhabilitacion.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 7 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800" data-category="Identidad">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/cedula-profesional.webp');">
+            <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">Completa</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Consulta y descarga tu cédula profesional SEP en línea</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-green-400">✅ Paso 3 de 3 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Aprende cómo verificar y obtener tu cédula electrónica emitida por la SEP</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 7 min</span>
+                <span>👁️ 11,850 vistas</span>
+              </div>
+            </div>
+            <a href="cedula-profesional.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 8 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800" data-category="SAT">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/cambio-domicilio-sat.webp');">
+            <div class="absolute top-3 right-3 bg-orange-500 text-white px-2 py-1 rounded-full text-xs font-bold">Actualizada</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Cómo hacer el cambio de domicilio fiscal en el SAT en línea</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-blue-400">📋 Paso 2 de 6 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Aprende a actualizar tu dirección en el RFC desde casa</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 12 min</span>
+                <span>👁️ 13,420 vistas</span>
+              </div>
+            </div>
+            <a href="cambio-domicilio-sat.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 9 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800" data-category="Becas">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/beca-jovenes.webp');">
+            <div class="absolute top-3 right-3 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-bold">Nuevo</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Beca Jóvenes Construyendo el Futuro: requisitos y registro 2025</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-yellow-400">🔄 Paso 1 de 3 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Descubre cómo aplicar a este programa federal y recibir apoyo mensual</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 18 min</span>
+                <span>👁️ 6,150 vistas</span>
+              </div>
+            </div>
+            <a href="beca-jovenes.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 10 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800 hidden" data-category="Becas">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/tarjeta-inapam.webp');">
+            <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">Completa</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Cómo obtener tu tarjeta INAPAM en 2025 y sus beneficios</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-green-400">✅ Paso 1 de 1 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Conoce los requisitos para tramitar tu tarjeta INAPAM y acceder a descuentos oficiales</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 10 min</span>
+                <span>👁️ 4,850 vistas</span>
+              </div>
+            </div>
+            <a href="tarjeta-inapam.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 11 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800 hidden" data-category="Becas">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/pension-issste.webp');">
+            <div class="absolute top-3 right-3 bg-orange-500 text-white px-2 py-1 rounded-full text-xs font-bold">Actualizada</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Pensión ISSSTE: cómo consultar, calcular y tramitar en 2025</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-blue-400">📋 Paso 2 de 4 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Revisa si ya puedes jubilarte con ISSSTE y cómo iniciar tu trámite</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 15 min</span>
+                <span>👁️ 3,420 vistas</span>
+              </div>
+            </div>
+            <a href="pension-issste.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 12 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800 hidden" data-category="Documentos">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/certificado-medico.webp');">
+            <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">Completa</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Cómo obtener un certificado médico oficial para trámites en México</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-green-400">✅ Paso 1 de 1 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Aprende qué clínicas lo emiten y para qué trámites es obligatorio</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 8 min</span>
+                <span>👁️ 9,230 vistas</span>
+              </div>
+            </div>
+            <a href="certificado-medico.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 13 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800 hidden" data-category="Documentos">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/carta-residencia.webp');">
+            <div class="absolute top-3 right-3 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-bold">Nuevo</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Carta de residencia: cómo solicitarla en tu municipio</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-yellow-400">🔄 Paso 1 de 3 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Documento que acredita dónde vives, útil para diversos trámites oficiales</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 10 min</span>
+                <span>👁️ 6,750 vistas</span>
+              </div>
+            </div>
+            <a href="carta-residencia.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 14 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800 hidden" data-category="Vehículo">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/permiso-sin-placas.webp');">
+            <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">Completa</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Permiso para circular sin placas: cómo tramitarlo en 2025</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-green-400">✅ Paso 2 de 2 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Consulta los requisitos para obtener este permiso temporal de circulación</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 12 min</span>
+                <span>👁️ 8,420 vistas</span>
+              </div>
+            </div>
+            <a href="permiso-sin-placas.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 15 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800 hidden" data-category="Documentos">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/registro-nacimiento.webp');">
+            <div class="absolute top-3 right-3 bg-orange-500 text-white px-2 py-1 rounded-full text-xs font-bold">Actualizada</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Registro de nacimiento en México: cómo hacerlo correctamente</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-blue-400">📋 Paso 1 de 5 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Descubre cómo registrar a un recién nacido en el Registro Civil</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 15 min</span>
+                <span>👁️ 5,230 vistas</span>
+              </div>
+            </div>
+            <a href="registro-nacimiento.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 16 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800 hidden" data-category="Otros">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/permiso-maternidad.webp');">
+            <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">Completa</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Permiso de maternidad IMSS: requisitos y duración en 2025</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-green-400">✅ Paso 3 de 3 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Conoce los derechos y beneficios de las madres trabajadoras afiliadas al IMSS</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 14 min</span>
+                <span>👁️ 7,850 vistas</span>
+              </div>
+            </div>
+            <a href="permiso-maternidad.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 17 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800 hidden" data-category="Identidad">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/padron-electoral.webp');">
+            <div class="absolute top-3 right-3 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-bold">Nuevo</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Cómo darte de alta en el padrón electoral y actualizar tus datos</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-yellow-400">🔄 Paso 1 de 4 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Aprende a registrarte como votante o cambiar tu domicilio electoral</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 9 min</span>
+                <span>👁️ 4,120 vistas</span>
+              </div>
+            </div>
+            <a href="padron-electoral.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 18 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800 hidden" data-category="Documentos">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/registro-testamento.webp');">
+            <div class="absolute top-3 right-3 bg-orange-500 text-white px-2 py-1 rounded-full text-xs font-bold">Actualizada</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Registro de testamento: cómo hacerlo ante notario en México</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-blue-400">📋 Paso 2 de 6 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Conoce cuándo y cómo registrar tu testamento para que tenga validez legal</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 20 min</span>
+                <span>👁️ 3,650 vistas</span>
+              </div>
+            </div>
+            <a href="registro-testamento.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 19 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800 hidden" data-category="Documentos">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/certificado-defuncion.webp');">
+            <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">Completa</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Certificado de defunción: requisitos y trámites en México</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-green-400">✅ Paso 1 de 1 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Aprende cómo obtener este documento esencial tras el fallecimiento de un familiar</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 11 min</span>
+                <span>👁️ 2,840 vistas</span>
+              </div>
+            </div>
+            <a href="certificado-defuncion.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 20 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800 hidden" data-category="Documentos">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/carta-poder.webp');">
+            <div class="absolute top-3 right-3 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-bold">Nuevo</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Carta poder simple: cómo redactarla y cuándo se utiliza</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-yellow-400">🔄 Paso 1 de 3 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Descubre en qué casos se usa una carta poder y cómo hacerla correctamente</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 13 min</span>
+                <span>👁️ 5,670 vistas</span>
+              </div>
+            </div>
+            <a href="carta-poder.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 21 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800 hidden" data-category="Documentos">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/permiso-menores.webp');">
+            <div class="absolute top-3 right-3 bg-orange-500 text-white px-2 py-1 rounded-full text-xs font-bold">Actualizada</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Permiso para viajar con menores: cómo tramitarlo en México</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-blue-400">📋 Paso 2 de 4 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Conoce los requisitos para salir del país con un menor de edad</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 16 min</span>
+                <span>👁️ 4,230 vistas</span>
+              </div>
+            </div>
+            <a href="permiso-menores.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 22 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800 hidden" data-category="Otros">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/robo-identidad.webp');">
+            <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">Completa</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Robo de identidad en México: cómo reportarlo y protegerte</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-green-400">✅ Paso 3 de 3 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Aprende qué hacer si alguien usó tus datos personales sin autorización</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 12 min</span>
+                <span>👁️ 6,890 vistas</span>
+              </div>
+            </div>
+            <a href="robo-identidad.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 23 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800 hidden" data-category="Vehículo">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/registro-vehiculo-clasico.webp');">
+            <div class="absolute top-3 right-3 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-bold">Nuevo</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Cómo registrar un vehículo clásico o antiguo en México</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-yellow-400">🔄 Paso 1 de 5 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Conoce los pasos para registrar legalmente un automóvil antiguo como patrimonio vehicular</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 18 min</span>
+                <span>👁️ 3,450 vistas</span>
+              </div>
+            </div>
+            <a href="registro-vehiculo-clasico.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 24 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800 hidden" data-category="Otros">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/aviso-privacidad.webp');">
+            <div class="absolute top-3 right-3 bg-orange-500 text-white px-2 py-1 rounded-full text-xs font-bold">Actualizada</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Cómo hacer tu aviso de privacidad en México paso a paso (2025)</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-blue-400">📋 Paso 2 de 6 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Aprende a cumplir con la Ley de Protección de Datos elaborando un aviso claro y legal</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 14 min</span>
+                <span>👁️ 4,120 vistas</span>
+              </div>
+            </div>
+            <a href="aviso-privacidad.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+
+        <!-- Guía 25 -->
+        <div class="bg-neutral-900 rounded-xl overflow-hidden shadow-lg flex flex-col hover:transform hover:scale-105 transition-all duration-300 border border-neutral-800 hidden" data-category="Otros">
+          <div class="h-48 bg-cover bg-center relative" style="background-image: url('images/registro-obra.webp');">
+            <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">Completa</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Cómo registrar tu obra en INDAUTOR y proteger tus derechos en 2025</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-sm text-green-400">✅ Paso 1 de 1 completado</span>
+              </div>
+              <p class="text-neutral-400 mb-4">Protege tu libro, música o creación registrándola como obra original</p>
+              <div class="flex items-center justify-between text-sm text-neutral-500 mb-4">
+                <span>📖 16 min</span>
+                <span>👁️ 2,890 vistas</span>
+              </div>
+            </div>
+            <a href="registro-obra.html" class="text-primary-400 hover:underline font-medium">Ver guía →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Load More Button -->
+      <div class="text-center mt-12">
+        <button id="load-more-btn" class="px-8 py-3 bg-neutral-800 hover:bg-neutral-700 text-white rounded-lg font-semibold transition group">
+          <span class="group-hover:translate-y-[-2px] transition-transform inline-block">Cargar más guías</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="max-w-6xl mx-auto mt-20 px-4">
+      <div class="bg-neutral-900 rounded-2xl p-8 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-8">¿Por qué usar nuestras guías?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mb-4">
+              <span class="text-2xl">⏰</span>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Ahorras tiempo</h3>
+            <p class="text-neutral-400">Procesos optimizados para que completes tus trámites más rápido.</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mb-4">
+              <span class="text-2xl">✅</span>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Evitas errores frecuentes</h3>
+            <p class="text-neutral-400">Aprende de los errores más comunes y cómo evitarlos.</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mb-4">
+              <span class="text-2xl">📋</span>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Entiendes el proceso completo</h3>
+            <p class="text-neutral-400">Información detallada de cada paso del trámite.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="max-w-6xl mx-auto mt-20 px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">¿Tienes dudas?</h2>
+      <div class="space-y-4">
+        <div class="bg-neutral-900 rounded-xl border border-neutral-800">
+          <button class="w-full p-6 text-left flex justify-between items-center hover:bg-neutral-800 transition" onclick="toggleFAQ(this)">
+            <span class="font-semibold text-lg">¿Dónde puedo agendar cita?</span>
+            <span class="text-primary-400 text-xl">+</span>
+          </button>
+          <div class="hidden px-6 pb-6">
+            <p class="text-neutral-400">Puedes agendar citas a través de los portales oficiales de cada dependencia. Nuestras guías te muestran los enlaces directos y el proceso paso a paso.</p>
+          </div>
+        </div>
+        
+        <div class="bg-neutral-900 rounded-xl border border-neutral-800">
+          <button class="w-full p-6 text-left flex justify-between items-center hover:bg-neutral-800 transition" onclick="toggleFAQ(this)">
+            <span class="font-semibold text-lg">¿Cuánto cuesta este trámite?</span>
+            <span class="text-primary-400 text-xl">+</span>
+          </button>
+          <div class="hidden px-6 pb-6">
+            <p class="text-neutral-400">Los costos varían según el trámite y pueden cambiar. En cada guía incluimos información actualizada sobre costos y formas de pago disponibles.</p>
+          </div>
+        </div>
+        
+        <div class="bg-neutral-900 rounded-xl border border-neutral-800">
+          <button class="w-full p-6 text-left flex justify-between items-center hover:bg-neutral-800 transition" onclick="toggleFAQ(this)">
+            <span class="font-semibold text-lg">¿Las guías están actualizadas?</span>
+            <span class="text-primary-400 text-xl">+</span>
+          </button>
+          <div class="hidden px-6 pb-6">
+            <p class="text-neutral-400">Sí, nuestras guías se actualizan regularmente para mantener la información más reciente y precisa sobre cada trámite.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="max-w-6xl mx-auto mt-20 px-4">
+      <div class="bg-gradient-to-br from-primary-600/20 to-primary-800/20 rounded-2xl p-8 text-center border border-primary-500/30 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-primary-500/10 rounded-full -translate-y-16 translate-x-16"></div>
+        <div class="absolute bottom-0 left-0 w-24 h-24 bg-primary-400/10 rounded-full translate-y-12 -translate-x-12"></div>
+        <div class="relative z-10">
+          <h2 class="text-2xl md:text-3xl font-bold mb-4">Inicia ahora tu trámite</h2>
+          <p class="text-lg mb-6 text-neutral-300">Comienza a resolver tus trámites ahora mismo con ayuda de nuestras guías.</p>
+          <a href="#guias-list" class="inline-flex items-center gap-2 px-8 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition group">
+            <span>Ver todas las guías</span>
+            <span class="group-hover:translate-x-1 transition-transform">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="max-w-6xl mx-auto mt-20 px-4">
+      <div class="bg-gradient-to-r from-neutral-800 to-neutral-900 rounded-2xl p-8 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Información importante</h2>
+        <p class="text-lg mb-6 text-neutral-300">Nuestras guías se actualizan constantemente para mantener la información más reciente y precisa.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div class="flex items-center gap-2 text-sm text-neutral-400">
+            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+            <span>Guías paso a paso</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm text-neutral-400">
+            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+            <span>Actualizaciones regulares</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm text-neutral-400">
+            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+            <span>Información verificada</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-neutral-900 text-neutral-400 py-6 sm:py-8 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-sm">© 2024 Tramita México. Todos los derechos reservados.</div>
+      <div class="text-xs">Este sitio no es una entidad gubernamental ni está afiliado a ninguna institución oficial.</div>
+    </div>
+  </footer>
+
+  <div id="cookie-banner" class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-neutral-800 text-white w-full max-w-xl sm:max-w-2xl px-4 py-3 sm:px-6 sm:py-4 rounded-lg shadow-lg flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4 z-50 text-sm sm:text-base">
+    <span class="w-full sm:w-auto text-center sm:text-left">Este sitio utiliza cookies para mejorar tu experiencia. <a href="sobre-nosotros.html" class="underline text-primary-400">Saber más</a></span>
+    <button onclick="document.getElementById('cookie-banner').style.display='none'" class="w-full sm:w-auto mt-2 sm:mt-0 px-4 py-2 bg-primary-500 hover:bg-primary-600 rounded transition">Aceptar</button>
+  </div>
+
+  <script>
+    const categoryTabs = document.getElementById('category-tabs');
+    const guias = document.querySelectorAll('#guias-container > div[data-category]');
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    let currentFilter = 'Todos';
+    let allGuiasShown = false;
+
+    // Функция для показа дополнительных guías
+    function loadMoreGuias() {
+      // Показываем дополнительные guías только для категории "Todos"
+      if (currentFilter === 'Todos') {
+        const visibleGuias = document.querySelectorAll('#guias-container > div[data-category]:not(.hidden)');
+        const allGuias = Array.from(guias);
+        const nextGuias = allGuias.slice(visibleGuias.length, visibleGuias.length + 9);
+        
+        nextGuias.forEach(guia => {
+          guia.classList.remove('hidden');
+        });
+
+        // Если больше нет скрытых guías, скрываем кнопку
+        if (visibleGuias.length + nextGuias.length >= allGuias.length) {
+          loadMoreBtn.style.display = 'none';
+          allGuiasShown = true;
+        }
+      }
+    }
+
+    // Обработчик кнопки "Cargar más guías"
+    loadMoreBtn.addEventListener('click', loadMoreGuias);
+
+    categoryTabs.addEventListener('click', (e) => {
+      if (e.target.tagName === 'BUTTON') {
+        const category = e.target.getAttribute('data-category');
+        currentFilter = category;
+        
+        // Update active tab styling
+        categoryTabs.querySelectorAll('button').forEach(btn => {
+          btn.classList.remove('bg-primary-500', 'text-white');
+          btn.classList.add('bg-neutral-800', 'text-white');
+        });
+        e.target.classList.add('bg-primary-500', 'text-white');
+        e.target.classList.remove('bg-neutral-800');
+        
+        // Сброс состояния "показать еще"
+        allGuiasShown = false;
+        loadMoreBtn.style.display = 'block';
+        
+        // Фильтрация
+        const filteredGuias = Array.from(guias).filter(card => 
+          category === 'Todos' || card.getAttribute('data-category') === category
+        );
+        
+        // Скрываем все guías сначала
+        guias.forEach(card => {
+          card.classList.add('hidden');
+        });
+        
+        // Показываем guías выбранной категории
+        filteredGuias.forEach((card, index) => {
+          if (category === 'Todos') {
+            // Для "Todos" показываем только первые 9
+            if (index < 9) {
+              card.classList.remove('hidden');
+            }
+          } else {
+            // Для конкретной категории показываем все guías
+            card.classList.remove('hidden');
+          }
+        });
+        
+        // Скрываем кнопку "показать еще" для конкретных категорий
+        if (category !== 'Todos') {
+          loadMoreBtn.style.display = 'none';
+        } else {
+          loadMoreBtn.style.display = 'block';
+        }
+      }
+    });
+
+    // Инициализация: показываем только первые 9 guías
+    document.addEventListener('DOMContentLoaded', function() {
+      // Скрываем все guías кроме первых 9
+      guias.forEach((card, index) => {
+        if (index >= 9) {
+          card.classList.add('hidden');
+        }
+      });
+
+      // Fullscreen burger menu for all screens + overlay + auto-hide nav
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('main-menu');
+      const overlay = document.getElementById('menu-overlay');
+      const navbar = document.getElementById('main-navbar');
+      let open = false;
+      function openMenu() {
+        menu.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+        toggle.textContent = '✕';
+        document.body.classList.add('overflow-hidden');
+        open = true;
+      }
+      function closeMenu() {
+        menu.classList.add('hidden');
+        overlay.classList.add('hidden');
+        toggle.textContent = '☰';
+        document.body.classList.remove('overflow-hidden');
+        open = false;
+      }
+      if (toggle && menu && overlay) {
+        toggle.addEventListener('click', function() {
+          open ? closeMenu() : openMenu();
+        });
+        overlay.addEventListener('click', closeMenu);
+        menu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            closeMenu();
+          });
+        });
+      }
+      // Auto-hide navbar on scroll
+      let lastScroll = window.scrollY;
+      window.addEventListener('scroll', function() {
+        const curr = window.scrollY;
+        if (curr > lastScroll && curr > 60) {
+          navbar.classList.add('-translate-y-full');
+        } else {
+          navbar.classList.remove('-translate-y-full');
+        }
+        lastScroll = curr;
+      });
+    });
+
+    // FAQ toggle functionality
+    function toggleFAQ(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('span:last-child');
+      
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.textContent = '−';
+      } else {
+        content.classList.add('hidden');
+        icon.textContent = '+';
+      }
+    }
+  </script>
+</body>
+</html> 

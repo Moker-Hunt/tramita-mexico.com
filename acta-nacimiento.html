@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprende cómo obtener, renovar o corregir tu acta de nacimiento en México de forma sencilla.">
+  <meta name="keywords" content="acta de nacimiento, obtener acta, renovar acta, acta 2025, registro civil">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Acta de nacimiento: cómo obtenerla, renovarla o corregirla</title>
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-neutral-950 text-white min-h-screen flex flex-col">
+  <nav id="main-navbar" class="w-full px-4 py-3 flex justify-between items-center bg-neutral-900/80 backdrop-blur-md fixed top-0 left-0 z-30 transition-transform duration-300 transform">
+    <a href="index.html" class="text-xl font-bold tracking-tight">Tramita México</a>
+    <button id="menu-toggle" class="text-3xl text-white focus:outline-none transition-transform duration-200 z-50 relative">☰</button>
+    <div id="menu-overlay" class="fixed inset-0 bg-black/90 z-40 hidden transition-opacity duration-200"></div>
+    <ul id="main-menu" class="hidden fixed inset-0 bg-black flex-col items-start justify-start gap-8 z-50 text-2xl font-bold text-white transition-all duration-300 mt-[60px]">
+      <li><a href="index.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Inicio</a></li>
+      <li><a href="articulos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Artículos</a></li>
+      <li><a href="guias.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Guías</a></li>
+      <li><a href="recursos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Recursos</a></li>
+      <li><a href="tramites.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Trámites</a></li>
+      <li><a href="sobre-nosotros.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Sobre nosotros</a></li>
+    </ul>
+  </nav>
+  <main class="flex-1 pb-8" style="padding-top: 60px;">
+    <!-- 1. Hero-zona -->
+    <section class="relative flex items-center justify-center bg-cover bg-center min-h-[45vh] px-4" style="background-image: url('images/acta-nacimiento.webp');">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent"></div>
+      <div class="relative z-10 text-center max-w-2xl mx-auto flex flex-col items-center justify-center h-full py-12">
+        <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-500/20 rounded-full mb-6">
+          <span class="text-2xl">📄</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold mb-4">Acta de nacimiento: cómo obtenerla, renovarla o corregirla</h1>
+        <p class="text-lg sm:text-2xl mb-8 text-neutral-200 font-medium">Tu acta de nacimiento es el documento más importante de tu identidad legal en México. Te explicamos cómo obtenerla por primera vez, renovarla cuando esté deteriorada o corregir errores en los datos. Esta guía te ayudará a navegar el proceso del registro civil y obtener tu acta sin complicaciones.</p>
+        <a href="#obtener" class="inline-block px-8 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-lg shadow-lg">Obtener acta</a>
+      </div>
+    </section>
+
+    <!-- 2. ¿Qué es el acta de nacimiento? -->
+    <section id="obtener" class="max-w-5xl mx-auto mt-14 px-4">
+      <div class="flex flex-col md:flex-row gap-8 items-center bg-neutral-900/90 rounded-2xl p-8 shadow border border-neutral-800">
+        <div class="flex-1">
+          <h2 class="text-2xl font-bold mb-3">¿Qué es el acta de nacimiento?</h2>
+          <p class="text-base text-neutral-300 mb-4">El acta de nacimiento es el documento oficial que acredita tu identidad legal en México. Es el primer documento que se genera cuando naces y contiene información fundamental como tu nombre completo, fecha y lugar de nacimiento, y datos de tus padres. Este documento es esencial para obtener cualquier otra identificación oficial como CURP, RFC, INE o pasaporte.</p>
+          <div class="flex gap-4 mt-6">
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">🆔</span>
+              <span class="text-xs text-neutral-400 mt-1">Identidad legal</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">📋</span>
+              <span class="text-xs text-neutral-400 mt-1">Trámites oficiales</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">🎓</span>
+              <span class="text-xs text-neutral-400 mt-1">Educación</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center">
+          <img src="images/article-acta-nacimiento.webp" alt="Acta de nacimiento" class="w-72 h-44 object-cover rounded-xl shadow-lg opacity-90">
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Cuándo necesitas tu acta -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Cuándo necesitas tu acta de nacimiento</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">🆔</span>
+          <span class="font-semibold mb-2">Primera vez</span>
+          <p class="text-sm text-neutral-300">Si nunca has tenido acta de nacimiento, necesitas registrarte en el registro civil de tu lugar de nacimiento. Es el primer paso para tu identidad legal.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">🔄</span>
+          <span class="font-semibold mb-2">Renovación</span>
+          <p class="text-sm text-neutral-300">Si tu acta está deteriorada, ilegible o muy antigua, necesitas renovarla para que sea aceptada en trámites oficiales.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">✏️</span>
+          <span class="font-semibold mb-2">Corrección de errores</span>
+          <p class="text-sm text-neutral-300">Si hay errores en tu nombre, fecha de nacimiento o datos de tus padres, necesitas corregir el acta.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Proceso de obtención -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Proceso de obtención paso a paso</h2>
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 w-full">
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mb-3">
+              <span class="text-white font-bold">1</span>
+            </div>
+            <span class="font-semibold mb-2">Identifica el registro</span>
+            <span class="text-xs text-neutral-400">Ve al registro civil del lugar donde naciste o donde estés registrado.</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mb-3">
+              <span class="text-white font-bold">2</span>
+            </div>
+            <span class="font-semibold mb-2">Reúne documentos</span>
+            <span class="text-xs text-neutral-400">Lleva identificación oficial, comprobante de domicilio y pago de derechos.</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mb-3">
+              <span class="text-white font-bold">3</span>
+            </div>
+            <span class="font-semibold mb-2">Solicita el trámite</span>
+            <span class="text-xs text-neutral-400">Presenta tu solicitud en ventanilla. El proceso puede tomar de 1 a 3 horas.</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mb-3">
+              <span class="text-white font-bold">4</span>
+            </div>
+            <span class="font-semibold mb-2">Recibe tu acta</span>
+            <span class="text-xs text-neutral-400">Recibirás tu acta el mismo día. Verifica que todos los datos sean correctos.</span>
+          </div>
+        </div>
+        <div class="mt-6 text-xs text-neutral-400 text-center">El tiempo de entrega varía según el registro civil y la complejidad del caso.</div>
+      </div>
+    </section>
+
+    <!-- 5. Casos reales y errores frecuentes -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Casos reales y errores frecuentes</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">❌</span>
+          <span class="font-semibold mb-1">"Mi acta tenía errores y no me aceptaron"</span>
+          <span class="text-xs text-neutral-400 mt-2">Errores en el acta pueden impedir trámites oficiales. Siempre verifica que los datos sean correctos.</span>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">📄</span>
+          <span class="font-semibold mb-1">"No encontré mi registro"</span>
+          <span class="text-xs text-neutral-400 mt-2">Si no encuentras tu registro, puede que nunca te hayan registrado o estés en otro registro civil.</span>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">⏰</span>
+          <span class="font-semibold mb-1">"El trámite tardó más de lo esperado"</span>
+          <span class="text-xs text-neutral-400 mt-2">Los tiempos varían según el registro civil. Planifica con tiempo para evitar retrasos.</span>
+        </div>
+      </div>
+      <div class="text-xs text-neutral-400 text-center">Estos problemas son comunes pero se pueden resolver siguiendo los pasos correctos.</div>
+    </section>
+
+    <!-- 6. Acta válida vs inválida -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Acta válida vs inválida</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="bg-green-900/80 rounded-xl p-6 flex flex-col items-center shadow border border-green-700">
+          <span class="text-2xl mb-2">✅ VÁLIDA</span>
+          <ul class="text-sm text-green-100 space-y-1">
+            <li>Emitida por registro civil oficial</li>
+            <li>Datos legibles y correctos</li>
+            <li>Con sellos y firmas oficiales</li>
+            <li>Sin tachaduras o correcciones</li>
+          </ul>
+        </div>
+        <div class="bg-red-900/80 rounded-xl p-6 flex flex-col items-center shadow border border-red-700">
+          <span class="text-2xl mb-2">❌ INVÁLIDA</span>
+          <ul class="text-sm text-red-100 space-y-1">
+            <li>Datos ilegibles o deteriorados</li>
+            <li>Errores en nombres o fechas</li>
+            <li>Sin sellos oficiales</li>
+            <li>Documento no oficial o falsificado</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4 text-xs text-neutral-400 text-center">Un acta válida es tu garantía para realizar trámites oficiales sin problemas.</div>
+    </section>
+
+    <!-- 7. Mini-guía ilustrada -->
+    <section class="max-w-3xl mx-auto mt-14 px-4">
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <div class="flex flex-col items-center gap-4">
+          <span class="text-3xl">🏢</span>
+          <span class="font-semibold">Identifica el registro correcto</span>
+          <span class="text-xs text-neutral-400 text-center">Ve al registro civil del lugar donde naciste o donde estés registrado.</span>
+          <span class="text-3xl">📋</span>
+          <span class="font-semibold">Lleva todos los documentos</span>
+          <span class="text-xs text-neutral-400 text-center">Asegúrate de tener todos los documentos requeridos antes de acudir.</span>
+          <span class="text-3xl">✅</span>
+          <span class="font-semibold">Verifica tu acta</span>
+          <span class="text-xs text-neutral-400 text-center">Revisa que todos los datos en tu acta sean correctos antes de salir.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Cierre emocional -->
+    <section class="max-w-4xl mx-auto mt-14 px-4">
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <h2 class="text-2xl font-bold mb-4 text-center">¿Por qué es fundamental tener tu acta de nacimiento?</h2>
+        <p class="text-base text-neutral-300 mb-4 text-center">Tu acta de nacimiento es el documento base de tu identidad legal en México. Sin ella, no puedes obtener otros documentos oficiales como CURP, RFC, INE o pasaporte. Es esencial para trámites educativos, laborales, bancarios y cualquier gestión que requiera identificación oficial. Una acta correcta es tu garantía de identidad y ciudadanía.</p>
+        <ul class="list-disc pl-6 text-sm text-neutral-400 mb-4">
+          <li>Es el documento base para obtener cualquier identificación oficial.</li>
+          <li>Necesaria para trámites educativos y laborales.</li>
+          <li>Requerida para servicios bancarios y financieros.</li>
+          <li>Esencial para ejercer derechos ciudadanos y legales.</li>
+        </ul>
+        <p class="text-sm text-neutral-400 text-center">Recuerda: tu acta de nacimiento es el fundamento de tu identidad legal en México.</p>
+      </div>
+    </section>
+
+    <!-- 9. Disclaimer -->
+    <section class="max-w-3xl mx-auto mt-10 px-4">
+      <div class="bg-neutral-800/90 rounded-lg p-4 text-xs text-neutral-300 text-center">
+        No realizamos trámites ni almacenamos datos personales. Toda la información aquí tiene fines informativos y no sustituye la consulta oficial con las autoridades del registro civil. Consulta siempre fuentes oficiales para realizar tu trámite de acta de nacimiento.
+      </div>
+    </section>
+  </main>
+  <footer class="bg-neutral-900 text-neutral-400 py-6 sm:py-8 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-sm">© 2024 Tramita México. Todos los derechos reservados.</div>
+      <div class="text-xs">Este sitio no es una entidad gubernamental ni está afiliado a ninguna institución oficial.</div>
+    </div>
+  </footer>
+  <div id="cookie-banner"
+    class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-neutral-800 text-white w-[95vw] max-w-xl sm:max-w-2xl px-3 py-3 sm:px-6 sm:py-4 rounded-lg shadow-lg flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4 z-50 text-sm sm:text-base"
+    style="word-break:break-word;">
+    <span class="w-full sm:w-auto text-center sm:text-left leading-snug">
+      Este sitio utiliza cookies para mejorar tu experiencia.
+      <a href="sobre-nosotros.html" class="underline text-primary-400">Saber más</a>
+    </span>
+    <button
+      onclick="document.getElementById('cookie-banner').style.display='none'"
+      class="w-full sm:w-auto mt-2 sm:mt-0 px-4 py-2 bg-primary-500 hover:bg-primary-600 rounded transition font-semibold focus:outline-none focus:ring-2 focus:ring-primary-400"
+      aria-label="Aceptar cookies">
+      Aceptar
+    </button>
+  </div>
+  <script>
+    // Fullscreen burger menu for all screens + overlay + auto-hide nav
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('main-menu');
+      const overlay = document.getElementById('menu-overlay');
+      const navbar = document.getElementById('main-navbar');
+      let open = false;
+      function openMenu() {
+        menu.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+        toggle.textContent = '✕';
+        document.body.classList.add('overflow-hidden');
+        open = true;
+      }
+      function closeMenu() {
+        menu.classList.add('hidden');
+        overlay.classList.add('hidden');
+        toggle.textContent = '☰';
+        document.body.classList.remove('overflow-hidden');
+        open = false;
+      }
+      if (toggle && menu && overlay) {
+        toggle.addEventListener('click', function() {
+          open ? closeMenu() : openMenu();
+        });
+        overlay.addEventListener('click', closeMenu);
+        menu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            closeMenu();
+          });
+        });
+      }
+      // Auto-hide navbar on scroll
+      let lastScroll = window.scrollY;
+      window.addEventListener('scroll', function() {
+        const curr = window.scrollY;
+        if (curr > lastScroll && curr > 60) {
+          navbar.classList.add('-translate-y-full');
+        } else {
+          navbar.classList.remove('-translate-y-full');
+        }
+        lastScroll = curr;
+      });
+    });
+  </script>
+</body>
+</html> 

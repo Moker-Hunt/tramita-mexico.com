@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubre cómo consultar y descargar tus comprobantes fiscales de forma rápida y segura.">
+  <meta name="keywords" content="CFDI, comprobante fiscal, SAT, descargar CFDI, factura electrónica">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Cómo consultar y descargar tu comprobante fiscal (CFDI)</title>
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-neutral-950 text-white min-h-screen flex flex-col">
+  <nav id="main-navbar" class="w-full px-4 py-3 flex justify-between items-center bg-neutral-900/80 backdrop-blur-md fixed top-0 left-0 z-30 transition-transform duration-300 transform">
+    <a href="index.html" class="text-xl font-bold tracking-tight">Tramita México</a>
+    <button id="menu-toggle" class="text-3xl text-white focus:outline-none transition-transform duration-200 z-50 relative">☰</button>
+    <div id="menu-overlay" class="fixed inset-0 bg-black/90 z-40 hidden transition-opacity duration-200"></div>
+    <ul id="main-menu" class="hidden fixed inset-0 bg-black flex-col items-start justify-start gap-8 z-50 text-2xl font-bold text-white transition-all duration-300 mt-[60px]">
+      <li><a href="index.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Inicio</a></li>
+      <li><a href="articulos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Artículos</a></li>
+      <li><a href="guias.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Guías</a></li>
+      <li><a href="recursos.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Recursos</a></li>
+      <li><a href="tramites.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Trámites</a></li>
+      <li><a href="sobre-nosotros.html" class="block px-8 py-4 text-white hover:text-primary-400 transition bg-black/80 rounded-xl">Sobre nosotros</a></li>
+    </ul>
+  </nav>
+  <main class="flex-1 pb-8" style="padding-top: 60px;">
+    <!-- 1. Hero-zona -->
+    <section class="relative flex items-center justify-center bg-cover bg-center min-h-[45vh] px-4" style="background-image: url('images/cfdi.webp');">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent"></div>
+      <div class="relative z-10 text-center max-w-2xl mx-auto flex flex-col items-center justify-center h-full py-12">
+        <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-500/20 rounded-full mb-6">
+          <span class="text-2xl">🧾</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold mb-4">Cómo consultar y descargar tu comprobante fiscal (CFDI)</h1>
+        <p class="text-lg sm:text-2xl mb-8 text-neutral-200 font-medium">Aprende a obtener tus facturas electrónicas CFDI desde el portal del SAT. Te explicamos paso a paso cómo consultar y descargar tus comprobantes fiscales de forma rápida y segura.</p>
+        <a href="#consulta" class="inline-block px-8 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition text-lg shadow-lg">Consultar CFDI</a>
+      </div>
+    </section>
+
+    <!-- 2. ¿Qué es el CFDI? -->
+    <section id="consulta" class="max-w-5xl mx-auto mt-14 px-4">
+      <div class="flex flex-col md:flex-row gap-8 items-center bg-neutral-900/90 rounded-2xl p-8 shadow border border-neutral-800">
+        <div class="flex-1">
+          <h2 class="text-2xl font-bold mb-3">¿Qué es el CFDI?</h2>
+          <p class="text-base text-neutral-300 mb-4">El CFDI (Comprobante Fiscal Digital por Internet) es la factura electrónica que reemplazó a las facturas en papel. Es un documento digital que acredita las operaciones comerciales y es válido para efectos fiscales.</p>
+          <div class="flex gap-4 mt-6">
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">💻</span>
+              <span class="text-xs text-neutral-400 mt-1">Digital</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">🔒</span>
+              <span class="text-xs text-neutral-400 mt-1">Seguro</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="text-2xl">📊</span>
+              <span class="text-xs text-neutral-400 mt-1">Fiscal</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center">
+          <img src="images/article-cfdi.webp" alt="CFDI SAT" class="w-72 h-44 object-cover rounded-xl shadow-lg opacity-90">
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Cómo consultar CFDI -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Cómo consultar tus CFDI en el SAT</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">💻</span>
+          <span class="font-semibold mb-2">Portal del SAT</span>
+          <p class="text-sm text-neutral-300">Accede al portal oficial del SAT y consulta tus comprobantes fiscales con tu RFC y contraseña.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">📱</span>
+          <span class="font-semibold mb-2">App SAT</span>
+          <p class="text-sm text-neutral-300">Descarga la aplicación oficial del SAT y consulta tus CFDI desde tu dispositivo móvil.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col shadow border border-neutral-800">
+          <span class="text-2xl mb-2">🔍</span>
+          <span class="font-semibold mb-2">Búsqueda por UUID</span>
+          <p class="text-sm text-neutral-300">Busca un CFDI específico usando su UUID (Identificador Único de Factura).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Pasos para consultar -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Pasos para consultar tus CFDI</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-4 gap-6 mb-4">
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">1️⃣</span>
+          <span class="font-semibold mb-1">Accede al SAT</span>
+          <span class="text-xs text-neutral-400 mt-2">Ve a www.sat.gob.mx y busca "Consulta CFDI"</span>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">2️⃣</span>
+          <span class="font-semibold mb-1">Inicia sesión</span>
+          <span class="text-xs text-neutral-400 mt-2">Usa tu RFC y contraseña del SAT</span>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">3️⃣</span>
+          <span class="font-semibold mb-1">Filtra resultados</span>
+          <span class="text-xs text-neutral-400 mt-2">Selecciona fechas, montos o proveedores</span>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">4️⃣</span>
+          <span class="font-semibold mb-1">Descarga CFDI</span>
+          <span class="text-xs text-neutral-400 mt-2">Descarga en PDF o XML según necesites</span>
+        </div>
+      </div>
+      <div class="text-xs text-neutral-400 text-center">El proceso es gratuito y puedes consultar CFDI de los últimos 5 años.</div>
+    </section>
+
+    <!-- 5. Requisitos para la consulta -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Requisitos para consultar CFDI</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="bg-green-900/80 rounded-xl p-6 flex flex-col items-center shadow border border-green-700">
+          <span class="text-2xl mb-2">✅ DOCUMENTOS NECESARIOS</span>
+          <ul class="text-sm text-green-100 space-y-1">
+            <li>• RFC (Registro Federal de Contribuyentes)</li>
+            <li>• Contraseña del SAT (e.firma o CIEC)</li>
+            <li>• Conexión a internet</li>
+            <li>• Dispositivo (computadora, tablet o celular)</li>
+          </ul>
+        </div>
+        <div class="bg-blue-900/80 rounded-xl p-6 flex flex-col items-center shadow border border-blue-700">
+          <span class="text-2xl mb-2">⚠️ CASOS ESPECIALES</span>
+          <ul class="text-sm text-blue-100 space-y-1">
+            <li>• Si no tienes contraseña, tramítala primero</li>
+            <li>• Para CFDI de otros contribuyentes, usa UUID</li>
+            <li>• CFDI de más de 5 años requieren trámite especial</li>
+            <li>• Para extranjeros, consulta requisitos específicos</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4 text-xs text-neutral-400 text-center">La consulta es gratuita y está disponible 24/7.</div>
+    </section>
+
+    <!-- 6. Tipos de CFDI -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">Tipos de CFDI que puedes consultar</h2>
+      <div class="bg-neutral-900/90 rounded-2xl p-8 shadow border border-neutral-800">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="flex flex-col items-center text-center">
+            <div class="w-24 h-24 bg-primary-500 rounded-full flex items-center justify-center mb-4">
+              <span class="text-3xl">📥</span>
+            </div>
+            <span class="font-semibold mb-2">CFDI recibidos</span>
+            <p class="text-sm text-neutral-300">Facturas que has recibido de proveedores y servicios que has contratado.</p>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="w-24 h-24 bg-primary-500 rounded-full flex items-center justify-center mb-4">
+              <span class="text-3xl">📤</span>
+            </div>
+            <span class="font-semibold mb-2">CFDI emitidos</span>
+            <p class="text-sm text-neutral-300">Facturas que has emitido como contribuyente (si tienes actividad empresarial).</p>
+          </div>
+        </div>
+        <div class="mt-6 text-xs text-neutral-400 text-center">Puedes consultar ambos tipos de CFDI desde el mismo portal.</div>
+      </div>
+    </section>
+
+    <!-- 7. Usos del CFDI -->
+    <section class="max-w-5xl mx-auto mt-14 px-4">
+      <h2 class="text-2xl font-bold mb-6">¿Para qué necesitas tus CFDI?</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">💰</span>
+          <span class="font-semibold mb-1">Declaraciones fiscales</span>
+          <span class="text-xs text-neutral-400 mt-2">Para presentar tus declaraciones mensuales y anuales ante el SAT.</span>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">🏢</span>
+          <span class="font-semibold mb-1">Deducción de gastos</span>
+          <span class="text-xs text-neutral-400 mt-2">Para deducir gastos personales o empresariales en tu declaración.</span>
+        </div>
+        <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center shadow border border-neutral-800">
+          <span class="text-3xl mb-2">📋</span>
+          <span class="font-semibold mb-1">Trámites oficiales</span>
+          <span class="text-xs text-neutral-400 mt-2">Requeridos para diversos trámites gubernamentales y bancarios.</span>
+        </div>
+      </div>
+      <div class="text-xs text-neutral-400 text-center">Los CFDI son documentos oficiales que debes conservar por al menos 5 años.</div>
+    </section>
+
+    <!-- 8. Mini-guía ilustrada -->
+    <section class="max-w-3xl mx-auto mt-14 px-4">
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <div class="flex flex-col items-center gap-4">
+          <span class="text-3xl">🔍</span>
+          <span class="font-semibold">Consulta fácil</span>
+          <span class="text-xs text-neutral-400 text-center">Puedes consultar tus CFDI desde cualquier dispositivo con internet.</span>
+          <span class="text-3xl">📥</span>
+          <span class="font-semibold">Descarga múltiples</span>
+          <span class="text-xs text-neutral-400 text-center">Descarga en PDF para imprimir o XML para uso fiscal.</span>
+          <span class="text-3xl">📅</span>
+          <span class="font-semibold">Historial completo</span>
+          <span class="text-xs text-neutral-400 text-center">Accede a tus CFDI de los últimos 5 años sin límite.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Cierre emocional -->
+    <section class="max-w-4xl mx-auto mt-14 px-4">
+      <div class="bg-neutral-900/90 rounded-2xl p-8 flex flex-col items-center shadow border border-neutral-800">
+        <h2 class="text-2xl font-bold mb-4 text-center">¿Por qué es importante consultar tus CFDI?</h2>
+        <p class="text-base text-neutral-300 mb-4 text-center">Los CFDI son documentos fiscales oficiales que acreditan tus operaciones comerciales. Son necesarios para declaraciones fiscales, deducciones de gastos y diversos trámites oficiales. Mantener un control de tus CFDI te ayuda a cumplir con tus obligaciones fiscales.</p>
+        <ul class="list-disc pl-6 text-sm text-neutral-400 mb-4">
+          <li>Te permiten cumplir con tus obligaciones fiscales.</li>
+          <li>Son necesarios para deducir gastos personales y empresariales.</li>
+          <li>Te ayudan a mantener un control de tus finanzas.</li>
+          <li>Son requeridos para diversos trámites oficiales.</li>
+        </ul>
+        <p class="text-sm text-neutral-400 text-center">Consulta regularmente tus CFDI para mantener un control fiscal adecuado.</p>
+      </div>
+    </section>
+
+    <!-- 10. Disclaimer -->
+    <section class="max-w-3xl mx-auto mt-10 px-4">
+      <div class="bg-neutral-800/90 rounded-lg p-4 text-xs text-neutral-300 text-center">
+        Esta información es proporcionada con fines informativos. Para consultas específicas sobre CFDI, contacta directamente al SAT a través de sus canales oficiales.
+      </div>
+    </section>
+  </main>
+  <footer class="bg-neutral-900 text-neutral-400 py-6 sm:py-8 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-sm">© 2024 Tramita México. Todos los derechos reservados.</div>
+      <div class="text-xs">Este sitio no es una entidad gubernamental ni está afiliado a ninguna institución oficial.</div>
+    </div>
+  </footer>
+  <div id="cookie-banner"
+    class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-neutral-800 text-white w-[95vw] max-w-xl sm:max-w-2xl px-3 py-3 sm:px-6 sm:py-4 rounded-lg shadow-lg flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4 z-50 text-sm sm:text-base"
+    style="word-break:break-word;">
+    <span class="w-full sm:w-auto text-center sm:text-left leading-snug">
+      Este sitio utiliza cookies para mejorar tu experiencia.
+      <a href="sobre-nosotros.html" class="underline text-primary-400">Saber más</a>
+    </span>
+    <button
+      onclick="document.getElementById('cookie-banner').style.display='none'"
+      class="w-full sm:w-auto mt-2 sm:mt-0 px-4 py-2 bg-primary-500 hover:bg-primary-600 rounded transition font-semibold focus:outline-none focus:ring-2 focus:ring-primary-400"
+      aria-label="Aceptar cookies">
+      Aceptar
+    </button>
+  </div>
+  <script>
+    // Fullscreen burger menu for all screens + overlay + auto-hide nav
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('main-menu');
+      const overlay = document.getElementById('menu-overlay');
+      const navbar = document.getElementById('main-navbar');
+      let open = false;
+      function openMenu() {
+        menu.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+        toggle.textContent = '✕';
+        document.body.classList.add('overflow-hidden');
+        open = true;
+      }
+      function closeMenu() {
+        menu.classList.add('hidden');
+        overlay.classList.add('hidden');
+        toggle.textContent = '☰';
+        document.body.classList.remove('overflow-hidden');
+        open = false;
+      }
+      if (toggle && menu && overlay) {
+        toggle.addEventListener('click', function() {
+          open ? closeMenu() : openMenu();
+        });
+        overlay.addEventListener('click', closeMenu);
+        menu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            closeMenu();
+          });
+        });
+      }
+      // Auto-hide navbar on scroll
+      let lastScroll = window.scrollY;
+      window.addEventListener('scroll', function() {
+        const curr = window.scrollY;
+        if (curr > lastScroll && curr > 60) {
+          navbar.classList.add('-translate-y-full');
+        } else {
+          navbar.classList.remove('-translate-y-full');
+        }
+        lastScroll = curr;
+      });
+    });
+  </script>
+</body>
+</html> 
